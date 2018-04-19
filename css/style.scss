@@ -5,6 +5,7 @@ $unit: 4px;
 /* # Font settings
 ================================================== */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 $family: 'Montserrat', sans-serif;
 $light: 400;
 $normal: 600;
@@ -46,7 +47,7 @@ $redbubble:   #E41421;
 ================================================== */
 
 body {
-    color: $eggplant;
+    color: $Sunflower;
     font-family: $family;
     font-weight: $light;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */

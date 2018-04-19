@@ -2,12 +2,13 @@
 ================================================== */
 /* # Font settings
 ================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 /* # Color Variables
 ================================================== */
   /* # Global Styles
 ================================================== */
 body {
-  color: #40354E;
+  color: #FFCE54;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
