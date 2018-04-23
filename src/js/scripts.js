@@ -7,3 +7,5 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var scroll = new SmoothScroll('a[href*="#"]');
