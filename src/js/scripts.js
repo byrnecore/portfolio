@@ -1,3 +1,5 @@
+// Swiper
+
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
@@ -8,8 +10,12 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
+// Smooth Scroll to anchors
+
 var scroll = new SmoothScroll('a[href*="#"]');
 
+
+// GA tagging and tracing
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 window.dataLayer = window.dataLayer || [];
