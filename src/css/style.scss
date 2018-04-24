@@ -64,6 +64,19 @@ body {
     font-size: $unit * 10;
     line-height: $unit * 10;
     font-weight: $semibold;
+    text-transform: uppercase;
+    margin-bottom: $unit * 12;;
+  }
+  h1:after {
+    content: " ";
+    top: 1.2rem;
+    left: 50%;
+    position: relative;
+    display: block;
+    border: 1px solid $Grapefruit;
+    width: 4.4rem;
+    margin-bottom: 1.25rem;
+    transform: translateX(-50%);
   }
   p {
     font-size: $unit * 5;
@@ -185,7 +198,7 @@ section.intro {
     .intro {
       font-size: $unit * 16;
       line-height: $unit * 14;
-      margin-bottom: $unit * 6;
+      margin-bottom: $unit * 12;;
       margin-top: 0;
       font-weight: $semibold;
     }

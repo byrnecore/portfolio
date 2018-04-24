@@ -23,7 +23,19 @@ body {
   body h1 {
     font-size: 40px;
     line-height: 40px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 48px; }
+  body h1:after {
+    content: " ";
+    top: 1.2rem;
+    left: 50%;
+    position: relative;
+    display: block;
+    border: 1px solid #ED5565;
+    width: 4.4rem;
+    margin-bottom: 1.25rem;
+    transform: translateX(-50%); }
   body p {
     font-size: 20px;
     line-height: 30px;
@@ -117,7 +129,7 @@ section.intro {
   section.intro .container .intro {
     font-size: 64px;
     line-height: 56px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
     margin-top: 0;
     font-weight: 700; }
   section.intro .container p.sub-heading {
