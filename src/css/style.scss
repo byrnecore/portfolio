@@ -1,5 +1,6 @@
 
 @import url('normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css');
 
 /* # Global Unit
 ================================================== */
@@ -59,7 +60,7 @@ body {
     background-size: cover;
     height: 100%;
     text-align: center;
-  h1 {
+  h1 {   
     font-size: $unit * 10;
     line-height: $unit * 10;
     font-weight: $semibold;
@@ -83,7 +84,7 @@ body {
 // Section styles
 
 section {
-  height: 100vh;
+  height: 85vh;
   background: white;
   display: flex;
   align-items: center;
@@ -174,6 +175,7 @@ a.button {
 ================================================== */
 
 section.intro {
+  height: 100vh;
   background: $eggplant;
   background: rgba(64,53,78,.9);
   padding: 0;
