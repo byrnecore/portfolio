@@ -73,7 +73,7 @@ body {
     left: 50%;
     position: relative;
     display: block;
-    border: 1px solid $Grapefruit;
+    border: 2px solid $Grapefruit;
     width: 4.4rem;
     margin-bottom: 1.25rem;
     transform: translateX(-50%);
@@ -97,15 +97,15 @@ body {
 // Section styles
 
 section {
-  height: 85vh;
+  height: 100%;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   .container {
     max-width: 552px;
-    margin: 0 $unit*8;
-    padding: 10px;
+    // margin: 0 $unit*8;
+    padding: $unit*4 $unit*8;
     a.scroll {
       position: absolute;
       left: 50%;
@@ -339,15 +339,22 @@ section.footer {
 
 // Tablet
 @media screen and (min-width: 600px) {
-  .container {
-    // width: 80%;
+  
+  section {
+    height: 85vh;
+    .container {
+      // width: 80%;
+    }
   }
 }
 
 // Desktop
 @media screen and (min-width: 1000px) {
-  .container {
-    // width: 30%;
+  section {
+    height: 85vh;
+    .container {
+      // width: 80%;
+    }
   }
   section.my-expereince .swiper-button-next, section.my-expereince .swiper-button-prev {
       display: block;
