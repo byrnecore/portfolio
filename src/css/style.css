@@ -219,7 +219,7 @@ section.social {
 section.footer {
   background: #434A54;
   color: white;
-  min-height: 100%; }
+  height: 100%; }
   section.footer .container {
     padding: 0 32px; }
     section.footer .container p {
