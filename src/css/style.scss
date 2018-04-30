@@ -1,5 +1,5 @@
 
-@import url('normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css');
 
 /* # Global Unit
@@ -18,11 +18,13 @@ $semibold: 700;
 /* # Color Variables
 ================================================== */
 
+// Neutral Colours 
 $Light-Gray:  #F5F7FA; //#E6E9ED
 $Medium-Gray: #AAB2BD; //#CCD1D9
 $Dark-Gray:   #434A54; //#656D78
 $eggplant:    #40354E;
 
+// Accent Colours 
 $Grapefruit:  #ED5565; //#DA4453
 $Bittersweet: #FC6E51; //#E9573F
 $Sunflower:   #FFCE54; //#F6BB42
@@ -33,7 +35,7 @@ $Blue-Jeans:  #5D9CEC; //#4A89DC
 $Lavender:    #AC92EC; //#967ADC
 $Pink-Rose:   #EC87C0; //#D770AD
 
-
+// Social Colours 
 $behance:     #053eff;     
 $dribbble:    #ea4c89;
 $linkedin:    #007bb5;
