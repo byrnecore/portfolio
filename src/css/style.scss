@@ -96,6 +96,10 @@ body {
     color: $Blue-Jeans;
     cursor: pointer;
     }
+  .swipe {
+    font-size: 36px;
+    animation: swipey 1.6s linear infinite;
+  }
   
 }
 
@@ -377,6 +381,18 @@ section.footer {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes swipey {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
       

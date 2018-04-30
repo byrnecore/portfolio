@@ -48,6 +48,9 @@ body {
   body a:hover {
     color: #5D9CEC;
     cursor: pointer; }
+  body .swipe {
+    font-size: 36px;
+    animation: swipey 1.6s linear infinite; }
 
 section {
   min-height: 100%;
@@ -247,5 +250,12 @@ section.footer {
     transform: translateY(4px); }
   100% {
     transform: translateY(0); } }
+@keyframes swipey {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(4px); }
+  100% {
+    transform: translateX(0); } }
 
 /*# sourceMappingURL=style.css.map */
