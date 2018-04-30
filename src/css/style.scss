@@ -4,52 +4,7 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css');
-
-/* # Global Unit
-================================================== */
-$unit: 4px;
-
-/* # Font settings
-================================================== */
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-$family: 'Montserrat', sans-serif;
-$light: 400;
-$normal: 600;
-$semibold: 700;
-
-/* # Color Variables
-================================================== */
-
-// Neutral Colours 
-$Light-Gray:  #F5F7FA; //#E6E9ED
-$Medium-Gray: #AAB2BD; //#CCD1D9
-$Dark-Gray:   #434A54; //#656D78
-$eggplant:    #40354E;
-
-// Accent Colours 
-$Grapefruit:  #ED5565; //#DA4453
-$Bittersweet: #FC6E51; //#E9573F
-$Sunflower:   #FFCE54; //#F6BB42
-$Grass:       #A0D468; //#8CC152
-$Mint:        #48CFAD; //#37BC9B
-$Aqua:        #4FC1E9; //#3BAFDA
-$Blue-Jeans:  #5D9CEC; //#4A89DC
-$Lavender:    #AC92EC; //#967ADC
-$Pink-Rose:   #EC87C0; //#D770AD
-
-// Social Colours 
-$behance:     #053eff;     
-$dribbble:    #ea4c89;
-$linkedin:    #007bb5;
-$github:      #4078c0;
-$medium:      #02b875;
-$instagram:   #c32aa3;
-$foursquare:  #FA4778;
-$spotify:     #1ed760;
-$twitter:     #1da1f2;
-$pinterest:   #bd081c;
-$redbubble:   #E41421;
+@import 'variables';
 
 
   /* # Global Styles
@@ -257,6 +212,11 @@ section.my-expereince {
 section.contact {
   background: $Aqua;
 }
+
+section.recommendations {
+  background: $Bittersweet;
+}
+
 
 section.social {
   background-color: $Sunflower;
