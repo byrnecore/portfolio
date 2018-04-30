@@ -26,6 +26,7 @@ body {
     font-weight: $semibold;
     text-transform: uppercase;
     margin-bottom: $unit * 12;;
+    letter-spacing: -1.5px;
   }
   h1:after {
     content: " ";
@@ -214,7 +215,34 @@ section.contact {
 }
 
 section.recommendations {
-  background: $Bittersweet;
+  background: $Grass;
+  height: 100%;
+  blockquote {
+    padding-bottom: 12rem;
+    .avatar {
+      display: block;
+      width: 128px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      border-radius: 500px;
+      box-sizing: border-box;
+      background-color: #ddd;
+      border: 2px solid #fff;
+    }
+    .author {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: $normal;
+      padding-bottom: .4rem;
+    }
+    .position {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      opacity: .65;
+      font-weight: 300;
+    }
+  }
 }
 
 

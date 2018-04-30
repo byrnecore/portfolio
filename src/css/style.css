@@ -27,7 +27,8 @@ body {
     line-height: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    letter-spacing: -1.5px; }
   body h1:after {
     content: " ";
     top: 1.2rem;
@@ -174,7 +175,30 @@ section.contact {
   background: #4FC1E9; }
 
 section.recommendations {
-  background: #FC6E51; }
+  background: #A0D468;
+  height: 100%; }
+  section.recommendations blockquote {
+    padding-bottom: 12rem; }
+    section.recommendations blockquote .avatar {
+      display: block;
+      width: 128px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      border-radius: 500px;
+      box-sizing: border-box;
+      background-color: #ddd;
+      border: 2px solid #fff; }
+    section.recommendations blockquote .author {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding-bottom: .4rem; }
+    section.recommendations blockquote .position {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      opacity: .65;
+      font-weight: 300; }
 
 section.social {
   background-color: #FFCE54; }
