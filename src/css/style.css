@@ -1,3 +1,5 @@
+/* # Imports
+================================================== */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css");
 /* # Global Unit
@@ -107,14 +109,14 @@ a.button {
     background: #5D9CEC; }
   .swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
     display: none;
-    width: 24px;
-    height: 24px;
+    width: 62px;
+    height: 62px;
     background-size: auto; }
   .swiper-container .swiper-button-next {
-    background-image: url("data:image/svg+xml;utf8,<svg width='23' height='24' xmlns='http://www.w3.org/2000/svg'><path d='M12.14 17.884a.498.498 0 0 1 0-.707l4.645-4.647H4.993a.499.499 0 1 1 0-1h11.792L12.14 6.884a.5.5 0 0 1 .707-.707l5.5 5.5a.503.503 0 0 1 0 .707l-5.5 5.5a.5.5 0 0 1-.707 0m10.854-5.854c0-6.34-5.159-11.5-11.5-11.5-6.342 0-11.5 5.16-11.5 11.5 0 6.342 5.158 11.5 11.5 11.5 6.341 0 11.5-5.158 11.5-11.5' fill='#FFF' fill-rule='evenodd'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M21.772 30.595a.87.87 0 0 1 0-1.23l8.08-8.081H9.344a.869.869 0 1 1 0-1.74h20.508l-8.08-8.08a.87.87 0 0 1 1.23-1.229l9.565 9.565a.874.874 0 0 1 0 1.23l-9.565 9.565a.87.87 0 0 1-1.23 0m18.877-10.18c0-11.029-8.973-20-20-20-11.03 0-20 8.971-20 20s8.97 20 20 20c11.027 0 20-8.971 20-20' fill='#FFF' fill-rule='evenodd'/></svg>");
     background-repeat: no-repeat; }
   .swiper-container .swiper-button-prev {
-    background-image: url("data:image/svg+xml;utf8,<svg width='23' height='24' xmlns='http://www.w3.org/2000/svg'><path d='M12.14 17.884a.498.498 0 0 1 0-.707l4.645-4.647H4.993a.499.499 0 1 1 0-1h11.792L12.14 6.884a.5.5 0 0 1 .707-.707l5.5 5.5a.503.503 0 0 1 0 .707l-5.5 5.5a.5.5 0 0 1-.707 0m10.854-5.854c0-6.34-5.159-11.5-11.5-11.5-6.342 0-11.5 5.16-11.5 11.5 0 6.342 5.158 11.5 11.5 11.5 6.341 0 11.5-5.158 11.5-11.5' fill='#FFF' fill-rule='evenodd'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M19.525 10.233a.867.867 0 0 1 0 1.23l-8.08 8.082h20.508a.869.869 0 1 1 0 1.74l-20.508-.001 8.08 8.08a.87.87 0 0 1-1.23 1.23L8.73 21.027a.874.874 0 0 1 0-1.23l9.565-9.565a.87.87 0 0 1 1.23 0M.65 20.414c0 11.028 8.972 20 20 20 11.03 0 20-8.972 20-20 0-11.03-8.97-20-20-20-11.028 0-20 8.97-20 20' fill='#FFF' fill-rule='evenodd'/></svg>");
     background-repeat: no-repeat; }
 
   /* # Local Styles
@@ -145,7 +147,7 @@ section.intro {
       font-weight: 700; }
 
 section.my-expereince {
-  background-color: #AC92EC; }
+  background-color: #48CFAD; }
 
 section.contact {
   background: #4FC1E9; }
