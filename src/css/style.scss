@@ -62,7 +62,7 @@ section.recommendations {
   background: $Grass;
   height: 100%;
   blockquote {
-    padding-bottom: 6rem;
+    padding: 3rem 0;
     margin: 0;
     .avatar {
       display: block;
@@ -74,17 +74,20 @@ section.recommendations {
       background-color: #ddd;
       border: 2px solid white;
     }
-    .author {
-      display: block;
-      font-weight: $normal;
-      padding-bottom: .4rem;
-    }
-    .position {
-      display: block;
-      font-size: $unit*3.5;
-      line-height: 1.5;
-      opacity: .65;
-      font-weight: $light;
+    cite {
+      font-style: normal;
+      .author {
+        display: block;
+        font-weight: $normal;
+        padding: 8px 0 $unit 0;
+      }
+      .position {
+        display: block;
+        font-size: $unit*3.5;
+        line-height: 1.5;
+        opacity: .65;
+        font-weight: $light;
+      }
     }
   }
 }

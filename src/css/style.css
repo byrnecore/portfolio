@@ -178,7 +178,7 @@ section.recommendations {
   background: #A0D468;
   height: 100%; }
   section.recommendations blockquote {
-    padding-bottom: 6rem;
+    padding: 3rem 0;
     margin: 0; }
     section.recommendations blockquote .avatar {
       display: block;
@@ -189,16 +189,18 @@ section.recommendations {
       box-sizing: border-box;
       background-color: #ddd;
       border: 2px solid white; }
-    section.recommendations blockquote .author {
-      display: block;
-      font-weight: 600;
-      padding-bottom: .4rem; }
-    section.recommendations blockquote .position {
-      display: block;
-      font-size: 14px;
-      line-height: 1.5;
-      opacity: .65;
-      font-weight: 400; }
+    section.recommendations blockquote cite {
+      font-style: normal; }
+      section.recommendations blockquote cite .author {
+        display: block;
+        font-weight: 600;
+        padding: 8px 0 4px 0; }
+      section.recommendations blockquote cite .position {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        opacity: .65;
+        font-weight: 400; }
 
 section.social {
   background-color: #FFCE54; }
