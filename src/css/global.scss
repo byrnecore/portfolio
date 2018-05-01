@@ -60,7 +60,7 @@ section {
   justify-content: center;
   .container {
     max-width: 700px;
-    padding: $unit*8;
+    padding: $unit*12 $unit*8;
     a.scroll {
       position: absolute;
       left: 50%;

@@ -61,7 +61,7 @@ section {
   justify-content: center; }
   section .container {
     max-width: 700px;
-    padding: 32px; }
+    padding: 48px 32px; }
     section .container a.scroll {
       position: absolute;
       left: 50%;
@@ -184,18 +184,18 @@ section.recommendations {
       display: block;
       width: 128px;
       margin: 0 auto;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
       border-radius: 500px;
       box-sizing: border-box;
-      background-color: #ddd;
-      border: 2px solid white; }
-    section.recommendations blockquote cite {
+      background-color: #dddddd;
+      border: 4px solid white; }
+    section.recommendations blockquote .name {
       font-style: normal; }
-      section.recommendations blockquote cite .author {
+      section.recommendations blockquote .name .author {
         display: block;
         font-weight: 600;
         padding: 8px 0 4px 0; }
-      section.recommendations blockquote cite .position {
+      section.recommendations blockquote .name .position {
         display: block;
         font-size: 14px;
         line-height: 1.5;
