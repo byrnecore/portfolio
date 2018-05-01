@@ -1,0 +1,160 @@
+ /* # Global Styles
+================================================== */
+
+body {
+    color: $eggplant;
+    font-family: $family;
+    font-weight: $light;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    background: url(https://instagram.fmel1-1.fna.fbcdn.net/vp/ada2ccb068ff889a5de2c17018710579/5B459D54/t51.2885-15/e15/10956596_1538553869750341_2129848734_n.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+  h1 {   
+    font-size: $unit*10;
+    line-height: $unit*10;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    margin-bottom: $unit * 12;;
+    letter-spacing: -1.5px;
+  }
+  h1:after {
+    content: " ";
+    top: 1.2rem;
+    left: 50%;
+    position: relative;
+    display: block;
+    border: 2px solid $Grapefruit;
+    width: 4.4rem;
+    margin-bottom: 1.25rem;
+    transform: translateX(-50%);
+  }
+  p {
+    font-size: $unit*4;
+    line-height: $unit*6.5;
+    font-weight: $light;
+  }
+  a {
+    color: $eggplant;
+    font-weight: $semibold;
+    }
+  a:hover {
+    color: $Blue-Jeans;
+    cursor: pointer;
+    }
+  .swipe {
+    font-size: 36px;
+    animation: swipey 1.6s linear infinite;
+  }
+  
+}
+
+// Section styles
+
+section {
+  min-height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    max-width: 700px;
+    padding: $unit*8;
+    a.scroll {
+      position: absolute;
+      left: 50%;
+      right: 0;
+      bottom: $unit*3;
+      z-index: 90;
+      width: 50px;
+      margin-left: -25px;
+      border: 0;
+      font-size: $unit*8;
+      line-height: 1.5;
+      text-align: center;
+      background: none;
+      transition: (ease 1s);
+      animation: bouncey 1.6s linear infinite;
+      text-decoration: none;
+    }
+  }
+}
+
+// Button styles
+
+a.button {
+  border: 1px solid $eggplant;
+  border-radius: 29px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 0;
+  width: 100%;
+  margin-top: $unit*10;
+  color: $eggplant;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  font-size: $unit*4;
+  transition: all 150ms ease-out;
+  &:hover {
+    color: white;
+    background: $eggplant;
+  }
+}
+
+a.redbubble {
+      cursor: pointer;
+      font-weight: $normal;
+      color: $redbubble !important;
+    &::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url("data:image/svg+xml;utf8,<svg width='20' height='20' xmlns='http://www.w3.org/2000/svg'><path d='M13.86 13.603h-2.665a.267.267 0 0 1-.267-.267v-6.69c0-.149.12-.268.267-.268h2.471c1.855 0 2.244 1.091 2.244 2.007 0 .53-.14.95-.42 1.26.68.28 1.047.912 1.047 1.827 0 1.335-1 2.131-2.676 2.131m-3.87 0H4.453a.267.267 0 0 1-.266-.267v-6.69c0-.149.119-.268.266-.268h2.587c1.615 0 2.579.87 2.579 2.326 0 .97-.487 1.73-1.272 2.04l1.842 2.414a.268.268 0 0 1-.2.445M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0' fill='#E41421' fill-rule='evenodd'/></svg>") no-repeat;
+    height: 24px;
+    width: 22px;
+    }
+    }
+  a.redbubble {
+    color: $redbubble;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+// Swiper styles
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  .swiper-pagination-bullet {
+    background: $eggplant;
+  }
+  .swiper-pagination-bullet-active {
+    background: $eggplant;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+    width: 62px;
+    height: 62px;
+    background-size: auto;
+  }
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M21.772 30.595a.87.87 0 0 1 0-1.23l8.08-8.081H9.344a.869.869 0 1 1 0-1.74h20.508l-8.08-8.08a.87.87 0 0 1 1.23-1.229l9.565 9.565a.874.874 0 0 1 0 1.23l-9.565 9.565a.87.87 0 0 1-1.23 0m18.877-10.18c0-11.029-8.973-20-20-20-11.03 0-20 8.971-20 20s8.97 20 20 20c11.027 0 20-8.971 20-20' fill='#FFF' fill-rule='evenodd'/></svg>");
+  background-repeat: no-repeat
+  }
+  .swiper-button-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M19.525 10.233a.867.867 0 0 1 0 1.23l-8.08 8.082h20.508a.869.869 0 1 1 0 1.74l-20.508-.001 8.08 8.08a.87.87 0 0 1-1.23 1.23L8.73 21.027a.874.874 0 0 1 0-1.23l9.565-9.565a.87.87 0 0 1 1.23 0M.65 20.414c0 11.028 8.972 20 20 20 11.03 0 20-8.972 20-20 0-11.03-8.97-20-20-20-11.028 0-20 8.97-20 20' fill='#FFF' fill-rule='evenodd'/></svg>");
+  background-repeat: no-repeat
+  }
+}

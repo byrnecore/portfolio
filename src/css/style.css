@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
 /* # Color Variables
 ================================================== */
-  /* # Global Styles
+ /* # Global Styles
 ================================================== */
 body {
   color: #40354E;
@@ -40,8 +40,8 @@ body {
     margin-bottom: 1.25rem;
     transform: translateX(-50%); }
   body p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 400; }
   body a {
     color: #40354E;
@@ -60,7 +60,7 @@ section {
   align-items: center;
   justify-content: center; }
   section .container {
-    max-width: 552px;
+    max-width: 700px;
     padding: 32px; }
     section .container a.scroll {
       position: absolute;
@@ -91,7 +91,7 @@ a.button {
   text-align: center;
   text-decoration: none;
   background: transparent;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 150ms ease-out; }
   a.button:hover {
     color: white;
@@ -178,7 +178,8 @@ section.recommendations {
   background: #A0D468;
   height: 100%; }
   section.recommendations blockquote {
-    padding-bottom: 12rem; }
+    padding-bottom: 6rem;
+    margin: 0; }
     section.recommendations blockquote .avatar {
       display: block;
       width: 128px;
@@ -187,18 +188,17 @@ section.recommendations {
       border-radius: 500px;
       box-sizing: border-box;
       background-color: #ddd;
-      border: 2px solid #fff; }
+      border: 2px solid white; }
     section.recommendations blockquote .author {
       display: block;
-      font-size: 1.2rem;
       font-weight: 600;
       padding-bottom: .4rem; }
     section.recommendations blockquote .position {
       display: block;
-      font-size: 1.1rem;
+      font-size: 14px;
       line-height: 1.5;
       opacity: .65;
-      font-weight: 300; }
+      font-weight: 400; }
 
 section.social {
   background-color: #FFCE54; }
