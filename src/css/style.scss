@@ -170,7 +170,7 @@ section.footer {
   color: white;
   height: 100%;
   .container {
-    padding: 0 32px;
+    padding: $unit*4 32px;
 
     p {
       font-size: $unit * 4;
