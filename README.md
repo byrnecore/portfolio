@@ -8,7 +8,7 @@ Find this portfolio via:
 
 # Special Thanks
 
-Fortunately for me, there are amazing well documented and easy to use open source projects that help me build websites like these. I have used the following to help me build this one: 
+Fortunately for me, there are amazing well documented and easy to use open source projects out there. They have helped me build websites like these. I have used the following to help me build this one: 
 
 + [jQuery](https://www.jquery.com/)
 + [ScrollReveal](https://scrollrevealjs.org/)
@@ -19,4 +19,4 @@ Fortunately for me, there are amazing well documented and easy to use open sourc
 + [smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
 
 # Bugs and Feedback? 
-Community feedback is an essential part of the design process. If you find any pugs, or want to give feedback, please let me know by contacting me on [twitter](https://twitter.com/byrnecore), [creating an issue](https://github.com/byrnecore/byrnecore.github.io/issues), or making the change yourself by [submitting a pull request](https://github.com/byrnecore/byrnecore.github.io/pulls). 
+Community feedback is an essential part of the design process. If you find any bugs, or want to give feedback, please let me know by contacting me on [twitter](https://twitter.com/byrnecore), [creating an issue](https://github.com/byrnecore/byrnecore.github.io/issues), or making the change yourself and [submitting a pull request](https://github.com/byrnecore/byrnecore.github.io/pulls). 
