@@ -193,6 +193,21 @@ section.recommendations {
         opacity: .65;
         font-weight: 400; }
 
+section.worked-with {
+  background: #AC92EC; }
+  section.worked-with .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    section.worked-with .brand-list .brand {
+      flex-grow: 1;
+      flex: 0 0 auto;
+      padding: 16px; }
+      section.worked-with .brand-list .brand img {
+        width: 96px;
+        max-height: 40px; }
+
 section.social {
   background-color: #FFCE54; }
   section.social .social-profiles {
@@ -265,7 +280,10 @@ section.footer {
     height: 85vh; }
 
   section.my-expereince .swiper-button-next, section.my-expereince .swiper-button-prev {
-    display: block; } }
+    display: block; }
+
+  section.worked-with .brand-list .brand {
+    min-width: 20%; } }
 @keyframes bouncey {
   0% {
     transform: translateY(0); }
