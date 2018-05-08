@@ -92,6 +92,26 @@ section.recommendations {
   }
 }
 
+section.worked-with {
+  background: $Lavender;
+  .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    .brand {
+      // max-width: 30%;
+      flex-grow: 1;
+      flex: 0 0 auto;
+      padding: $unit*4;
+      img {
+        width: 96px;
+        max-height: 40px;
+      }
+    }
+  }
+}
+
 
 section.social {
   background-color: $Sunflower;
@@ -204,6 +224,13 @@ section.footer {
   }
   section.my-expereince .swiper-button-next, section.my-expereince .swiper-button-prev {
       display: block;
+  }
+  section.worked-with {
+    .brand-list {
+      .brand {
+        min-width: 20%;
+      }
+    }
   }
 }
 
