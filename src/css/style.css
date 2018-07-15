@@ -18,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  background: url(https://instagram.fmel1-1.fna.fbcdn.net/vp/ada2ccb068ff889a5de2c17018710579/5B459D54/t51.2885-15/e15/10956596_1538553869750341_2129848734_n.jpg) no-repeat center center fixed;
+  background: url("../img/bg_hero.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   text-align: center; }
