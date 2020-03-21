@@ -18,7 +18,7 @@ section.intro {
   background: rgba(63, 61, 85, 0.9);
   padding: 0;
   color: white;
-  
+
   .container {
     margin-top: $unit*16;
     margin-bottom: $unit*16;
@@ -102,8 +102,8 @@ section.recommendations {
     flex-wrap: wrap;
 
     .testimonial {
-      padding: $unit*4;
-      margin: 0;
+      margin: 0 $unit*8 $unit*8 0;
+      // margin: 0;
       max-width: 100%;
 
       @media screen and (min-width: 900px) {
