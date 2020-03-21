@@ -127,10 +127,50 @@ a.current-role:hover {
 
 /* # Local Styles
 ================================================== */
+header {
+  width: 100%;
+  position: fixed;
+  background: #203D55;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+header .header-container {
+  display: flex;
+  align-content: center;
+  padding: 16px 0;
+  max-width: 940px;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  header .header-container {
+    padding: 0 32px;
+  }
+}
+header .header-container .header-left, header .header-container .header-right {
+  position: relative;
+  flex-grow: 1;
+}
+header .header-container .header-left .logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+}
+header .header-container .header-right {
+  position: relative;
+  text-align: right;
+}
+header .header-container .header-right a {
+  margin: 8px;
+}
+
 section.intro {
+  min-height: 100vh;
   background: #203D55;
   background: rgba(63, 61, 85, 0.9);
-  padding: 0;
+  padding: 48px 0 0 0;
   color: white;
 }
 section.intro .container {

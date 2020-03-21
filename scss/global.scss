@@ -65,7 +65,7 @@ section {
 }
 
 .container {
-  max-width: 940px;
+  max-width: $max-width;
   width: 100%;
   margin: 0 $unit*8 $unit*16 $unit*8;
   // margin-left: auto;
