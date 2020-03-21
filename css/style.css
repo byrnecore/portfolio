@@ -128,11 +128,14 @@ a.current-role:hover {
 /* # Local Styles
 ================================================== */
 section.intro {
-  min-height: 100vh;
   background: #203D55;
   background: rgba(63, 61, 85, 0.9);
   padding: 0;
   color: white;
+}
+section.intro .container {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 section.intro .container h1 {
   font-size: 48px;
@@ -263,6 +266,7 @@ section.footer {
 section.footer .container {
   text-align: center;
   padding: 24px 0;
+  margin-bottom: 0;
 }
 section.footer .container p {
   font-size: 16px;

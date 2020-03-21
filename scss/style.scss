@@ -13,12 +13,15 @@
 ================================================== */
 
 section.intro {
-  min-height: 100vh;
+  // min-height: 100vh;
   background: $eggplant;
   background: rgba(63, 61, 85, 0.9);
   padding: 0;
   color: white;
+  
   .container {
+    margin-top: $unit*16;
+    margin-bottom: $unit*16;
     
     h1 {
       font-size: $unit*12 ;
@@ -167,6 +170,7 @@ section.footer {
   .container {
     text-align: center;
     padding: $unit*6 0;
+    margin-bottom: 0;
 
     p {
       font-size: $unit * 4;
