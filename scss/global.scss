@@ -28,6 +28,7 @@ body {
     font-size: $unit*4;
     line-height: 1.5;
     font-weight: $normal;
+    margin: 0;
     }
   
   p {
@@ -57,7 +58,6 @@ body {
 // Section styles
 
 section {
-  // min-height: 100%;
   background: white;
   display: flex;
   align-items: center;
@@ -68,13 +68,6 @@ section {
   max-width: $max-width;
   width: 100%;
   margin: 0 $unit*8 $unit*16 $unit*8;
-  a.scroll {
-    display: block;
-    font-size: $unit*8;
-    transition: (ease 1s);
-    animation: bouncey 1.6s linear infinite;
-    text-decoration: none;
-  }
 }
 
 // Button styles

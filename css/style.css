@@ -40,6 +40,7 @@ body h4 {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
+  margin: 0;
 }
 body p {
   font-size: 18px;
@@ -74,13 +75,6 @@ section {
   max-width: 940px;
   width: 100%;
   margin: 0 32px 64px 32px;
-}
-.container a.scroll {
-  display: block;
-  font-size: 32px;
-  transition: ease 1s;
-  animation: bouncey 1.6s linear infinite;
-  text-decoration: none;
 }
 
 button {
@@ -131,6 +125,7 @@ header {
   position: fixed;
   background: #203D55;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  z-index: 9;
 }
 header .header-container {
   display: flex;
@@ -166,7 +161,7 @@ header .header-container .header-right a {
 }
 
 section.intro {
-  min-height: 100vh;
+  min-height: 85vh;
   background: #203D55;
   background: rgba(63, 61, 85, 0.9);
   padding: 48px 0 0 0;
@@ -245,6 +240,11 @@ section.recent .workcontainer h2 {
 }
 section.recent .workcontainer .description p {
   padding-right: 32px;
+}
+@media screen and (max-width: 600px) {
+  section.recent .workcontainer .description p {
+    padding-right: 0;
+  }
 }
 
 section.recommendations {
@@ -326,12 +326,15 @@ section.footer .container a {
 section.footer .container a:hover {
   text-decoration: underline;
 }
-section.footer .container button {
-  padding: 8px 16px;
-}
-section.footer .container .footerlink {
+section.footer .container .links .footerlink {
   margin: 16px 16px 0 16px;
 }
+@media screen and (max-width: 600px) {
+  section.footer .container .links .footerlink {
+    display: block;
+  }
+}
+
 @keyframes bouncey {
   0% {
     transform: translateY(0);

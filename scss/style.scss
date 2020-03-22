@@ -17,6 +17,7 @@ header {
   position: fixed;
   background: $eggplant;
   box-shadow: $shadow;
+  z-index: 9;
 
   .header-container {
     display: flex;
@@ -55,7 +56,7 @@ header {
 }
 
 section.intro {
-  min-height: 100vh;
+  min-height: 85vh;
   background: $eggplant;
   background: rgba(63, 61, 85, 0.9);
   padding: 48px 0 0 0;
@@ -139,6 +140,9 @@ section.recent {
     .description {
       p {
         padding-right: $unit*8;
+        @media screen and (max-width: 600px) {
+          padding-right: 0;
+        }
       }
     }
   }
@@ -233,15 +237,15 @@ section.footer {
         text-decoration: underline;
       }
     }
-    button {
-      padding: 8px 16px;
-    }
-    .footerlink {
-      margin: $unit*4 $unit*4 0 $unit*4;
-      &button {
-
+    .links {
+      .footerlink {
+        margin: $unit*4 $unit*4 0 $unit*4;
+        @media screen and (max-width: 600px) {
+          display: block;
+        }
       }
     }
+    
   }
 }
 
