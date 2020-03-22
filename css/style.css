@@ -135,7 +135,7 @@ header {
   width: 100%;
   position: fixed;
   background: #203D55;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   z-index: 9;
 }
 header .header-container {
@@ -226,7 +226,7 @@ section.recent .workcontainer .workcolumns {
 section.recent .workcontainer .workcolumns img {
   display: flex;
   border-radius: 30px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   max-width: 100%;
 }
 section.recent .workcontainer .workcolumns .secondary_images {
