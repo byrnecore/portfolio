@@ -109,15 +109,22 @@ section.recent {
       @media screen and (min-width: 600px) {
         flex-basis: 50%;
       }
-
       img {
+        display: flex;
         border-radius: 30px;
         box-shadow: $shadow;
-        &.lrg {
-        max-width: 99%;
-        }
-        &.sml {
-        max-width: 49%;
+        max-width: 100%;
+      }
+      .secondary_images {
+        display: flex;
+        flex-wrap: no-wrap;
+        .image {
+          flex-shrink:1;
+          max-width: 50%;
+          margin-top: $unit*4;  
+          &:nth-child(odd) {
+            margin-right: $unit*4;
+          }     
         }
       }
     }

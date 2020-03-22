@@ -64,7 +64,6 @@ body .swipe {
 }
 
 section {
-  min-height: 100%;
   background: white;
   display: flex;
   align-items: center;
@@ -219,14 +218,22 @@ section.recent .workcontainer .workcolumns {
   }
 }
 section.recent .workcontainer .workcolumns img {
+  display: flex;
   border-radius: 30px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  max-width: 100%;
 }
-section.recent .workcontainer .workcolumns img.lrg {
-  max-width: 99%;
+section.recent .workcontainer .workcolumns .secondary_images {
+  display: flex;
+  flex-wrap: no-wrap;
 }
-section.recent .workcontainer .workcolumns img.sml {
-  max-width: 49%;
+section.recent .workcontainer .workcolumns .secondary_images .image {
+  flex-shrink: 1;
+  max-width: 50%;
+  margin-top: 16px;
+}
+section.recent .workcontainer .workcolumns .secondary_images .image:nth-child(odd) {
+  margin-right: 16px;
 }
 section.recent .workcontainer h4 {
   text-transform: uppercase;
