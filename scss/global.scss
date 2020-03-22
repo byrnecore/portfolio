@@ -41,18 +41,29 @@ body {
     font-weight: $semibold;
     }
   a:hover {
-    color: $Blue-Jeans;
+    color: pink;
     cursor: pointer;
     }
   .divider {
     margin: 24px 0;
   }
-  .swipe {
-    display: block;
-    font-size: 36px;
-    animation: swipey 1.6s linear infinite;
-  }
   
+}
+
+.label {
+  background: $Light-Gray;
+  padding: 0 12px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  .label_name {
+    text-transform: uppercase;
+    color: #2368A2;
+    letter-spacing: .01em;
+    font-size: 14px;
+    font-weight: 700;
+  }
 }
 
 // Section styles
@@ -113,36 +124,3 @@ a.current-role {
   text-decoration: underline;
   }
 }
-
-// Swiper styles
-
-// .swiper-container {
-//     width: 100%;
-//     height: 100%;
-//     .swiper-slide {
-//       text-align: center;
-//       font-size: 18px;
-//       background: transparent;
-//       display: flex;
-//     }
-//   .swiper-pagination-bullet {
-//     background: $eggplant;
-//   }
-//   .swiper-pagination-bullet-active {
-//     background: $eggplant;
-//   }
-//   .swiper-button-next, .swiper-button-prev {
-//     display: none;
-//     width: 62px;
-//     height: 62px;
-//     background-size: auto;
-//   }
-// .swiper-button-next {
-//   background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M21.772 30.595a.87.87 0 0 1 0-1.23l8.08-8.081H9.344a.869.869 0 1 1 0-1.74h20.508l-8.08-8.08a.87.87 0 0 1 1.23-1.229l9.565 9.565a.874.874 0 0 1 0 1.23l-9.565 9.565a.87.87 0 0 1-1.23 0m18.877-10.18c0-11.029-8.973-20-20-20-11.03 0-20 8.971-20 20s8.97 20 20 20c11.027 0 20-8.971 20-20' fill='#FFF' fill-rule='evenodd'/></svg>");
-//   background-repeat: no-repeat
-//   }
-//   .swiper-button-prev {
-//   background-image: url("data:image/svg+xml;utf8,<svg width='41' height='41' xmlns='http://www.w3.org/2000/svg'><path d='M19.525 10.233a.867.867 0 0 1 0 1.23l-8.08 8.082h20.508a.869.869 0 1 1 0 1.74l-20.508-.001 8.08 8.08a.87.87 0 0 1-1.23 1.23L8.73 21.027a.874.874 0 0 1 0-1.23l9.565-9.565a.87.87 0 0 1 1.23 0M.65 20.414c0 11.028 8.972 20 20 20 11.03 0 20-8.972 20-20 0-11.03-8.97-20-20-20-11.028 0-20 8.97-20 20' fill='#FFF' fill-rule='evenodd'/></svg>");
-//   background-repeat: no-repeat
-//   }
-// }
