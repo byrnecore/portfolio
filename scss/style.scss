@@ -25,7 +25,7 @@ header {
     max-width: $max-width;
     margin: auto;
     @media screen and (max-width: 767px) {
-      padding: 0 $unit*8;
+      padding: 16px $unit*8;
     }
 
 
