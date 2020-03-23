@@ -1,0 +1,59 @@
+/* # Global Design Unit
+================================================== */
+$unit: 4px;
+$max-width: 940px;
+$shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+
+/* # Font settings
+================================================== */
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+// $family: 'Montserrat', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+$family: 'Open Sans', sans-serif;
+
+$light: 600;
+$normal: 700;
+$semibold: 800;
+
+/* # Color Variables
+================================================== */
+
+// Core Colours
+$eggplant:    #203D55; 
+
+// Neutral Colours 
+$Light-Gray:  #F5F7FA; //#E6E9ED
+$Medium-Gray: #AAB2BD; //#CCD1D9
+$Dark-Gray:   #434A54; //#656D78
+
+// Neutral Scale
+$neutral-10: grey;
+$neutral-20: grey;
+$neutral-30: grey;
+$neutral-40: grey;
+$neutral-50: grey;
+$neutral-60: grey;
+$neutral-70: grey;
+$neutral-80: grey;
+$neutral-90: grey;
+$neutral-100: grey;
+
+
+
+// Accent Colours 
+
+
+// Social Media Colours 
+$behance:     #053eff;     
+$dribbble:    #ea4c89;
+$linkedin:    #007bb5;
+$github:      #4078c0;
+$medium:      #02b875;
+$instagram:   #c32aa3;
+$foursquare:  #FA4778;
+$spotify:     #1ed760;
+$twitter:     #1da1f2;
+$pinterest:   #bd081c;
+$current-role:   #E41421;

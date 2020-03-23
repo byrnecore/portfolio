@@ -1,0 +1,145 @@
+ /* # Global Styles
+================================================== */
+
+body {
+    color: $eggplant;
+    font-family: $family;
+    font-weight: $light;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    background: url(../img/bg_hero.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+  h1 {   
+    font-size: $unit*10;
+    line-height: $unit*10; 
+    font-weight: $semibold;
+    margin-bottom: $unit * 1;
+    letter-spacing: -1.5px;
+  }
+  h2 {
+    margin: 0;
+    font-size: $unit*5;
+    font-weight: $semibold;
+  }
+  h4 {
+    color: $Medium-Gray;
+    display: block;
+    font-size: $unit*4;
+    line-height: 1.5;
+    font-weight: $normal;
+    margin: 0;
+    }
+  
+  p {
+    font-size: $unit*4.5;
+    line-height: $unit*7;
+    font-weight: $light;
+  }
+  a {
+    color: $eggplant;
+    font-weight: $semibold;
+    }
+  a:hover {
+    color: pink;
+    cursor: pointer;
+    }
+  .divider {
+    margin: 24px 0;
+  }
+  
+}
+
+.label {
+  background: $Light-Gray;
+  padding: 0 12px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  .label_name {
+    text-transform: uppercase;
+    color: #2368A2;
+    letter-spacing: .01em;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+ a {
+  color: #3183C8;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+   .recent_cta {
+          
+          span {
+            display: inline-flex;
+            align-items: center;
+            width: 24px;
+            height: 16px;
+            margin-left: $unit*2;
+            color: #e03f7f;
+          }
+  }
+}
+
+// Section styles
+
+section {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 $unit*8 $unit*16 $unit*8;
+}
+
+// Button styles
+
+button {
+  border-radius: 6px;
+  border: 3px solid;
+  margin: 0 auto;
+  padding: $unit*4;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  font-family: $family;
+  font-size: $unit*4;
+  font-weight: $semibold;
+  transition: all 150ms ease-out;
+  cursor: pointer;
+  &.dark {
+  border-color: $eggplant;
+  color: $eggplant;
+  &:hover {
+    color: white;
+    background: $eggplant;
+  }
+  }
+  &.light {
+  background: white;
+  border-color: white;
+  color: $eggplant;
+  }
+  &.full {
+  width: 100%;
+  }
+  
+}
+
+a.current-role {
+  cursor: pointer;
+  font-weight: $normal;
+  color: $current-role !important;
+  text-decoration: none;
+  &:hover {
+  text-decoration: underline;
+  }
+}

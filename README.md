@@ -1,4 +1,4 @@
-# Shaun Byrne - Experienced Full Stack Product Designer
+# Shaun Byrne - Product Designer & Leader
 The personal website and portfolio of Shaun Byrne. 
 
 Find this portfolio via: 
@@ -13,10 +13,8 @@ Fortunately for me, there are amazing well documented and easy to use open sourc
 + [jQuery](https://www.jquery.com/)
 + [ScrollReveal](https://scrollrevealjs.org/)
 + [Normalize](https://necolas.github.io/normalize.css/)
-+ [Pug.js](https://pugjs.org/)
 + [SCSS](https://sass-lang.com/)
-+ [Swiper](http://idangero.us/swiper/)
-+ [smooth-scroll](https://github.com/cferdinandi/smooth-scroll)
++ 
 
 # Bugs and Feedback? 
 Community feedback is an essential part of the design process. If you find any bugs, or want to give feedback, please let me know by contacting me on [twitter](https://twitter.com/byrnecore), [creating an issue](https://github.com/byrnecore/byrnecore.github.io/issues), or making the change yourself and [submitting a pull request](https://github.com/byrnecore/byrnecore.github.io/pulls). 

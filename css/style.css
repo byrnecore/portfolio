@@ -1,0 +1,400 @@
+/* # Imports
+================================================== */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css");
+/* # Global Design Unit
+================================================== */
+/* # Font settings
+================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+/* # Color Variables
+================================================== */
+/* # Global Styles
+================================================== */
+body {
+  color: #203D55;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  background: url(../img/bg_hero.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+body h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: -1.5px;
+}
+body h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+body h4 {
+  color: #AAB2BD;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0;
+}
+body p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+body a {
+  color: #203D55;
+  font-weight: 800;
+}
+body a:hover {
+  color: pink;
+  cursor: pointer;
+}
+body .divider {
+  margin: 24px 0;
+}
+
+.label {
+  background: #F5F7FA;
+  padding: 0 12px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.label .label_name {
+  text-transform: uppercase;
+  color: #2368A2;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a {
+  color: #3183C8;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+}
+a .recent_cta span {
+  display: inline-flex;
+  align-items: center;
+  width: 24px;
+  height: 16px;
+  margin-left: 8px;
+  color: #e03f7f;
+}
+
+section {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 32px 64px 32px;
+}
+
+button {
+  border-radius: 6px;
+  border: 3px solid;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 150ms ease-out;
+  cursor: pointer;
+}
+button.dark {
+  border-color: #203D55;
+  color: #203D55;
+}
+button.dark:hover {
+  color: white;
+  background: #203D55;
+}
+button.light {
+  background: white;
+  border-color: white;
+  color: #203D55;
+}
+button.full {
+  width: 100%;
+}
+
+a.current-role {
+  cursor: pointer;
+  font-weight: 700;
+  color: #E41421 !important;
+  text-decoration: none;
+}
+a.current-role:hover {
+  text-decoration: underline;
+}
+
+/* # Local Styles
+================================================== */
+header {
+  width: 100%;
+  position: fixed;
+  background: #203D55;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  z-index: 9;
+}
+header .header-container {
+  display: flex;
+  align-content: center;
+  padding: 16px 0;
+  max-width: 940px;
+  margin: auto;
+}
+@media screen and (max-width: 940px) {
+  header .header-container {
+    padding: 16px 32px;
+  }
+}
+header .header-container .header-left, header .header-container .header-right {
+  position: relative;
+  flex-grow: 1;
+}
+header .header-container .header-left .logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+}
+header .header-container .header-right {
+  position: relative;
+  text-align: right;
+}
+header .header-container .header-right a {
+  margin: 8px;
+}
+
+section.intro {
+  min-height: 85vh;
+  background: #203D55;
+  background: rgba(32, 61, 85, 0.9);
+  padding: 48px 0 0 0;
+  color: white;
+}
+section.intro .container {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+section.intro .container h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 4px;
+  margin-top: 0;
+  font-weight: 800;
+}
+section.intro .container h2 {
+  margin: 0;
+  color: #AAB2BD;
+}
+section.intro .container p.sub-heading {
+  font-size: 24px;
+  line-height: 36px;
+}
+section.intro .container p.about {
+  color: white;
+}
+section.intro .container p.about a {
+  color: white;
+  font-weight: 800;
+}
+
+section.recent .workcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 0 64px 0;
+}
+section.recent .workcontainer:first-child {
+  margin-top: 0px;
+}
+section.recent .workcontainer .workcolumns {
+  flex-basis: 100%;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 600px) {
+  section.recent .workcontainer .workcolumns {
+    flex-basis: 50%;
+  }
+}
+section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
+  display: flex;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  max-width: 100%;
+}
+section.recent .workcontainer .workcolumns .video {
+  display: flex;
+  background: #EFF8FE;
+  padding: 32px;
+  align-items: center;
+}
+section.recent .workcontainer .workcolumns .video video {
+  max-height: 450px;
+  width: 100%;
+  margin: auto;
+}
+section.recent .workcontainer .workcolumns .secondary_images {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+section.recent .workcontainer .workcolumns .secondary_images .image {
+  flex-shrink: 1;
+  max-width: 50%;
+  margin-top: 16px;
+}
+section.recent .workcontainer .workcolumns .secondary_images .image:nth-child(odd) {
+  margin-right: 16px;
+}
+section.recent .workcontainer h4 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+section.recent .workcontainer h2 {
+  font-size: 28px;
+  padding-right: 32px;
+  margin-top: 16px;
+}
+section.recent .workcontainer .description p {
+  padding-right: 32px;
+}
+@media screen and (max-width: 600px) {
+  section.recent .workcontainer .description p {
+    padding-right: 0;
+  }
+}
+
+section.recommendations {
+  height: 100%;
+}
+section.recommendations .testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.recommendations .testimonials .testimonial {
+  margin: 0 32px 32px 0;
+  max-width: 100%;
+}
+@media screen and (min-width: 900px) {
+  section.recommendations .testimonials .testimonial {
+    max-width: 46%;
+  }
+}
+section.recommendations .testimonials .testimonial .avatar {
+  display: block;
+  width: 88px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #dddddd;
+  border: 4px solid #434A54;
+}
+section.recommendations .testimonials .testimonial .name {
+  font-style: normal;
+}
+section.recommendations .testimonials .testimonial .name .author {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 0 0 0;
+}
+section.recommendations .testimonials .testimonial .name .position {
+  color: #AAB2BD;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+section.worked-with .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.worked-with .brand-list .brand {
+  flex-grow: 1;
+  flex: 0 0 auto;
+  padding: 16px;
+}
+section.worked-with .brand-list .brand img {
+  width: 96px;
+}
+
+section.footer {
+  background: #203D55;
+  color: white;
+  height: 100%;
+}
+section.footer .container {
+  text-align: center;
+  padding: 24px 0;
+  margin-bottom: 0;
+}
+section.footer .container p {
+  font-size: 16px;
+  text-align: center;
+}
+section.footer .container a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+section.footer .container a:hover {
+  text-decoration: underline;
+}
+section.footer .container .links .footerlink {
+  margin: 16px 16px 0 16px;
+}
+@media screen and (max-width: 600px) {
+  section.footer .container .links .footerlink {
+    display: block;
+  }
+}
+
+@keyframes bouncey {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes swipey {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
