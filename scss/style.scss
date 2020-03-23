@@ -58,7 +58,7 @@ header {
 section.intro {
   min-height: 85vh;
   background: $eggplant;
-  background: rgba(63, 61, 85, 0.9);
+  background: rgba(32, 61, 85, 0.9);
   padding: 48px 0 0 0;
   color: white;
 
@@ -110,11 +110,23 @@ section.recent {
       @media screen and (min-width: 600px) {
         flex-basis: 50%;
       }
-      img {
+      img, .video {
         display: flex;
         border-radius: 30px;
         box-shadow: $shadow;
         max-width: 100%;
+      }
+      .video {
+        display: flex;
+        background: #EFF8FE;
+        padding: 32px;
+        align-items:center;
+        video {
+          max-height: 450px;
+          width: 100%;
+          margin: auto;
+
+        }
       }
       .secondary_images {
         display: flex;
@@ -127,6 +139,7 @@ section.recent {
             margin-right: $unit*4;
           }     
         }
+
       }
     }
     h4 {

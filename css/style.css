@@ -174,7 +174,7 @@ header .header-container .header-right a {
 section.intro {
   min-height: 85vh;
   background: #203D55;
-  background: rgba(63, 61, 85, 0.9);
+  background: rgba(32, 61, 85, 0.9);
   padding: 48px 0 0 0;
   color: white;
 }
@@ -223,11 +223,22 @@ section.recent .workcontainer .workcolumns {
     flex-basis: 50%;
   }
 }
-section.recent .workcontainer .workcolumns img {
+section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
   display: flex;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   max-width: 100%;
+}
+section.recent .workcontainer .workcolumns .video {
+  display: flex;
+  background: #EFF8FE;
+  padding: 32px;
+  align-items: center;
+}
+section.recent .workcontainer .workcolumns .video video {
+  max-height: 450px;
+  width: 100%;
+  margin: auto;
 }
 section.recent .workcontainer .workcolumns .secondary_images {
   display: flex;
