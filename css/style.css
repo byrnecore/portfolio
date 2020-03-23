@@ -75,6 +75,22 @@ body .divider {
   font-weight: 700;
 }
 
+a {
+  color: #3183C8;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+}
+a .recent_cta span {
+  display: inline-flex;
+  align-items: center;
+  width: 24px;
+  height: 16px;
+  margin-left: 8px;
+  color: #e03f7f;
+}
+
 section {
   background: white;
   display: flex;
