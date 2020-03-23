@@ -117,18 +117,15 @@ a.button {
   &.dark {
   border-color: $eggplant;
   color: $eggplant;
-  &:hover {
-    color: white;
-    background: $eggplant;
-  }
+  // &:hover {
+  //   color: white;
+  //   background: $eggplant;
+  // }
   }
   &.light {
   background: white;
   border-color: white;
   color: $eggplant;
-  }
-  &.full {
-  width: 100%;
   }
   
 }

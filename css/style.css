@@ -122,17 +122,10 @@ a.button.dark {
   border-color: #203D55;
   color: #203D55;
 }
-a.button.dark:hover {
-  color: white;
-  background: #203D55;
-}
 a.button.light {
   background: white;
   border-color: white;
   color: #203D55;
-}
-a.button.full {
-  width: 100%;
 }
 
 a.current-role {
@@ -244,6 +237,7 @@ section.intro .container .button {
 }
 section.intro .container .button.tertiary {
   border: 0;
+  padding: 16px 0;
 }
 
 section.recent h1 {
