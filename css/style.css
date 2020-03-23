@@ -221,6 +221,9 @@ section.intro .container p.about a {
   font-weight: 800;
 }
 
+section.recent h1 {
+  margin-top: 64px;
+}
 section.recent .workcontainer {
   display: flex;
   justify-content: space-evenly;
