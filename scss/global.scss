@@ -71,9 +71,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  width: 100%;
    .recent_cta {
-          
           span {
             display: inline-flex;
             align-items: center;
@@ -102,10 +100,11 @@ section {
 
 // Button styles
 
-button {
+a.button {
+  display: inline-block;
   border-radius: 6px;
   border: 3px solid;
-  margin: 0 auto;
+  margin: $unit*4 0 0 0;
   padding: $unit*4;
   text-align: center;
   text-decoration: none;

@@ -80,7 +80,6 @@ a {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  width: 100%;
 }
 a .recent_cta span {
   display: inline-flex;
@@ -104,10 +103,11 @@ section {
   margin: 0 32px 64px 32px;
 }
 
-button {
+a.button {
+  display: inline-block;
   border-radius: 6px;
   border: 3px solid;
-  margin: 0 auto;
+  margin: 16px 0 0 0;
   padding: 16px;
   text-align: center;
   text-decoration: none;
@@ -118,20 +118,20 @@ button {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-button.dark {
+a.button.dark {
   border-color: #203D55;
   color: #203D55;
 }
-button.dark:hover {
+a.button.dark:hover {
   color: white;
   background: #203D55;
 }
-button.light {
+a.button.light {
   background: white;
   border-color: white;
   color: #203D55;
 }
-button.full {
+a.button.full {
   width: 100%;
 }
 
@@ -166,9 +166,14 @@ header .header-container {
     padding: 16px 32px;
   }
 }
+header .header-container:hover .header-left, header .header-container:hover .header-right {
+  opacity: 1;
+}
 header .header-container .header-left, header .header-container .header-right {
   position: relative;
   flex-grow: 1;
+  opacity: 0.5;
+  transition: opacity 150ms ease-out;
 }
 header .header-container .header-left .logo {
   font-family: "Open Sans", sans-serif;
@@ -180,11 +185,19 @@ header .header-container .header-left .logo {
   margin-top: 8px;
 }
 header .header-container .header-right {
-  position: relative;
-  text-align: right;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 header .header-container .header-right a {
-  margin: 8px;
+  display: flex;
+}
+header .header-container .header-right a:hover {
+  opacity: 1;
+}
+header .header-container .header-right .icon {
+  width: 23px;
+  margin-left: 16px;
 }
 
 section.intro {
@@ -209,16 +222,28 @@ section.intro .container h2 {
   margin: 0;
   color: #AAB2BD;
 }
-section.intro .container p.sub-heading {
+section.intro .container p {
+  color: white;
   font-size: 24px;
   line-height: 36px;
+  margin: 0;
 }
-section.intro .container p.about {
-  color: white;
-}
-section.intro .container p.about a {
+section.intro .container p a {
   color: white;
   font-weight: 800;
+}
+section.intro .container .button {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  border: 3px solid white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 32px 16px 0 0;
+}
+section.intro .container .button.tertiary {
+  border: 0;
 }
 
 section.recent h1 {
