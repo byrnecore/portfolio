@@ -15,7 +15,7 @@
 header {
   width: 100%;
   position: fixed;
-  background: $eggplant;
+  background: $primary-70;
   box-shadow: $shadow;
   z-index: 9;
 
@@ -86,7 +86,7 @@ header {
 
 section.intro {
   min-height: 85vh;
-  background: $eggplant;
+  background: $primary-70;
   background: rgba(32, 61, 85, 0.9);
   padding: 48px 0 0 0;
   color: white;
@@ -275,7 +275,7 @@ section.worked-with {
 
 
 section.footer {
-  background: $eggplant;
+  background: $primary-70;
   color: white;
   height: 100%;
 

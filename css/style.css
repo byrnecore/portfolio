@@ -11,6 +11,10 @@
 ================================================== */
 /* # Global Styles
 ================================================== */
+::selection {
+  background: #F8F9FA;
+}
+
 body {
   color: #203D55;
   font-family: "Open Sans", sans-serif;
