@@ -95,7 +95,7 @@ a .recent_cta span {
 }
 
 section {
-  background: white;
+  background: #F8F9FA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,6 +248,7 @@ section.recent h1 {
   margin-top: 64px;
 }
 section.recent .workcontainer {
+  background: white;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
