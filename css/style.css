@@ -11,6 +11,10 @@
 ================================================== */
 /* # Global Styles
 ================================================== */
+::selection {
+  background: #F8F9FA;
+}
+
 body {
   color: #203D55;
   font-family: "Open Sans", sans-serif;
@@ -90,8 +94,11 @@ a .recent_cta span {
   color: #e03f7f;
 }
 
+.section-wrapper {
+  background: #F8F9FA;
+}
+
 section {
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,17 +251,20 @@ section.recent h1 {
   margin-top: 64px;
 }
 section.recent .workcontainer {
+  background: white;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 0 64px 0;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
 }
 section.recent .workcontainer:first-child {
   margin-top: 0px;
 }
 section.recent .workcontainer .workcolumns {
   flex-basis: 100%;
-  margin-bottom: 16px;
 }
 @media screen and (min-width: 600px) {
   section.recent .workcontainer .workcolumns {
@@ -263,8 +273,7 @@ section.recent .workcontainer .workcolumns {
 }
 section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
   display: flex;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  border-radius: 16px;
   max-width: 100%;
 }
 section.recent .workcontainer .workcolumns .video {
@@ -316,12 +325,17 @@ section.recommendations .testimonials {
   flex-wrap: wrap;
 }
 section.recommendations .testimonials .testimonial {
-  margin: 0 32px 32px 0;
-  max-width: 100%;
+  background: white;
+  margin: 0 0 32px 0;
+  width: 100%;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  align-self: stretch;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 920px) {
   section.recommendations .testimonials .testimonial {
-    max-width: 46%;
+    margin: 0 32px 32px 0;
   }
 }
 section.recommendations .testimonials .testimonial .avatar {
@@ -363,6 +377,20 @@ section.worked-with .brand-list .brand {
 }
 section.worked-with .brand-list .brand img {
   width: 96px;
+}
+
+section.contact .container {
+  margin: 0;
+  padding: 32px;
+  margin-bottom: 64px;
+  border-radius: 32px;
+  background: #EFF8FE;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+}
+@media screen and (max-width: 940px) {
+  section.contact .container {
+    margin: 32px;
+  }
 }
 
 section.footer {

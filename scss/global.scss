@@ -1,8 +1,12 @@
  /* # Global Styles
 ================================================== */
 
+::selection {
+  background: $neutral-10;
+}
+
 body {
-    color: $eggplant;
+    color: $primary-70;
     font-family: $family;
     font-weight: $light;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -37,7 +41,7 @@ body {
     font-weight: $light;
   }
   a {
-    color: $eggplant;
+    color: $primary-70;
     font-weight: $semibold;
     }
   a:hover {
@@ -84,9 +88,12 @@ body {
 }
 
 // Section styles
+.section-wrapper {
+  background: $neutral-10;
+}
 
 section {
-  background: white;
+  // background: $neutral-10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,17 +122,13 @@ a.button {
   transition: all 150ms ease-out;
   cursor: pointer;
   &.dark {
-  border-color: $eggplant;
-  color: $eggplant;
-  // &:hover {
-  //   color: white;
-  //   background: $eggplant;
-  // }
+  border-color: $primary-70;
+  color: $primary-70;
   }
   &.light {
   background: white;
   border-color: white;
-  color: $eggplant;
+  color: $primary-70;
   }
   
 }
