@@ -218,12 +218,17 @@ section.recommendations {
     flex-wrap: wrap;
 
     .testimonial {
-      margin: 0 $unit*8 $unit*8 0;
-      // margin: 0;
-      max-width: 100%;
+      background: white;
+      margin: 0 0 $unit*8 0;
+      width: 100%;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: $shadow;
+      align-self: stretch;
 
-      @media screen and (min-width: 900px) {
-        max-width: 46%
+      @media screen and (min-width: 920px) {
+        // width: 45%;
+        margin: 0 $unit*8 $unit*8 0;
       }
 
       .quote {

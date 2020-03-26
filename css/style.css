@@ -322,12 +322,17 @@ section.recommendations .testimonials {
   flex-wrap: wrap;
 }
 section.recommendations .testimonials .testimonial {
-  margin: 0 32px 32px 0;
-  max-width: 100%;
+  background: white;
+  margin: 0 0 32px 0;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  align-self: stretch;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 920px) {
   section.recommendations .testimonials .testimonial {
-    max-width: 46%;
+    margin: 0 32px 32px 0;
   }
 }
 section.recommendations .testimonials .testimonial .avatar {
