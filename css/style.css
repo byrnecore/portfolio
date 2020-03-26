@@ -94,8 +94,11 @@ a .recent_cta span {
   color: #e03f7f;
 }
 
-section {
+.section-wrapper {
   background: #F8F9FA;
+}
+
+section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,7 +257,7 @@ section.recent .workcontainer {
   flex-wrap: wrap;
   margin: 0 0 64px 0;
   padding: 32px;
-  border-radius: 16px;
+  border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
 }
 section.recent .workcontainer:first-child {
@@ -270,7 +273,7 @@ section.recent .workcontainer .workcolumns {
 }
 section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
   display: flex;
-  border-radius: 30px;
+  border-radius: 16px;
   max-width: 100%;
 }
 section.recent .workcontainer .workcolumns .video {
@@ -326,7 +329,7 @@ section.recommendations .testimonials .testimonial {
   margin: 0 0 32px 0;
   width: 100%;
   padding: 32px;
-  border-radius: 16px;
+  border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   align-self: stretch;
 }
@@ -374,6 +377,20 @@ section.worked-with .brand-list .brand {
 }
 section.worked-with .brand-list .brand img {
   width: 96px;
+}
+
+section.contact .container {
+  margin: 0;
+  padding: 32px;
+  margin-bottom: 64px;
+  border-radius: 32px;
+  background: #EFF8FE;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+}
+@media screen and (max-width: 940px) {
+  section.contact .container {
+    margin: 32px;
+  }
 }
 
 section.footer {
