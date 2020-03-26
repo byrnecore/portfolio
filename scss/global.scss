@@ -45,8 +45,9 @@ body {
     font-weight: $semibold;
     }
   a:hover {
-    color: pink;
     cursor: pointer;
+    // text-decoration: underline;
+    border-bottom: 3px solid $primary-70;
     }
   .divider {
     margin: 24px 0;

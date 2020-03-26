@@ -56,8 +56,8 @@ body a {
   font-weight: 800;
 }
 body a:hover {
-  color: pink;
   cursor: pointer;
+  border-bottom: 3px solid #203D55;
 }
 body .divider {
   margin: 24px 0;
@@ -413,7 +413,7 @@ section.footer .container a {
   text-decoration: none;
 }
 section.footer .container a:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid white;
 }
 section.footer .container .links .footerlink {
   margin: 16px 16px 0 16px;
