@@ -144,13 +144,16 @@ section.recent {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 0 $unit*16 0;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: $shadow;
+
     &:first-child {
       margin-top: 0px;
     }
 
     .workcolumns {
       flex-basis: 100%;
-      margin-bottom: $unit*4;
 
       @media screen and (min-width: 600px) {
         flex-basis: 50%;
@@ -158,7 +161,7 @@ section.recent {
       img, .video {
         display: flex;
         border-radius: 30px;
-        box-shadow: $shadow;
+        // box-shadow: $shadow;
         max-width: 100%;
       }
       .video {
