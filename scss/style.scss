@@ -15,7 +15,7 @@
 header {
   width: 100%;
   position: fixed;
-  background: $eggplant;
+  background: $primary-70;
   box-shadow: $shadow;
   z-index: 9;
 
@@ -86,7 +86,7 @@ header {
 
 section.intro {
   min-height: 85vh;
-  background: $eggplant;
+  background: $primary-70;
   background: rgba(32, 61, 85, 0.9);
   padding: 48px 0 0 0;
   color: white;
@@ -140,25 +140,29 @@ section.recent {
     }
 
   .workcontainer {
+    background: white;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 0 $unit*16 0;
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: $shadow;
+
     &:first-child {
       margin-top: 0px;
     }
 
     .workcolumns {
       flex-basis: 100%;
-      margin-bottom: $unit*4;
 
       @media screen and (min-width: 600px) {
         flex-basis: 50%;
       }
       img, .video {
         display: flex;
-        border-radius: 30px;
-        box-shadow: $shadow;
+        border-radius: 16px;
+        // box-shadow: $shadow;
         max-width: 100%;
       }
       .video {
@@ -214,12 +218,17 @@ section.recommendations {
     flex-wrap: wrap;
 
     .testimonial {
-      margin: 0 $unit*8 $unit*8 0;
-      // margin: 0;
-      max-width: 100%;
+      background: white;
+      margin: 0 0 $unit*8 0;
+      width: 100%;
+      padding: 32px;
+      border-radius: 32px;
+      box-shadow: $shadow;
+      align-self: stretch;
 
-      @media screen and (min-width: 900px) {
-        max-width: 46%
+      @media screen and (min-width: 920px) {
+        // width: 45%;
+        margin: 0 $unit*8 $unit*8 0;
       }
 
       .quote {
@@ -256,6 +265,8 @@ section.recommendations {
   }
 }
 
+
+
 section.worked-with {
   .brand-list {
     display: flex;
@@ -273,9 +284,21 @@ section.worked-with {
   }
 }
 
+section.contact .container {
+  margin: 0;
+  padding: 32px;
+  margin-bottom: 64px;
+  border-radius: $unit*8;
+  background: $primary-10;
+  box-shadow: $shadow;
+  @media screen and (max-width: $max-width) {
+        margin: $unit*8;
+      }
+}
+
 
 section.footer {
-  background: $eggplant;
+  background: $primary-70;
   color: white;
   height: 100%;
 
