@@ -61,6 +61,7 @@ header {
         display: flex;
         &:hover {
           opacity: 1;
+          border: 0;
         }
       }
       .icon {
@@ -134,17 +135,24 @@ section.intro {
   }
 }
 
-section.recent {
-  h1 {
-      margin-top: $unit*16;
-    }
+section.recent::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_recent.svg);
+  // outline: 1px solid red;
+}
 
+section.recent {
+  position: relative;
   .workcontainer {
     background: white;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 0 $unit*16 0;
+    margin: 0 0 $unit*8 0;
     padding: 32px;
     border-radius: 32px;
     box-shadow: $shadow;
@@ -162,7 +170,6 @@ section.recent {
       img, .video {
         display: flex;
         border-radius: 16px;
-        // box-shadow: $shadow;
         max-width: 100%;
       }
       .video {
@@ -196,7 +203,8 @@ section.recent {
       margin-bottom: 0;
     }
     h2 {
-      font-size: $unit*7;
+      font-size: $unit*6.5;
+      line-height: $unit*8;
       padding-right: $unit*8;
       margin-top: $unit*4;
     }
@@ -211,24 +219,38 @@ section.recent {
   }
 }
 
+section.recommendations::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_testmonials.svg);
+  // outline: 1px solid red;
+}
+
 section.recommendations {
-  height: 100%;
+  position: relative;
+  background: #FFFDF4;
+  position: relative;
   .testimonials {
     display: flex;
     flex-wrap: wrap;
 
     .testimonial {
       background: white;
-      margin: 0 0 $unit*8 0;
       width: 100%;
       padding: 32px;
       border-radius: 32px;
       box-shadow: $shadow;
-      align-self: stretch;
-
-      @media screen and (min-width: 920px) {
-        // width: 45%;
-        margin: 0 $unit*8 $unit*8 0;
+      margin: 0 0 $unit*8 0;
+      
+      @media screen and (min-width: 900px) {
+        // min-width: 40%;
+        &:nth-child(even) {
+            // margin-right: 0;
+          } 
       }
 
       .quote {
@@ -265,9 +287,19 @@ section.recommendations {
   }
 }
 
-
+section.worked-with::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_worked.svg);
+  // outline: 1px solid red;
+}
 
 section.worked-with {
+  position:relative;
+  background: #E3FDED;
   .brand-list {
     display: flex;
     flex-wrap: wrap;
@@ -284,20 +316,48 @@ section.worked-with {
   }
 }
 
-section.contact .container {
-  margin: 0;
-  padding: 32px;
-  margin-bottom: 64px;
-  border-radius: $unit*8;
-  background: $primary-10;
-  box-shadow: $shadow;
-  @media screen and (max-width: $max-width) {
-        margin: $unit*8;
+section.contact {
+  background: #E3FDED;
+
+
+  .container {
+    display: flex;
+    padding: 32px;
+    margin-bottom: 80px;
+    border-radius: $unit*8;
+    background: white;
+    box-shadow: $shadow; 
+    .image {
+      margin: $unit*6;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-wrap: wrap;
+      .content, .image {
+        width: 150%
       }
+      .image {
+        order: -1;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 
+section.footer::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_footer.svg);
+  // outline: 1px solid red;
+}
+
 section.footer {
+  position:relative;
   background: $primary-70;
   color: white;
   height: 100%;

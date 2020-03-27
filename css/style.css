@@ -28,7 +28,7 @@ body {
 }
 body h1 {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 48px;
   font-weight: 800;
   margin-bottom: 4px;
   letter-spacing: -1.5px;
@@ -102,12 +102,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container {
-  max-width: 940px;
+  max-width: 1024px;
   width: 100%;
   margin: 0 32px 64px 32px;
+  padding-top: 24px;
 }
 
 a.button {
@@ -158,10 +160,10 @@ header .header-container {
   display: flex;
   align-content: center;
   padding: 16px 0;
-  max-width: 940px;
+  max-width: 1024px;
   margin: auto;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1024px) {
   header .header-container {
     padding: 16px 32px;
   }
@@ -194,6 +196,7 @@ header .header-container .header-right a {
 }
 header .header-container .header-right a:hover {
   opacity: 1;
+  border: 0;
 }
 header .header-container .header-right .icon {
   width: 23px;
@@ -247,15 +250,24 @@ section.intro .container .button.tertiary {
   padding: 16px 0;
 }
 
-section.recent h1 {
-  margin-top: 64px;
+section.recent::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_recent.svg);
+}
+
+section.recent {
+  position: relative;
 }
 section.recent .workcontainer {
   background: white;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 0 0 64px 0;
+  margin: 0 0 32px 0;
   padding: 32px;
   border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
@@ -304,7 +316,8 @@ section.recent .workcontainer h4 {
   margin-bottom: 0;
 }
 section.recent .workcontainer h2 {
-  font-size: 28px;
+  font-size: 26px;
+  line-height: 32px;
   padding-right: 32px;
   margin-top: 16px;
 }
@@ -317,8 +330,20 @@ section.recent .workcontainer .description p {
   }
 }
 
+section.recommendations::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_testmonials.svg);
+}
+
 section.recommendations {
-  height: 100%;
+  position: relative;
+  background: #FFFDF4;
+  position: relative;
 }
 section.recommendations .testimonials {
   display: flex;
@@ -326,17 +351,11 @@ section.recommendations .testimonials {
 }
 section.recommendations .testimonials .testimonial {
   background: white;
-  margin: 0 0 32px 0;
   width: 100%;
   padding: 32px;
   border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
-  align-self: stretch;
-}
-@media screen and (min-width: 920px) {
-  section.recommendations .testimonials .testimonial {
-    margin: 0 32px 32px 0;
-  }
+  margin: 0 0 32px 0;
 }
 section.recommendations .testimonials .testimonial .avatar {
   display: block;
@@ -364,6 +383,19 @@ section.recommendations .testimonials .testimonial .name .position {
   font-weight: 600;
 }
 
+section.worked-with::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_worked.svg);
+}
+
+section.worked-with {
+  position: relative;
+  background: #E3FDED;
+}
 section.worked-with .brand-list {
   display: flex;
   flex-wrap: wrap;
@@ -379,21 +411,45 @@ section.worked-with .brand-list .brand img {
   width: 96px;
 }
 
+section.contact {
+  background: #E3FDED;
+}
 section.contact .container {
-  margin: 0;
+  display: flex;
   padding: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 80px;
   border-radius: 32px;
-  background: #EFF8FE;
+  background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
 }
-@media screen and (max-width: 940px) {
+section.contact .container .image {
+  margin: 24px;
+}
+@media screen and (max-width: 600px) {
   section.contact .container {
-    margin: 32px;
+    flex-wrap: wrap;
+  }
+  section.contact .container .content, section.contact .container .image {
+    width: 150%;
+  }
+  section.contact .container .image {
+    order: -1;
+    text-align: center;
+    margin-top: 0;
   }
 }
 
+section.footer::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_footer.svg);
+}
+
 section.footer {
+  position: relative;
   background: #203D55;
   color: white;
   height: 100%;
