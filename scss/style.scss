@@ -380,6 +380,7 @@ section.footer {
       }
     }
     .links {
+      margin-bottom: $unit*8;
       .footerlink {
         margin: $unit*4 $unit*4 0 $unit*4;
         @media screen and (max-width: 600px) {

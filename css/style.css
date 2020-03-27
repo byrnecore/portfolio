@@ -471,6 +471,9 @@ section.footer .container a {
 section.footer .container a:hover {
   border-bottom: 3px solid white;
 }
+section.footer .container .links {
+  margin-bottom: 32px;
+}
 section.footer .container .links .footerlink {
   margin: 16px 16px 0 16px;
 }
