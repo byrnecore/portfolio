@@ -33,13 +33,23 @@ body h1 {
   margin-bottom: 4px;
   letter-spacing: -1.5px;
 }
+@media screen and (max-width: 500px) {
+  body h1 {
+    font-size: 32px;
+  }
+}
 body h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 800;
 }
+@media screen and (max-width: 500px) {
+  body h2 {
+    font-size: 16px;
+  }
+}
 body h4 {
-  color: #AAB2BD;
+  color: #8895A7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -103,6 +113,12 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+section h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 .container {
@@ -219,13 +235,13 @@ section.intro .container {
 section.intro .container h1 {
   font-size: 48px;
   line-height: 56px;
-  margin-bottom: 4px;
-  margin-top: 0;
   font-weight: 800;
+  text-align: left;
+  margin: 0;
 }
 section.intro .container h2 {
   margin: 0;
-  color: #AAB2BD;
+  color: #8895A7;
 }
 section.intro .container p {
   color: white;
@@ -265,6 +281,9 @@ section.recent::before {
 
 section.recent {
   position: relative;
+}
+section.recent h1 {
+  color: #3183C8;
 }
 section.recent .workcontainer {
   background: white;
@@ -349,6 +368,9 @@ section.worked-with {
   position: relative;
   background: #E3FDED;
 }
+section.worked-with h1 {
+  color: #479E59;
+}
 section.worked-with .brand-list {
   display: flex;
   flex-wrap: wrap;
@@ -365,6 +387,8 @@ section.worked-with .brand-list .brand img {
   width: 96px;
 }
 
+/* # Tertimonials 
+================================================== */
 section.recommendations::before {
   content: "";
   position: absolute;
@@ -379,6 +403,9 @@ section.recommendations {
   position: relative;
   background: #FFFDF4;
   position: relative;
+}
+section.recommendations h1 {
+  color: #F4CA64;
 }
 section.recommendations .testimonials {
   display: flex;
@@ -411,7 +438,7 @@ section.recommendations .testimonials .testimonial .name .author {
   padding: 8px 0 0 0;
 }
 section.recommendations .testimonials .testimonial .name .position {
-  color: #AAB2BD;
+  color: #8895A7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -425,11 +452,11 @@ section.contact {
 }
 section.contact .container {
   display: flex;
-  padding: 32px;
-  margin-bottom: 80px;
-  border-radius: 32px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  padding: 32px;
+  border-radius: 32px;
+  margin: 24px 0 64px 0;
 }
 section.contact .container .image {
   margin: 24px;
@@ -466,7 +493,6 @@ section.footer {
 section.footer .container {
   text-align: center;
   padding: 24px 0;
-  margin-bottom: 0;
 }
 section.footer .container p {
   font-size: 16px;

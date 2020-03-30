@@ -102,14 +102,14 @@ section.intro {
     h1 {
       font-size: $unit*12 ;
       line-height: $unit*14;
-      margin-bottom: $unit*1;
-      margin-top: 0;
       font-weight: $semibold;
+      text-align: left;
+      margin: 0;
     }
 
     h2 {
       margin: 0;
-      color: $Medium-Gray;
+      color: $neutral-50;
     }
     p {
       color: white;
@@ -153,6 +153,10 @@ section.recent::before {
 
 section.recent {
   position: relative;
+
+  h1 {
+    color: #3183C8;
+  }
   .workcontainer {
     background: white;
     display: flex;
@@ -241,13 +245,16 @@ section.worked-with::before {
 section.worked-with {
   position:relative;
   background: #E3FDED;
+  h1 {
+    color: #479E59;
+  }
   .brand-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 64px;
-    
+
     .brand {
       flex-grow: 1;
       flex: 0 0 auto;
@@ -258,6 +265,9 @@ section.worked-with {
     }
   }
 }
+
+/* # Tertimonials 
+================================================== */
 
 section.recommendations::before {
   content: "";
@@ -271,6 +281,10 @@ section.recommendations::before {
 }
 
 section.recommendations {
+  h1 {
+    color: #F4CA64;
+  }
+
   position: relative;
   background: #FFFDF4;
   position: relative;
@@ -316,7 +330,7 @@ section.recommendations {
           padding: 8px 0 0 0;
         }
         .position {
-          color: $Medium-Gray;
+          color: $neutral-50;
           display: block;
           font-size: $unit*4;
           line-height: 1.5;
@@ -338,11 +352,12 @@ section.contact {
 
   .container {
     display: flex;
-    padding: 32px;
-    margin-bottom: 80px;
-    border-radius: $unit*8;
     background: white;
     box-shadow: $shadow; 
+    padding: $unit*8;
+    border-radius: $unit*8;
+    margin: $unit*6 0 $unit*16 0;
+
     .image {
       margin: $unit*6;
     }
@@ -381,7 +396,7 @@ section.footer {
   .container {
     text-align: center;
     padding: $unit*6 0;
-    margin-bottom: 0;
+    // margin-bottom: 0;
 
     p {
       font-size: $unit * 4;
