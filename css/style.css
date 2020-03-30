@@ -203,6 +203,8 @@ header .header-container .header-right .icon {
   margin-left: 16px;
 }
 
+/* # Intro Hero Styles
+================================================== */
 section.intro {
   min-height: 85vh;
   background: #203D55;
@@ -250,6 +252,8 @@ section.intro .container .button.tertiary {
   padding: 16px 0;
 }
 
+/* # Recent Work Styles
+================================================== */
 section.recent::before {
   content: "";
   position: absolute;
@@ -330,6 +334,37 @@ section.recent .workcontainer .description p {
   }
 }
 
+/* # Brands I have Worked With 
+================================================== */
+section.worked-with::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_worked.svg);
+}
+
+section.worked-with {
+  position: relative;
+  background: #E3FDED;
+}
+section.worked-with .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 64px;
+}
+section.worked-with .brand-list .brand {
+  flex-grow: 1;
+  flex: 0 0 auto;
+  padding: 16px;
+}
+section.worked-with .brand-list .brand img {
+  width: 96px;
+}
+
 section.recommendations::before {
   content: "";
   position: absolute;
@@ -383,36 +418,10 @@ section.recommendations .testimonials .testimonial .name .position {
   font-weight: 600;
 }
 
-section.worked-with::before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  height: 32px;
-  width: 100%;
-  background: url(../img/vector_worked.svg);
-}
-
-section.worked-with {
-  position: relative;
-  background: #E3FDED;
-}
-section.worked-with .brand-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-section.worked-with .brand-list .brand {
-  flex-grow: 1;
-  flex: 0 0 auto;
-  padding: 16px;
-}
-section.worked-with .brand-list .brand img {
-  width: 96px;
-}
-
+/* # Contact CTA Styles
+================================================== */
 section.contact {
-  background: #E3FDED;
+  background: #FFFDF4;
 }
 section.contact .container {
   display: flex;
