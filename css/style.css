@@ -131,6 +131,11 @@ section h1 {
   }
 }
 
+.leadin {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
 a.button {
   display: inline-block;
   border-radius: 6px;
@@ -225,14 +230,13 @@ header .header-container .header-right .icon {
 /* # Intro Hero Styles
 ================================================== */
 section.intro {
-  min-height: 85vh;
   background: #4BAEA3;
   background: rgba(75, 174, 163, 0.9);
   padding: 48px 0 0 0;
   color: white;
 }
 section.intro .container {
-  margin: 64px 32px;
+  margin-top: 32px;
 }
 section.intro .container h1 {
   font-size: 48px;
@@ -242,7 +246,7 @@ section.intro .container h1 {
   margin: 0;
 }
 section.intro .container h2 {
-  margin: 0;
+  margin: 0 0 24px 0;
   color: white;
   opacity: 0.6;
 }
