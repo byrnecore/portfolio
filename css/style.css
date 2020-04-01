@@ -12,7 +12,7 @@
 /* # Global Styles
 ================================================== */
 ::selection {
-  background: #F8F9FA;
+  background: #FDF4D7;
 }
 
 body {
@@ -30,16 +30,25 @@ body h1 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 800;
-  margin-bottom: 4px;
   letter-spacing: -1.5px;
+}
+@media screen and (max-width: 500px) {
+  body h1 {
+    font-size: 32px;
+  }
 }
 body h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 800;
 }
+@media screen and (max-width: 500px) {
+  body h2 {
+    font-size: 16px;
+  }
+}
 body h4 {
-  color: #AAB2BD;
+  color: #8895A7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -104,15 +113,30 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+section h1 {
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto 24px;
+}
 
 .container {
   max-width: 1024px;
   width: 100%;
-  margin: 0 32px 64px 32px;
+  margin: 0 0 80px 0;
   padding-top: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 32px 64px 32px;
+  }
+}
 
-a.button {
+.leadin {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+a.button, button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
@@ -127,11 +151,11 @@ a.button {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-a.button.dark {
+a.button.dark, button.dark {
   border-color: #203D55;
   color: #203D55;
 }
-a.button.light {
+a.button.light, button.light {
   background: white;
   border-color: white;
   color: #203D55;
@@ -147,7 +171,123 @@ a.current-role:hover {
   text-decoration: underline;
 }
 
-/* # Local Styles
+/* # Contact CTA Styles
+================================================== */
+section.contact::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_contact.svg);
+}
+
+section.contact {
+  position: relative;
+  background: #FBE8E8;
+}
+section.contact .container {
+  display: flex;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  padding: 32px;
+  border-radius: 32px;
+  margin: 24px 32px 64px;
+}
+section.contact .container .image {
+  margin: 24px;
+}
+@media screen and (max-width: 600px) {
+  section.contact .container {
+    flex-wrap: wrap;
+  }
+  section.contact .container .content, section.contact .container .image {
+    width: 150%;
+  }
+  section.contact .container .image {
+    order: -1;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=url], #contact textarea, #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 16px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea {
+  border: 4px solid transparent;
+  background: #F8F9FA;
+  margin: 0 0 5px;
+  padding: 16px;
+  font-size: 16px;
+  color: #212A34;
+  font-weight: 600;
+  width: -webkit-calc(100% - 32px);
+  width: -moz-calc(100% - 32px);
+  width: calc(100% - 32px);
+}
+
+#contact input[type=text]:hover, #contact input[type=email]:hover, #contact input[type=tel]:hover, #contact input[type=url]:hover, #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 4px solid #ABD4F5;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type=submit] {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 150ms ease-out;
+}
+
+#contact button[type=submit]:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 4px solid #ABD4F5;
+}
+
+::-webkit-input-placeholder {
+  color: #B8C4CF;
+}
+
+:-moz-placeholder {
+  color: #B8C4CF;
+}
+
+::-moz-placeholder {
+  color: #B8C4CF;
+}
+
+:-ms-input-placeholder {
+  color: #B8C4CF;
+}
+
+/* # Header Styles
 ================================================== */
 header {
   width: 100%;
@@ -186,6 +326,11 @@ header .header-container .header-left .logo {
   letter-spacing: 0.01em;
   margin-top: 8px;
 }
+@media screen and (max-width: 400px) {
+  header .header-container .header-left .logo .firstname {
+    display: none;
+  }
+}
 header .header-container .header-right {
   display: flex;
   flex-wrap: nowrap;
@@ -200,30 +345,32 @@ header .header-container .header-right a:hover {
 }
 header .header-container .header-right .icon {
   width: 23px;
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
+/* # Intro Hero Styles
+================================================== */
 section.intro {
-  min-height: 85vh;
-  background: #203D55;
-  background: rgba(32, 61, 85, 0.9);
+  background: #4BAEA3;
+  background: rgba(75, 174, 163, 0.9);
   padding: 48px 0 0 0;
   color: white;
 }
 section.intro .container {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 32px;
+  margin-bottom: 120px;
 }
 section.intro .container h1 {
   font-size: 48px;
   line-height: 56px;
-  margin-bottom: 4px;
-  margin-top: 0;
   font-weight: 800;
+  text-align: left;
+  margin: 0;
 }
 section.intro .container h2 {
-  margin: 0;
-  color: #AAB2BD;
+  margin: 0 0 24px 0;
+  color: white;
+  opacity: 0.6;
 }
 section.intro .container p {
   color: white;
@@ -250,6 +397,8 @@ section.intro .container .button.tertiary {
   padding: 16px 0;
 }
 
+/* # Recent Work Styles
+================================================== */
 section.recent::before {
   content: "";
   position: absolute;
@@ -261,6 +410,9 @@ section.recent::before {
 
 section.recent {
   position: relative;
+}
+section.recent h1 {
+  color: #3183C8;
 }
 section.recent .workcontainer {
   background: white;
@@ -330,6 +482,42 @@ section.recent .workcontainer .description p {
   }
 }
 
+/* # Brands I have Worked With 
+================================================== */
+section.worked-with::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_worked.svg);
+}
+
+section.worked-with {
+  position: relative;
+  background: #E3FDED;
+}
+section.worked-with h1 {
+  color: #479E59;
+}
+section.worked-with .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 64px;
+}
+section.worked-with .brand-list .brand {
+  flex-grow: 1;
+  flex: 0 0 auto;
+  padding: 16px;
+}
+section.worked-with .brand-list .brand img {
+  width: 96px;
+}
+
+/* # Testimonials 
+================================================== */
 section.recommendations::before {
   content: "";
   position: absolute;
@@ -345,6 +533,9 @@ section.recommendations {
   background: #FFFDF4;
   position: relative;
 }
+section.recommendations h1 {
+  color: #F4CA64;
+}
 section.recommendations .testimonials {
   display: flex;
   flex-wrap: wrap;
@@ -357,14 +548,23 @@ section.recommendations .testimonials .testimonial {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   margin: 0 0 32px 0;
 }
-section.recommendations .testimonials .testimonial .avatar {
-  display: block;
+section.recommendations .testimonials .testimonial a:hover {
+  text-decoration: none;
+  border-bottom: 0;
+}
+section.recommendations .testimonials .testimonial a .avatar {
+  position: relative;
+  display: inline-block;
   width: 88px;
   margin-bottom: 12px;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #dddddd;
   border: 4px solid #434A54;
+  transition: border-color 0.2s ease-in-out;
+}
+section.recommendations .testimonials .testimonial a .avatar:hover {
+  border-color: #ABD4F5;
 }
 section.recommendations .testimonials .testimonial .name {
   font-style: normal;
@@ -376,69 +576,15 @@ section.recommendations .testimonials .testimonial .name .author {
   padding: 8px 0 0 0;
 }
 section.recommendations .testimonials .testimonial .name .position {
-  color: #AAB2BD;
+  color: #8895A7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
 }
 
-section.worked-with::before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  height: 32px;
-  width: 100%;
-  background: url(../img/vector_worked.svg);
-}
-
-section.worked-with {
-  position: relative;
-  background: #E3FDED;
-}
-section.worked-with .brand-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-section.worked-with .brand-list .brand {
-  flex-grow: 1;
-  flex: 0 0 auto;
-  padding: 16px;
-}
-section.worked-with .brand-list .brand img {
-  width: 96px;
-}
-
-section.contact {
-  background: #E3FDED;
-}
-section.contact .container {
-  display: flex;
-  padding: 32px;
-  margin-bottom: 80px;
-  border-radius: 32px;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
-}
-section.contact .container .image {
-  margin: 24px;
-}
-@media screen and (max-width: 600px) {
-  section.contact .container {
-    flex-wrap: wrap;
-  }
-  section.contact .container .content, section.contact .container .image {
-    width: 150%;
-  }
-  section.contact .container .image {
-    order: -1;
-    text-align: center;
-    margin-top: 0;
-  }
-}
-
+/* # Footer Styles
+================================================== */
 section.footer::before {
   content: "";
   position: absolute;
@@ -481,6 +627,18 @@ section.footer .container .links .footerlink {
   section.footer .container .links .footerlink {
     display: block;
   }
+}
+
+section.thanks {
+  position: relative;
+  height: 100vh;
+  height: -webkit-calc(100vh - 132px);
+  height: -moz-calc(100vh - 132px);
+  height: calc(100vh - 132px);
+  text-align: center;
+}
+section.thanks h1 {
+  color: #3183C8;
 }
 
 @keyframes bouncey {
