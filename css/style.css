@@ -136,7 +136,7 @@ section h1 {
   margin: 0 auto 40px;
 }
 
-a.button {
+a.button, button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
@@ -151,11 +151,11 @@ a.button {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-a.button.dark {
+a.button.dark, button.dark {
   border-color: #203D55;
   color: #203D55;
 }
-a.button.light {
+a.button.light, button.light {
   background: white;
   border-color: white;
   color: #203D55;
@@ -169,6 +169,81 @@ a.current-role {
 }
 a.current-role:hover {
   text-decoration: underline;
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=url], #contact textarea, #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 16px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea {
+  border: 2px solid #B8C4CF;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 16px;
+  font-size: 16px;
+  color: #212A34;
+  font-weight: 600;
+  width: -webkit-calc(100% - 32px);
+  width: -moz-calc(100% - 32px);
+  width: calc(100% - 32px);
+}
+
+#contact input[type=text]:hover, #contact input[type=email]:hover, #contact input[type=tel]:hover, #contact input[type=url]:hover, #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 2px solid #212A34;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type=submit] {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 150ms ease-out;
+}
+
+#contact button[type=submit]:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 2px solid #8895A7;
+}
+
+::-webkit-input-placeholder {
+  color: #B8C4CF;
+}
+
+:-moz-placeholder {
+  color: #B8C4CF;
+}
+
+::-moz-placeholder {
+  color: #B8C4CF;
+}
+
+:-ms-input-placeholder {
+  color: #B8C4CF;
 }
 
 /* # Header Styles
