@@ -531,14 +531,23 @@ section.recommendations .testimonials .testimonial {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   margin: 0 0 32px 0;
 }
-section.recommendations .testimonials .testimonial .avatar {
-  display: block;
+section.recommendations .testimonials .testimonial a:hover {
+  text-decoration: none;
+  border-bottom: 0;
+}
+section.recommendations .testimonials .testimonial a .avatar {
+  position: relative;
+  display: inline-block;
   width: 88px;
   margin-bottom: 12px;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #dddddd;
   border: 4px solid #434A54;
+  transition: border-color 0.2s ease-in-out;
+}
+section.recommendations .testimonials .testimonial a .avatar:hover {
+  border-color: #ABD4F5;
 }
 section.recommendations .testimonials .testimonial .name {
   font-style: normal;

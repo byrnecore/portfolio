@@ -292,20 +292,26 @@ section.recommendations {
             // margin-right: 0;
           } 
       }
+      a {
 
-      .quote {
-      // background-image: url(../img/quote.svg);
-      // background-position: 0 0;
-      // background-repeat: no-repeat;
-      }
-      .avatar {
-        display: block;
-        width: $unit*22;
-        margin-bottom: $unit*3;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background-color: #dddddd;
-        border: 4px solid $Dark-Gray;
+        &:hover {
+          text-decoration: none;
+          border-bottom: 0;
+        }
+        .avatar {
+          position:relative;
+          display: inline-block;
+          width: $unit*22;
+          margin-bottom: $unit*3;
+          border-radius: 50%;
+          box-sizing: border-box;
+          background-color: #dddddd;
+          border: 4px solid $Dark-Gray;
+          transition:border-color 0.2s ease-in-out;
+          &:hover {
+            border-color: #ABD4F5;
+          }
+        }
       }
       .name {
         font-style: normal;
