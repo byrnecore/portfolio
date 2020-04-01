@@ -51,6 +51,11 @@ header {
         color: white;
         letter-spacing: 0.01em;  
         margin-top: $unit*2;
+        .firstname {
+          @media screen and (max-width: 400px) {
+            display: none;
+          }
+        }
       }
     }
     .header-right {
@@ -66,7 +71,7 @@ header {
       }
       .icon {
         width: 23px;
-        margin-left: $unit*4;
+        margin-left: $unit*6;
       }
     }
   }

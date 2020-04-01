@@ -326,6 +326,11 @@ header .header-container .header-left .logo {
   letter-spacing: 0.01em;
   margin-top: 8px;
 }
+@media screen and (max-width: 400px) {
+  header .header-container .header-left .logo .firstname {
+    display: none;
+  }
+}
 header .header-container .header-right {
   display: flex;
   flex-wrap: nowrap;
@@ -340,7 +345,7 @@ header .header-container .header-right a:hover {
 }
 header .header-container .header-right .icon {
   width: 23px;
-  margin-left: 16px;
+  margin-left: 24px;
 }
 
 /* # Intro Hero Styles
