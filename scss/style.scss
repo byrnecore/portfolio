@@ -68,19 +68,6 @@ header {
         width: 23px;
         margin-left: $unit*4;
       }
-      // .resume {
-      //   width: 92px;
-      //   border-color: white;
-      //   color: white;
-      //   padding: $unit*1 0;
-      //   text-decoration: none;
-      //   background: transparent;
-      //   font-family: $family;
-      //   font-size: $unit*4;
-      //   font-weight: $normal;
-      //   margin: 0;
-      //   text-align: center;
-      // }
     }
   }
 }
@@ -89,7 +76,6 @@ header {
 ================================================== */
 
 section.intro {
-  // min-height: 85vh;
   background: #4BAEA3;
   background: rgba(75, 174, 163, 0.9);
   padding: 48px 0 0 0;
@@ -341,43 +327,11 @@ section.recommendations {
   }
 }
 
-/* # Contact CTA Styles
+
+
+
+  /* # Footer Styles
 ================================================== */
-
-
-
-section.contact {
-  background: #FFFDF4;
-
-
-  .container {
-    display: flex;
-    background: white;
-    box-shadow: $shadow; 
-    padding: $unit*8;
-    border-radius: $unit*8;
-    margin: $unit*6 $unit*8 $unit*16;
-
-    .image {
-      margin: $unit*6;
-    }
-
-    @media screen and (max-width: 600px) {
-      flex-wrap: wrap;
-      .content, .image {
-        width: 150%
-      }
-      .image {
-        order: -1;
-        text-align: center;
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-
-
 
 section.footer::before {
   content: "";
@@ -398,7 +352,7 @@ section.footer {
   .container {
     text-align: center;
     padding: $unit*6 0;
-    // margin-bottom: 0;
+    margin-bottom: 0;
 
     p {
       font-size: $unit * 4;
@@ -423,6 +377,20 @@ section.footer {
     }
     
   }
+}
+
+section.thanks {
+  position: relative;
+  height: 100vh;
+  height: -webkit-calc(100vh - 132px);
+  height:    -moz-calc(100vh - 132px);
+  height:         calc(100vh - 132px);
+  text-align: center;
+
+  h1 {
+    color: #3183C8;
+  }
+
 }
 
 
