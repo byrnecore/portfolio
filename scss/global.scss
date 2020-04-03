@@ -18,7 +18,7 @@ body {
     font-size: $unit*10;
     line-height: $unit*12; 
     font-weight: $semibold;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.5px;
 
     @media screen and (max-width: 500px) {
       font-size: $unit*8;
@@ -47,18 +47,20 @@ body {
     line-height: $unit*7;
     font-weight: $light;
   }
+  
+  strong {
+    font-weight: $semibold;
+  }
+
   a {
     color: $primary-70;
     font-weight: $semibold;
     }
+
   a:hover {
     cursor: pointer;
     border-bottom: 3px solid $primary-70;
     }
-  .divider {
-    margin: 24px 0;
-  }
-  
 }
 
 .label {
