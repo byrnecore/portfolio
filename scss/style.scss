@@ -30,6 +30,7 @@ header {
     @media screen and (max-width: $max-width) {
       padding: 16px $unit*8;
     }
+
     &:hover {
         .header-left,.header-right {
           opacity: 1;
@@ -101,9 +102,17 @@ section.intro {
   padding: 48px 0 0 0;
   color: white;
 
+   
+
   .container {
     margin-top: 32px;
     margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $max-width) {
+      height: 50vh;
+    }
     
     h1 {
       font-size: $unit*10;
@@ -115,6 +124,10 @@ section.intro {
         font-size: $unit*8;
         line-height: $unit*11;
         margin: $unit*6 auto;
+      }
+      @media screen and (min-width: $max-width) {
+        font-size: $unit*12;
+        line-height: $unit*16;
       }
       .strong {
         font-weight: $semibold;
