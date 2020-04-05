@@ -30,7 +30,7 @@ body h1 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 800;
-  letter-spacing: -1.5px;
+  letter-spacing: -0.5px;
 }
 @media screen and (max-width: 500px) {
   body h1 {
@@ -60,6 +60,9 @@ body p {
   line-height: 28px;
   font-weight: 600;
 }
+body strong {
+  font-weight: 800;
+}
 body a {
   color: #203D55;
   font-weight: 800;
@@ -67,9 +70,6 @@ body a {
 body a:hover {
   cursor: pointer;
   border-bottom: 3px solid #203D55;
-}
-body .divider {
-  margin: 24px 0;
 }
 
 .label {
@@ -317,6 +317,18 @@ header .header-container .header-left, header .header-container .header-right {
   opacity: 0.5;
   transition: opacity 150ms ease-out;
 }
+header .header-container .header-left {
+  display: flex;
+}
+header .header-container .header-left a:hover {
+  opacity: 1;
+  border: 0;
+}
+header .header-container .header-left .avatar {
+  border-radius: 50%;
+  height: 24px;
+  margin-right: 8px;
+}
 header .header-container .header-left .logo {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -327,7 +339,7 @@ header .header-container .header-left .logo {
   margin-top: 8px;
 }
 @media screen and (max-width: 400px) {
-  header .header-container .header-left .logo .firstname {
+  header .header-container .mobile_hide {
     display: none;
   }
 }
@@ -361,11 +373,21 @@ section.intro .container {
   margin-bottom: 120px;
 }
 section.intro .container h1 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 56px;
-  font-weight: 800;
+  font-weight: 600;
   text-align: left;
-  margin: 0;
+  margin: 32px auto;
+}
+@media screen and (max-width: 600px) {
+  section.intro .container h1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin: 24px auto;
+  }
+}
+section.intro .container h1 .strong {
+  font-weight: 800;
 }
 section.intro .container h2 {
   margin: 0 0 24px 0;
@@ -566,16 +588,25 @@ section.recommendations .testimonials .testimonial a .avatar {
 section.recommendations .testimonials .testimonial a .avatar:hover {
   border-color: #ABD4F5;
 }
-section.recommendations .testimonials .testimonial .name {
+
+.name {
   font-style: normal;
 }
-section.recommendations .testimonials .testimonial .name .author {
+.name .avatar {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.name .author {
   display: block;
   font-size: 20px;
   font-weight: 800;
   padding: 8px 0 0 0;
 }
-section.recommendations .testimonials .testimonial .name .position {
+.name .position {
   color: #8895A7;
   display: block;
   font-size: 16px;

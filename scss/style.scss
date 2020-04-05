@@ -43,6 +43,21 @@ header {
       transition: opacity 150ms ease-out; 
     }
     .header-left {
+      display: flex;
+       a {
+
+        &:hover {
+          opacity: 1;
+          border: 0;
+        }
+      }
+
+      .avatar {
+        border-radius:50%;
+        height: 24px;
+        margin-right: 8px;
+      }
+
       .logo {
         font-family: $family;
         font-weight: $normal;
@@ -51,12 +66,12 @@ header {
         color: white;
         letter-spacing: 0.01em;  
         margin-top: $unit*2;
-        .firstname {
-          @media screen and (max-width: 400px) {
-            display: none;
-          }
         }
       }
+      .mobile_hide {
+        @media screen and (max-width: 400px) {
+          display: none;
+        }
     }
     .header-right {
       display: flex;
@@ -91,11 +106,19 @@ section.intro {
     margin-bottom: 120px;
     
     h1 {
-      font-size: $unit*12 ;
+      font-size: $unit*10;
       line-height: $unit*14;
-      font-weight: $semibold;
+      font-weight: $light;
       text-align: left;
-      margin: 0;
+      margin: $unit*8 auto;
+      @media screen and (max-width: 600px) {
+        font-size: $unit*8;
+        line-height: $unit*11;
+        margin: $unit*6 auto;
+      }
+      .strong {
+        font-weight: $semibold;
+      }
     }
 
     h2 {
@@ -319,23 +342,32 @@ section.recommendations {
           }
         }
       }
-      .name {
-        font-style: normal;
-        .author {
-          display: block;
-          font-size: $unit*5;
-          font-weight: $semibold;
-          padding: 8px 0 0 0;
-        }
-        .position {
-          color: $neutral-50;
-          display: block;
-          font-size: $unit*4;
-          line-height: 1.5;
-          font-weight: $light;
-        }
-      }
     }
+  }
+}
+
+.name {
+  font-style: normal;
+  .avatar {
+    position:relative;
+    display: inline-block;
+    width: $unit*40;
+    margin-bottom: $unit*3;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  .author {
+    display: block;
+    font-size: $unit*5;
+    font-weight: $semibold;
+    padding: 8px 0 0 0;
+  }
+  .position {
+    color: $neutral-50;
+    display: block;
+    font-size: $unit*4;
+    line-height: 1.5;
+    font-weight: $light;
   }
 }
 
