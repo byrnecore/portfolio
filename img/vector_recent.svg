@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1440px" height="60px" viewBox="0 0 1440 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
     <title>vector_recent</title>
     <desc>Created with Sketch.</desc>
-    <g id="Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="vector_recent" fill="#F8F9FA" fill-rule="nonzero">
-            <path d="M0,34.2857143 L48,35.7053571 C96,37.2321429 192,39.9107143 288,35.7053571 C384,31.3392857 480,20.0892857 576,15.7232143 C672,11.5178571 768,14.1964286 864,12.8571429 C960,11.5178571 1056,5.625 1152,2.86607143 C1248,0 1344,0 1392,0 L1440,0 L1440,60 L1392,60 C1344,60 1248,60 1152,60 C1056,60 960,60 864,60 C768,60 672,60 576,60 C480,60 384,60 288,60 C192,60 96,60 48,60 L0,60 L0,34.2857143 Z" id="Path"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Test" fill="#F8F9FA" fill-rule="nonzero">
+            <g id="vector_recent" transform="translate(0.000000, -1.000000)">
+                <path d="M0,35.2857143 L48,36.7053571 C96,38.2321429 192,40.9107143 288,36.7053571 C384,32.3392857 480,5.3660714 576,1 C672,-3.2053572 768,32.3392857 864,31 C960,29.6607142 1056,6.625 1152,3.86607143 C1248,1 1330.57386,23.0411372 1354.25437,27.0174684 C1370.04138,29.6683558 1398.62325,32.3291997 1440,35 L1440,61 L1392,61 C1344,61 1248,61 1152,61 C1056,61 960,61 864,61 C768,61 672,61 576,61 C480,61 384,61 288,61 C192,61 96,61 48,61 L0,61 L0,35.2857143 Z" id="Path"></path>
+            </g>
         </g>
     </g>
 </svg>
