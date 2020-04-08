@@ -33,6 +33,12 @@ body {
       font-size: $unit*4;
     }
   }
+  h3 {
+    display: block;
+    font-size: $unit*5;
+    font-weight: $semibold;
+    padding: 8px 0 0 0;
+  }
   h4 {
     color: $neutral-50;
     display: block;
@@ -46,6 +52,7 @@ body {
     font-size: $unit*4.5;
     line-height: $unit*7;
     font-weight: $light;
+    color: #506690;
   }
   
   strong {

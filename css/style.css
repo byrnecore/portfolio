@@ -47,6 +47,12 @@ body h2 {
     font-size: 16px;
   }
 }
+body h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 0 0 0;
+}
 body h4 {
   color: #8895A7;
   display: block;
@@ -59,6 +65,7 @@ body p {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
+  color: #506690;
 }
 body strong {
   font-weight: 800;
@@ -411,6 +418,7 @@ section.intro .container p {
   font-size: 24px;
   line-height: 36px;
   margin: 0;
+  opacity: 0.9;
 }
 @media screen and (max-width: 768px) {
   section.intro .container p {
@@ -628,6 +636,28 @@ section.recommendations .testimonials .testimonial a .avatar:hover {
   font-weight: 600;
 }
 
+/* # My Value 
+================================================== */
+section.my-value {
+  background-color: #f3f0ff;
+}
+section.my-value .values_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.my-value .values_row .value-container {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  section.my-value .values_row .value-container {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 16px;
+  }
+}
+
 /* # Footer Styles
 ================================================== */
 section.footer::before {
@@ -651,6 +681,7 @@ section.footer .container {
   margin-bottom: 0;
 }
 section.footer .container p {
+  color: white;
   font-size: 16px;
   text-align: center;
 }

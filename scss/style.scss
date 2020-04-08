@@ -145,6 +145,7 @@ section.intro {
       font-size: $unit*6;
       line-height: $unit*9;
       margin:0;
+      opacity: 0.9;
       
       @media screen and (max-width: $tablet-width) {
         font-size: $unit*5;
@@ -386,7 +387,30 @@ section.recommendations {
   }
 }
 
+/* # My Value 
+================================================== */
 
+section.my-value {
+  background-color: #f3f0ff;
+
+  .values_row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .value-container {
+      box-sizing: border-box;
+      flex: 0 0 100%;
+      max-width: 100%;
+      @media screen and (min-width: $tablet-width) {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding: 0 16px;
+      }
+
+
+    }
+  }
+}
 
 
   /* # Footer Styles
@@ -414,6 +438,7 @@ section.footer {
     margin-bottom: 0;
 
     p {
+      color: white;
       font-size: $unit * 4;
       text-align: center;
     }
