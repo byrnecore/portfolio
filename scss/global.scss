@@ -1,60 +1,60 @@
- /* # Global Styles
+/* # Global Styles
 ================================================== */
 
 ::selection {
-  background: #FDF4D7;
+  background: #fdf4d7;
 }
 
 body {
-    color: $primary-70;
-    font-family: $family;
-    font-weight: $light;
-    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-    -webkit-text-size-adjust: 100%;
-    background: url(../img/bg_hero.jpg) no-repeat center center fixed; 
-    background-size: cover;
-    height: 100%;
-  h1 {   
-    font-size: $unit*10;
-    line-height: $unit*12; 
+  color: $primary-70;
+  font-family: $family;
+  font-weight: $light;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  background: url(../img/bg_hero.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  h1 {
+    font-size: $unit * 10;
+    line-height: $unit * 12;
     font-weight: $semibold;
     letter-spacing: -0.5px;
 
     @media screen and (max-width: 500px) {
-      font-size: $unit*8;
+      font-size: $unit * 8;
     }
   }
   h2 {
     margin: 0;
-    font-size: $unit*5;
+    font-size: $unit * 5;
     font-weight: $semibold;
 
     @media screen and (max-width: 500px) {
-      font-size: $unit*4;
+      font-size: $unit * 4;
     }
   }
   h3 {
     display: block;
-    font-size: $unit*5;
+    font-size: $unit * 5;
     font-weight: $semibold;
     padding: 8px 0 0 0;
   }
   h4 {
     color: $neutral-50;
     display: block;
-    font-size: $unit*4;
+    font-size: $unit * 4;
     line-height: 1.5;
     font-weight: $normal;
     margin: 0;
-    }
-  
+  }
+
   p {
-    font-size: $unit*4.5;
-    line-height: $unit*7;
+    font-size: $unit * 4.5;
+    line-height: $unit * 7;
     font-weight: $light;
     color: #506690;
   }
-  
+
   strong {
     font-weight: $semibold;
   }
@@ -62,12 +62,12 @@ body {
   a {
     color: $primary-70;
     font-weight: $semibold;
-    }
+  }
 
   a:hover {
     cursor: pointer;
     border-bottom: 3px solid $primary-70;
-    }
+  }
 }
 
 .label {
@@ -79,33 +79,33 @@ body {
   border-radius: 4px;
   .label_name {
     text-transform: uppercase;
-    color: #2368A2;
-    letter-spacing: .01em;
+    color: #2368a2;
+    letter-spacing: 0.01em;
     font-size: 14px;
     font-weight: 700;
   }
 }
 
- a {
-  color: #3183C8;
+a {
+  color: #3183c8;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-   .recent_cta {
-          span {
-            display: inline-flex;
-            align-items: center;
-            width: 24px;
-            height: 16px;
-            margin-left: $unit*2;
-            color: #e03f7f;
-          }
+  .recent_cta {
+    span {
+      display: inline-flex;
+      align-items: center;
+      width: 24px;
+      height: 16px;
+      margin-left: $unit * 2;
+      color: #e03f7f;
+    }
   }
 }
 
 // Section styles
 .section-wrapper {
-  background: $neutral-10;
+  background: #fff;
 }
 
 section {
@@ -116,18 +116,18 @@ section {
   h1 {
     text-align: center;
     max-width: 900px;
-    margin: 40px auto 24px; 
+    margin: 40px auto 24px;
   }
 }
 
 .container {
   max-width: $max-width;
   width: 100%;
-  margin: 0 0 $unit*20 0;
+  margin: 0 0 $unit * 20 0;
   padding-top: 24px;
   @media screen and (max-width: $max-width) {
-      margin: 0 $unit*8 $unit*16 $unit*8;
-    }
+    margin: 0 $unit * 8 $unit * 16 $unit * 8;
+  }
 }
 
 .leadin {
@@ -137,30 +137,30 @@ section {
 
 // Button styles
 
-a.button, button {
+a.button,
+button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
-  margin: $unit*4 0 0 0;
-  padding: $unit*4;
+  margin: $unit * 4 0 0 0;
+  padding: $unit * 4;
   text-align: center;
   text-decoration: none;
   background: transparent;
   font-family: $family;
-  font-size: $unit*4;
+  font-size: $unit * 4;
   font-weight: $semibold;
   transition: all 150ms ease-out;
   cursor: pointer;
   &.dark {
-  border-color: $primary-70;
-  color: $primary-70;
+    border-color: $primary-70;
+    color: $primary-70;
   }
   &.light {
-  background: white;
-  border-color: white;
-  color: $primary-70;
+    background: white;
+    border-color: white;
+    color: $primary-70;
   }
-  
 }
 
 a.current-role {
@@ -169,6 +169,6 @@ a.current-role {
   color: $current-role !important;
   text-decoration: none;
   &:hover {
-  text-decoration: underline;
+    text-decoration: underline;
   }
 }

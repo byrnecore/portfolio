@@ -12,11 +12,11 @@
 /* # Global Styles
 ================================================== */
 ::selection {
-  background: #FDF4D7;
+  background: #fdf4d7;
 }
 
 body {
-  color: #203D55;
+  color: #203d55;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
@@ -54,7 +54,7 @@ body h3 {
   padding: 8px 0 0 0;
 }
 body h4 {
-  color: #8895A7;
+  color: #8895a7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -71,16 +71,16 @@ body strong {
   font-weight: 800;
 }
 body a {
-  color: #203D55;
+  color: #203d55;
   font-weight: 800;
 }
 body a:hover {
   cursor: pointer;
-  border-bottom: 3px solid #203D55;
+  border-bottom: 3px solid #203d55;
 }
 
 .label {
-  background: #F5F7FA;
+  background: #f5f7fa;
   padding: 0 12px;
   height: 32px;
   display: inline-flex;
@@ -89,14 +89,14 @@ body a:hover {
 }
 .label .label_name {
   text-transform: uppercase;
-  color: #2368A2;
+  color: #2368a2;
   letter-spacing: 0.01em;
   font-size: 14px;
   font-weight: 700;
 }
 
 a {
-  color: #3183C8;
+  color: #3183c8;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
@@ -111,7 +111,7 @@ a .recent_cta span {
 }
 
 .section-wrapper {
-  background: #F8F9FA;
+  background: #fff;
 }
 
 section {
@@ -127,12 +127,12 @@ section h1 {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 0 80px 0;
   padding-top: 24px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .container {
     margin: 0 32px 64px 32px;
   }
@@ -143,7 +143,8 @@ section h1 {
   margin: 0 auto 40px;
 }
 
-a.button, button {
+a.button,
+button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
@@ -158,20 +159,22 @@ a.button, button {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-a.button.dark, button.dark {
-  border-color: #203D55;
-  color: #203D55;
+a.button.dark,
+button.dark {
+  border-color: #203d55;
+  color: #203d55;
 }
-a.button.light, button.light {
+a.button.light,
+button.light {
   background: white;
   border-color: white;
-  color: #203D55;
+  color: #203d55;
 }
 
 a.current-role {
   cursor: pointer;
   font-weight: 700;
-  color: #E41421 !important;
+  color: #e41421 !important;
   text-decoration: none;
 }
 a.current-role:hover {
@@ -234,11 +237,11 @@ fieldset {
 
 #contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea {
   border: 4px solid transparent;
-  background: #F8F9FA;
+  background: #f8f9fa;
   margin: 0 0 5px;
   padding: 16px;
   font-size: 16px;
-  color: #212A34;
+  color: #212a34;
   font-weight: 600;
   width: -webkit-calc(100% - 32px);
   width: -moz-calc(100% - 32px);
@@ -279,19 +282,19 @@ fieldset {
 }
 
 ::-webkit-input-placeholder {
-  color: #B8C4CF;
+  color: #b8c4cf;
 }
 
 :-moz-placeholder {
-  color: #B8C4CF;
+  color: #b8c4cf;
 }
 
 ::-moz-placeholder {
-  color: #B8C4CF;
+  color: #b8c4cf;
 }
 
 :-ms-input-placeholder {
-  color: #B8C4CF;
+  color: #b8c4cf;
 }
 
 /* # Header Styles
@@ -299,7 +302,7 @@ fieldset {
 header {
   width: 100%;
   position: fixed;
-  background: #203D55;
+  background: #203d55;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
   z-index: 9;
 }
@@ -307,18 +310,20 @@ header .header-container {
   display: flex;
   align-content: center;
   padding: 16px 0;
-  max-width: 1024px;
+  max-width: 1400px;
   margin: auto;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   header .header-container {
     padding: 16px 32px;
   }
 }
-header .header-container:hover .header-left, header .header-container:hover .header-right {
+header .header-container:hover .header-left,
+header .header-container:hover .header-right {
   opacity: 1;
 }
-header .header-container .header-left, header .header-container .header-right {
+header .header-container .header-left,
+header .header-container .header-right {
   position: relative;
   flex-grow: 1;
   opacity: 0.5;
@@ -370,7 +375,7 @@ header .header-container .header-right .icon {
 /* # Intro Hero Styles
 ================================================== */
 section.intro {
-  background: #4BAEA3;
+  background: #4baea3;
   background: rgba(75, 174, 163, 0.9);
   padding: 48px 0 0 0;
   color: white;
@@ -379,7 +384,7 @@ section.intro .container {
   margin-top: 32px;
   margin-bottom: 120px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   section.intro .container {
     min-height: 50vh;
   }
@@ -391,7 +396,7 @@ section.intro .container {
   }
 }
 section.intro .container h1 {
-  max-width: 1024px;
+  max-width: 1400px;
   text-align: left;
 }
 @media screen and (max-width: 768px) {
@@ -400,7 +405,7 @@ section.intro .container h1 {
     line-height: 36px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   section.intro .container h1 {
     line-height: 52px;
   }
@@ -456,20 +461,51 @@ section.recent {
   position: relative;
 }
 section.recent h1 {
-  color: #3183C8;
+  color: #3183c8;
 }
 section.recent .workcontainer {
-  background: white;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 0 0 32px 0;
-  padding: 32px;
+  justify-content: center;
+  margin: 16px 0 32px 0;
+  padding: 20vh 64px;
   border-radius: 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
 }
 section.recent .workcontainer:first-child {
   margin-top: 0px;
+}
+section.recent .workcontainer .workcolumns.image {
+  position: relative;
+}
+section.recent .workcontainer .workcolumns.image .perspective {
+  position: absolute;
+  background: #fff;
+  border-radius: 32px;
+  padding: 64px;
+  right: 0;
+  top: 50%;
+  box-shadow: -20px 20px 120px -20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%) translateX(40%) rotate(-10deg) skewX(10deg) scaleY(0.7) scaleX(1.1);
+}
+section.recent .workcontainer:nth-child(odd) .workcolumns.image {
+  order: -1;
+}
+section.recent .workcontainer:nth-child(odd) .workcolumns.image .perspective {
+  left: 0;
+  transform: translateY(-50%) translateX(-40%) rotate(10deg) skewX(-10deg) scaleY(0.7) scaleX(1.1);
+}
+section.recent .workcontainer a {
+  background: #2368a2;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-top: 32px;
+}
+section.recent .workcontainer .workcolumns.description {
+  max-width: 500px;
+  padding-right: 64px;
 }
 section.recent .workcontainer .workcolumns {
   flex-basis: 100%;
@@ -479,14 +515,15 @@ section.recent .workcontainer .workcolumns {
     flex-basis: 50%;
   }
 }
-section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
+section.recent .workcontainer .workcolumns img,
+section.recent .workcontainer .workcolumns .video {
   display: flex;
   border-radius: 16px;
   max-width: 100%;
 }
 section.recent .workcontainer .workcolumns .video {
   display: flex;
-  background: #EFF8FE;
+  background: #eff8fe;
   padding: 32px;
   align-items: center;
 }
@@ -526,7 +563,7 @@ section.recent .workcontainer .description p {
   }
 }
 
-/* # Brands I have Worked With 
+/* # Brands I have Worked With
 ================================================== */
 section.worked-with::before {
   content: "";
@@ -539,10 +576,10 @@ section.worked-with::before {
 
 section.worked-with {
   position: relative;
-  background: #E3FDED;
+  background: #e3fded;
 }
 section.worked-with h1 {
-  color: #479E59;
+  color: #479e59;
 }
 section.worked-with .brand-list {
   display: flex;
@@ -560,7 +597,7 @@ section.worked-with .brand-list .brand img {
   width: 96px;
 }
 
-/* # Testimonials 
+/* # Testimonials
 ================================================== */
 section.recommendations::before {
   content: "";
@@ -574,11 +611,11 @@ section.recommendations::before {
 
 section.recommendations {
   position: relative;
-  background: #FFFDF4;
+  background: #fffdf4;
   position: relative;
 }
 section.recommendations h1 {
-  color: #F4CA64;
+  color: #f4ca64;
 }
 section.recommendations .testimonials {
   display: flex;
@@ -608,7 +645,7 @@ section.recommendations .testimonials .testimonial a .avatar {
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #dddddd;
-  border: 4px solid #434A54;
+  border: 4px solid #434a54;
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -630,14 +667,14 @@ section.recommendations .testimonials .testimonial a .avatar {
   padding: 8px 0 0 0;
 }
 .name .position {
-  color: #8895A7;
+  color: #8895a7;
   display: block;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
 }
 
-/* # My Value 
+/* # My Value
 ================================================== */
 section.my-value {
   background-color: #f3f0ff;
@@ -678,7 +715,7 @@ section.footer::before {
 
 section.footer {
   position: relative;
-  background: #203D55;
+  background: #203d55;
   color: white;
   height: 100%;
 }
@@ -721,7 +758,7 @@ section.thanks {
   text-align: center;
 }
 section.thanks h1 {
-  color: #3183C8;
+  color: #3183c8;
 }
 
 @keyframes bouncey {
