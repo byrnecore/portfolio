@@ -324,12 +324,16 @@ section.recommendations {
     flex-wrap: wrap;
 
     .testimonial {
-      background: white;
-      width: 100%;
-      padding: 32px;
-      border-radius: 32px;
-      box-shadow: $shadow;
-      margin: 0 0 $unit*8 0;
+      box-sizing: border-box;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 0 32px 0;
+
+      @media screen and (min-width: $tablet-width) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 16px;
+      }
       
       @media screen and (min-width: 900px) {
         // min-width: 40%;
@@ -347,15 +351,11 @@ section.recommendations {
           position:relative;
           display: inline-block;
           width: $unit*22;
-          margin-bottom: $unit*3;
           border-radius: 50%;
           box-sizing: border-box;
           background-color: #dddddd;
           border: 4px solid $Dark-Gray;
           transition:border-color 0.2s ease-in-out;
-          &:hover {
-            border-color: #ABD4F5;
-          }
         }
       }
     }
@@ -405,6 +405,13 @@ section.my-value {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
         padding: 0 16px;
+      }
+      .image_value {
+        position:relative;
+        display: inline-block;
+        width: 120px;
+        // margin-bottom: $unit*3;
+        box-sizing: border-box;
       }
 
 
