@@ -401,6 +401,7 @@ section.my-value {
       box-sizing: border-box;
       flex: 0 0 100%;
       max-width: 100%;
+
       @media screen and (min-width: $tablet-width) {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
