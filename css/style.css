@@ -653,8 +653,8 @@ section.my-value .values_row .value-container {
 }
 @media screen and (min-width: 768px) {
   section.my-value .values_row .value-container {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding: 0 16px;
   }
 }
