@@ -80,7 +80,7 @@ body a:hover {
 }
 
 .label {
-  background: #F5F7FA;
+  background: #ABD4F5;
   padding: 0 12px;
   height: 32px;
   display: inline-flex;
@@ -494,34 +494,31 @@ section.recent::before {
 section.recent {
   position: relative;
 }
-section.recent h1 {
-  color: #3183C8;
-}
 section.recent .workcontainer {
-  background: white;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 0 0 32px 0;
-  padding: 32px;
-  border-radius: 32px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  margin-bottom: 64px;
 }
 section.recent .workcontainer:first-child {
   margin-top: 0px;
 }
 section.recent .workcontainer .workcolumns {
-  flex-basis: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 575px) {
   section.recent .workcontainer .workcolumns {
-    flex-basis: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 16px;
   }
 }
 section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
   display: flex;
   border-radius: 16px;
   max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
 }
 section.recent .workcontainer .workcolumns .video {
   display: flex;
@@ -615,9 +612,6 @@ section.recommendations {
   position: relative;
   background: #FFFDF4;
   position: relative;
-}
-section.recommendations h1 {
-  color: #F4CA64;
 }
 section.recommendations .testimonials {
   display: flex;
