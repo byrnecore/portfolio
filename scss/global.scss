@@ -71,7 +71,7 @@ body {
 }
 
 .label {
-  background: $Light-Gray;
+  background: $primary-20;
   padding: 0 12px;
   height: 32px;
   display: inline-flex;
@@ -79,7 +79,7 @@ body {
   border-radius: 4px;
   .label_name {
     text-transform: uppercase;
-    color: #2368A2;
+    color: $primary-50;
     letter-spacing: .01em;
     font-size: 14px;
     font-weight: 700;

@@ -231,32 +231,34 @@ section.recent {
   position: relative;
 
   h1 {
-    color: #3183C8;
+    // color: #3183C8;
   }
   .workcontainer {
-    background: white;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 0 $unit*8 0;
-    padding: 32px;
-    border-radius: 32px;
-    box-shadow: $shadow;
+      margin-bottom: 64px;
 
     &:first-child {
       margin-top: 0px;
     }
 
     .workcolumns {
-      flex-basis: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
 
-      @media screen and (min-width: 600px) {
-        flex-basis: 50%;
+
+      @media screen and (min-width: $mobile-tablet) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 16px;
       }
+
       img, .video {
         display: flex;
         border-radius: 16px;
         max-width: 100%;
+        box-shadow: $shadow;
       }
       .video {
         display: flex;
@@ -358,7 +360,7 @@ section.recommendations::before {
 
 section.recommendations {
   h1 {
-    color: #F4CA64;
+    // color: #F4CA64;
   }
 
   position: relative;
