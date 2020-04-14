@@ -24,6 +24,7 @@ position:relative;
     padding: $unit*8;
     border-radius: $unit*8;
     margin: $unit*6 $unit*8 $unit*16;
+    max-width: 800px;
 
     .image {
       margin: $unit*6;

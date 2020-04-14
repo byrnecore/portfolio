@@ -197,10 +197,11 @@ section.contact {
 section.contact .container {
   display: flex;
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
   padding: 32px;
   border-radius: 32px;
   margin: 24px 32px 64px;
+  max-width: 800px;
 }
 section.contact .container .image {
   margin: 24px;
@@ -300,7 +301,7 @@ header {
   width: 100%;
   position: fixed;
   background: #203D55;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
   z-index: 9;
 }
 header .header-container {
@@ -518,7 +519,7 @@ section.recent .workcontainer .workcolumns img, section.recent .workcontainer .w
   display: flex;
   border-radius: 16px;
   max-width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -8px, rgba(0, 0, 0, 0.1) 0px -4px 24px -4px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
 section.recent .workcontainer .workcolumns .video {
   display: flex;
