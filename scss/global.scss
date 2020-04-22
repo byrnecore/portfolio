@@ -71,15 +71,15 @@ body {
 }
 
 .label {
-  background: $primary-20;
-  padding: 0 12px;
+  background: #3973FF;
+  padding: 0 16px;
   height: 32px;
   display: inline-flex;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 16px;
   .label_name {
     text-transform: uppercase;
-    color: $primary-50;
+    color: white;
     letter-spacing: .01em;
     font-size: 14px;
     font-weight: 700;

@@ -229,25 +229,33 @@ section.recent::before {
 
 section.recent {
   position: relative;
+  background-color: #F9FBFD;
 
-  h1 {
-    // color: #3183C8;
-  }
   .workcontainer {
     display: flex;
     flex-wrap: wrap;
-      margin-bottom: 64px;
 
-    &:first-child {
-      margin-top: 0px;
+    &:nth-child(odd) {
+      margin-top: 32px;
+    }
+
+    &:nth-child(even) {
+      margin-top: 64px;
     }
 
     .workcolumns {
       flex: 0 0 100%;
       max-width: 100%;
       box-sizing: border-box;
+      
+      &:first-child {
+        margin-bottom: 32px;
+      }
 
-
+      &:second-child {
+        margin-bottom: 32px;
+      }
+      
       @media screen and (min-width: $mobile-tablet) {
         flex: 0 0 50%;
         max-width: 50%;
@@ -296,6 +304,37 @@ section.recent {
       padding-right: $unit*8;
       margin-top: $unit*4;
     }
+    .cta-link {
+      a {
+        color: #3973FF;
+        font-weight: $normal;
+        transition: all .1s ease-out;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+      &:hover {
+        a {
+
+        }
+        span {
+        margin-left: $unit*3;
+        }
+      }
+
+      span {
+        margin-left: $unit*2;
+        color: #e03f7f;
+        width: 22px;
+        height: 16px;
+        transition: all .1s ease-out;
+      }
+    }
+    .link-subtitle {
+        color: $neutral-50;
+        font-size: $unit*3;
+      }
     .description {
       p {
         padding-right: $unit*8;
