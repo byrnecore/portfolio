@@ -169,50 +169,7 @@ section.intro {
   }
 }
 
-/* # My Value 
-================================================== */
 
-section.my-value::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_value.svg);
-  // outline: 1px solid red;
-}
-
-section.my-value {
-  position: relative;
-  background-color: #f3f0ff;
-
-  .values_row {
-    display: flex;
-    flex-wrap: wrap;
-
-    .value-container {
-      box-sizing: border-box;
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: $unit*8;
-
-      @media screen and (min-width: $tablet-width) {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 0 16px;
-      }
-      .image_value {
-        position:relative;
-        display: inline-block;
-        width: 120px;
-        // margin-bottom: $unit*3;
-        box-sizing: border-box;
-      }
-
-
-    }
-  }
-}
 
 /* # Recent Work Styles
 ================================================== */
@@ -470,6 +427,51 @@ section.recommendations {
     font-size: $unit*4;
     line-height: 1.5;
     font-weight: $light;
+  }
+}
+
+/* # My Value 
+================================================== */
+
+section.my-value::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_value.svg);
+  // outline: 1px solid red;
+}
+
+section.my-value {
+  position: relative;
+  background-color: #F9FBFD;
+
+  .values_row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .value-container {
+      box-sizing: border-box;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: $unit*8;
+
+      @media screen and (min-width: $tablet-width) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 16px;
+      }
+      .image_value {
+        position:relative;
+        display: inline-block;
+        width: 120px;
+        // margin-bottom: $unit*3;
+        box-sizing: border-box;
+      }
+
+
+    }
   }
 }
 

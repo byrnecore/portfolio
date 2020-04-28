@@ -442,45 +442,6 @@ section.intro .container .button.tertiary {
   padding: 16px 0;
 }
 
-/* # My Value 
-================================================== */
-section.my-value::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_value.svg);
-}
-
-section.my-value {
-  position: relative;
-  background-color: #f3f0ff;
-}
-section.my-value .values_row {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.my-value .values_row .value-container {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  section.my-value .values_row .value-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.my-value .values_row .value-container .image_value {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  box-sizing: border-box;
-}
-
 /* # Recent Work Styles
 ================================================== */
 section.recent::before {
@@ -700,6 +661,45 @@ section.recommendations .testimonials .testimonial a .avatar {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
+}
+
+/* # My Value 
+================================================== */
+section.my-value::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_value.svg);
+}
+
+section.my-value {
+  position: relative;
+  background-color: #F9FBFD;
+}
+section.my-value .values_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.my-value .values_row .value-container {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  section.my-value .values_row .value-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 16px;
+  }
+}
+section.my-value .values_row .value-container .image_value {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  box-sizing: border-box;
 }
 
 /* # Footer Styles
