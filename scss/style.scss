@@ -191,14 +191,15 @@ section.recent {
   .workcontainer {
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 80px;
+/*
     &:nth-child(odd) {
       margin-top: 32px;
     }
 
     &:nth-child(even) {
-      margin-top: 64px;
-    }
+      margin-top: 80px;
+    }*/
 
     .workcolumns {
       flex: 0 0 100%;

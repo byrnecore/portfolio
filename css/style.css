@@ -460,12 +460,15 @@ section.recent {
 section.recent .workcontainer {
   display: flex;
   flex-wrap: wrap;
-}
-section.recent .workcontainer:nth-child(odd) {
-  margin-top: 32px;
-}
-section.recent .workcontainer:nth-child(even) {
-  margin-top: 64px;
+  margin-top: 80px;
+  /*
+      &:nth-child(odd) {
+        margin-top: 32px;
+      }
+
+      &:nth-child(even) {
+        margin-top: 80px;
+      }*/
 }
 section.recent .workcontainer .workcolumns {
   flex: 0 0 100%;
