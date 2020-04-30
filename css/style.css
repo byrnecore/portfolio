@@ -650,7 +650,7 @@ section.recommendations .testimonials .testimonial a:hover {
 section.recommendations .testimonials .testimonial a .avatar {
   position: relative;
   display: inline-block;
-  width: 88px;
+  width: 64px;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #dddddd;
