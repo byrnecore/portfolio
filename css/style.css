@@ -87,6 +87,12 @@ body a:hover {
   align-items: center;
   border-radius: 16px;
 }
+.label.openpay {
+  background: #3C465A;
+}
+.label.redbubble {
+  background: #E41421;
+}
 .label .label_name {
   text-transform: uppercase;
   color: white;

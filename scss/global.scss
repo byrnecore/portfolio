@@ -77,6 +77,14 @@ body {
   display: inline-flex;
   align-items: center;
   border-radius: 16px;
+
+  &.openpay {
+    background: #3C465A;
+  }
+  &.redbubble {
+    background: #E41421;
+  }
+
   .label_name {
     text-transform: uppercase;
     color: white;
