@@ -82,16 +82,23 @@ body a:hover {
 .label {
   background: #3973FF;
   padding: 0 16px;
-  height: 32px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   border-radius: 16px;
+  margin: 0 0 8px 8px;
+}
+.label.openpay {
+  background: #3C465A;
+}
+.label.redbubble {
+  background: #E41421;
 }
 .label .label_name {
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.01em;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -496,7 +503,7 @@ section.recent .workcontainer .workcolumns img, section.recent .workcontainer .w
 }
 section.recent .workcontainer .workcolumns .video {
   display: flex;
-  background: #F4B0C7;
+  background: #F6D5E0;
   padding: 32px;
   align-items: center;
 }
@@ -525,7 +532,7 @@ section.recent .workcontainer h2 {
   font-size: 26px;
   line-height: 32px;
   padding-right: 32px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 section.recent .workcontainer .cta-link a {
   color: #3973FF;
@@ -556,6 +563,16 @@ section.recent .workcontainer .description p {
   section.recent .workcontainer .description p {
     padding-right: 0;
   }
+}
+section.recent .workcontainer .description .labels {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.recent .workcontainer .description .labels .avatar_brand {
+  border-radius: 50%;
+  display: inline-flex;
+  height: 28px;
+  margin: 0;
 }
 
 /* # Brands I have Worked With 
@@ -633,7 +650,7 @@ section.recommendations .testimonials .testimonial a:hover {
 section.recommendations .testimonials .testimonial a .avatar {
   position: relative;
   display: inline-block;
-  width: 88px;
+  width: 64px;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: #dddddd;

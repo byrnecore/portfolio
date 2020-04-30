@@ -228,7 +228,7 @@ section.recent {
       }
       .video {
         display: flex;
-        background: #F4B0C7;
+        background: #F6D5E0;
         padding: 32px;
         align-items:center;
         video {
@@ -260,7 +260,7 @@ section.recent {
       font-size: $unit*6.5;
       line-height: $unit*8;
       padding-right: $unit*8;
-      margin-top: $unit*4;
+      margin-top: $unit*2;
     }
     .cta-link {
       a {
@@ -298,6 +298,17 @@ section.recent {
         padding-right: $unit*8;
         @media screen and (max-width: 600px) {
           padding-right: 0;
+        }
+      }
+      .labels {
+        display: flex;
+        flex-wrap: wrap;
+
+        .avatar_brand {
+          border-radius: 50%;
+          display: inline-flex;
+          height: 28px;
+          margin: 0;
         }
       }
     }
@@ -394,7 +405,7 @@ section.recommendations {
         .avatar {
           position:relative;
           display: inline-block;
-          width: $unit*22;
+          width: $unit*16;
           border-radius: 50%;
           box-sizing: border-box;
           background-color: #dddddd;

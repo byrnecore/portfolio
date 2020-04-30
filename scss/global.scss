@@ -73,15 +73,24 @@ body {
 .label {
   background: #3973FF;
   padding: 0 16px;
-  height: 32px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   border-radius: 16px;
+  margin: 0 0 8px 8px;
+
+  &.openpay {
+    background: #3C465A;
+  }
+  &.redbubble {
+    background: #E41421;
+  }
+
   .label_name {
     text-transform: uppercase;
     color: white;
     letter-spacing: .01em;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
   }
 }
