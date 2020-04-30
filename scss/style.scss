@@ -260,7 +260,7 @@ section.recent {
       font-size: $unit*6.5;
       line-height: $unit*8;
       padding-right: $unit*8;
-      margin-top: $unit*4;
+      margin-top: $unit*2;
     }
     .cta-link {
       a {
@@ -302,11 +302,12 @@ section.recent {
       }
       .labels {
         display: flex;
+        flex-wrap: wrap;
 
         .avatar_brand {
           border-radius: 50%;
           display: inline-flex;
-          height: 32px;
+          height: 28px;
           margin: 0;
         }
       }
