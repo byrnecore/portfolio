@@ -228,7 +228,7 @@ section.recent {
       }
       .video {
         display: flex;
-        background: #F4B0C7;
+        background: #F6D5E0;
         padding: 32px;
         align-items:center;
         video {
@@ -298,6 +298,16 @@ section.recent {
         padding-right: $unit*8;
         @media screen and (max-width: 600px) {
           padding-right: 0;
+        }
+      }
+      .labels {
+        display: flex;
+
+        .avatar_brand {
+          border-radius: 50%;
+          display: inline-flex;
+          height: 32px;
+          margin: 0;
         }
       }
     }

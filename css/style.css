@@ -86,6 +86,7 @@ body a:hover {
   display: inline-flex;
   align-items: center;
   border-radius: 16px;
+  margin-left: 8px;
 }
 .label.openpay {
   background: #3C465A;
@@ -502,7 +503,7 @@ section.recent .workcontainer .workcolumns img, section.recent .workcontainer .w
 }
 section.recent .workcontainer .workcolumns .video {
   display: flex;
-  background: #F4B0C7;
+  background: #F6D5E0;
   padding: 32px;
   align-items: center;
 }
@@ -562,6 +563,15 @@ section.recent .workcontainer .description p {
   section.recent .workcontainer .description p {
     padding-right: 0;
   }
+}
+section.recent .workcontainer .description .labels {
+  display: flex;
+}
+section.recent .workcontainer .description .labels .avatar_brand {
+  border-radius: 50%;
+  display: inline-flex;
+  height: 32px;
+  margin: 0;
 }
 
 /* # Brands I have Worked With 
