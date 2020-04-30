@@ -149,6 +149,10 @@ section h1 {
   max-width: 800px;
   margin: 0 auto 40px;
 }
+.leadin p {
+  font-size: 22px;
+  line-height: 32px;
+}
 
 a.button, button {
   display: inline-block;
@@ -630,24 +634,27 @@ section.recommendations .testimonials {
   display: flex;
   flex-wrap: wrap;
 }
-section.recommendations .testimonials .testimonial {
+section.recommendations .testimonials blockquote.testimonial {
   box-sizing: border-box;
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0 0 32px 0;
 }
+section.recommendations .testimonials blockquote.testimonial .avatar_lockup {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
-  section.recommendations .testimonials .testimonial {
+  section.recommendations .testimonials blockquote.testimonial {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 16px;
   }
 }
-section.recommendations .testimonials .testimonial a:hover {
+section.recommendations .testimonials blockquote.testimonial a:hover {
   text-decoration: none;
   border-bottom: 0;
 }
-section.recommendations .testimonials .testimonial a .avatar {
+section.recommendations .testimonials blockquote.testimonial a .avatar {
   position: relative;
   display: inline-block;
   width: 64px;
@@ -660,6 +667,7 @@ section.recommendations .testimonials .testimonial a .avatar {
 
 .name {
   font-style: normal;
+  margin-left: 16px;
 }
 .name .avatar {
   position: relative;

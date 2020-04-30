@@ -378,11 +378,15 @@ section.recommendations {
     display: flex;
     flex-wrap: wrap;
 
-    .testimonial {
+    blockquote.testimonial {
       box-sizing: border-box;
       flex: 0 0 100%;
       max-width: 100%;
       margin: 0 0 32px 0;
+
+      .avatar_lockup {
+        display: flex;
+      }
 
       @media screen and (min-width: $tablet-width) {
         flex: 0 0 50%;
@@ -419,6 +423,7 @@ section.recommendations {
 
 .name {
   font-style: normal;
+  margin-left: 16px;
   .avatar {
     position:relative;
     display: inline-block;
