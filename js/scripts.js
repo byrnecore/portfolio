@@ -17,3 +17,8 @@ var $hamburger = $(".hamburger");
 	$hamburger.toggleClass("is-active");
 	// Do something else, like open/close menu
 });
+
+$('#burger_btn').click(function(e){
+	e.preventDefault();
+	$('#mainNav').toggleClass('menuOpen');
+});
