@@ -189,698 +189,6 @@ a.current-role:hover {
   text-decoration: underline;
 }
 
-/* # Header Styles
-================================================== */
-header {
-  width: 100%;
-  position: fixed;
-  background: #203D55;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
-  z-index: 9;
-}
-header .header-container {
-  display: flex;
-  align-content: center;
-  padding: 16px 0;
-  max-width: 1024px;
-  margin: auto;
-}
-@media screen and (max-width: 1024px) {
-  header .header-container {
-    padding: 16px 32px;
-  }
-}
-header .header-container:hover .header-left, header .header-container:hover .header-right {
-  opacity: 1;
-}
-header .header-container .header-left, header .header-container .header-right {
-  position: relative;
-  flex-grow: 1;
-  opacity: 0.5;
-  transition: opacity 150ms ease-out;
-}
-header .header-container .header-left {
-  display: flex;
-}
-header .header-container .header-left a:hover {
-  opacity: 1;
-  border: 0;
-}
-header .header-container .header-left .avatar {
-  border-radius: 50%;
-  height: 24px;
-  margin-right: 8px;
-}
-header .header-container .header-left .logo {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 0.01em;
-  margin-top: 8px;
-}
-@media screen and (max-width: 400px) {
-  header .header-container .mobile_hide {
-    display: none;
-  }
-}
-header .header-container .header-right {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-}
-header .header-container .header-right a {
-  display: flex;
-}
-header .header-container .header-right a:hover {
-  opacity: 1;
-  border: 0;
-}
-header .header-container .header-right .icon {
-  width: 23px;
-  margin-left: 24px;
-}
-
-/* # Footer Styles
-================================================== */
-section.footer::before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  height: 32px;
-  width: 100%;
-  background: url(../img/vector_footer.svg);
-}
-
-section.footer {
-  position: relative;
-  background: #203D55;
-  color: white;
-  height: 100%;
-}
-section.footer .container {
-  text-align: center;
-  padding: 24px 0;
-  margin-bottom: 0;
-}
-section.footer .container p {
-  color: white;
-  font-size: 16px;
-  text-align: center;
-}
-section.footer .container a {
-  color: white;
-  font-weight: 800;
-  text-decoration: none;
-}
-section.footer .container a:hover {
-  border-bottom: 3px solid white;
-}
-section.footer .container .links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
-}
-section.footer .container .links .footerlink {
-  margin: 16px 16px 0 16px;
-}
-section.thanks {
-  position: relative;
-  height: 100vh;
-  height: -webkit-calc(100vh - 132px);
-  height: -moz-calc(100vh - 132px);
-  height: calc(100vh - 132px);
-  text-align: center;
-}
-section.thanks h1 {
-  color: #3183C8;
-}
-
-/* # Intro Hero Styles
-================================================== */
-section.intro {
-  background: #4BAEA3;
-  background: rgba(75, 174, 163, 0.9);
-  padding: 48px 0 0 0;
-  color: white;
-}
-section.intro .container {
-  margin-top: 32px;
-  margin-bottom: 120px;
-}
-@media screen and (min-width: 1024px) {
-  section.intro .container {
-    min-height: 50vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.intro .container {
-    margin-top: 0;
-    margin-bottom: 80px;
-  }
-}
-section.intro .container h1 {
-  max-width: 1024px;
-  text-align: left;
-}
-@media screen and (max-width: 768px) {
-  section.intro .container h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section.intro .container h1 {
-    line-height: 52px;
-  }
-}
-section.intro .container h1 .strong {
-  font-weight: 800;
-}
-section.intro .container h2 {
-  margin: 0 0 24px 0;
-  color: white;
-  opacity: 0.6;
-}
-section.intro .container p {
-  color: white;
-  font-size: 24px;
-  line-height: 36px;
-  margin: 0;
-  opacity: 0.9;
-}
-@media screen and (max-width: 768px) {
-  section.intro .container p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
-section.intro .container .button {
-  display: inline-block;
-  vertical-align: middle;
-  color: white;
-  border: 3px solid white;
-  padding: 16px 24px;
-  border-radius: 4px;
-  font-size: 16px;
-  margin: 32px 16px 0 0;
-}
-section.intro .container .button.tertiary {
-  border: 0;
-  padding: 16px 0;
-}
-
-/* # Recent Work Styles
-================================================== */
-section.recent::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_recent.svg);
-}
-
-section.recent {
-  position: relative;
-  background-color: #F9FBFD;
-}
-section.recent .workcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  /*
-      &:nth-child(odd) {
-        margin-top: 32px;
-      }
-
-      &:nth-child(even) {
-        margin-top: 80px;
-      }*/
-}
-section.recent .workcontainer .workcolumns {
-  flex: 0 0 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-section.recent .workcontainer .workcolumns:first-child {
-  margin-bottom: 32px;
-}
-section.recent .workcontainer .workcolumns:second-child {
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 575px) {
-  section.recent .workcontainer .workcolumns {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.recent .workcontainer .workcolumns img, section.recent .workcontainer .workcolumns .video {
-  display: flex;
-  border-radius: 16px;
-  max-width: 100%;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
-}
-section.recent .workcontainer .workcolumns .video {
-  display: flex;
-  background: #F6D5E0;
-  padding: 32px;
-  align-items: center;
-}
-section.recent .workcontainer .workcolumns .video video {
-  max-height: 450px;
-  width: 100%;
-  margin: auto;
-}
-section.recent .workcontainer .workcolumns .secondary_images {
-  display: flex;
-  flex-wrap: no-wrap;
-}
-section.recent .workcontainer .workcolumns .secondary_images .image {
-  flex-shrink: 1;
-  max-width: 50%;
-  margin-top: 16px;
-}
-section.recent .workcontainer .workcolumns .secondary_images .image:nth-child(odd) {
-  margin-right: 16px;
-}
-section.recent .workcontainer h4 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-section.recent .workcontainer h2 {
-  font-size: 26px;
-  line-height: 32px;
-  padding-right: 32px;
-  margin-top: 8px;
-}
-section.recent .workcontainer .cta-link a {
-  color: #3973FF;
-  font-weight: 700;
-  transition: all 0.1s ease-out;
-}
-section.recent .workcontainer .cta-link a:hover {
-  border-bottom: none;
-}
-section.recent .workcontainer .cta-link:hover span {
-  margin-left: 12px;
-}
-section.recent .workcontainer .cta-link span {
-  margin-left: 8px;
-  color: #e03f7f;
-  width: 22px;
-  height: 16px;
-  transition: all 0.1s ease-out;
-}
-section.recent .workcontainer .link-subtitle {
-  color: #8895A7;
-  font-size: 12px;
-}
-section.recent .workcontainer .description p {
-  padding-right: 32px;
-}
-@media screen and (max-width: 600px) {
-  section.recent .workcontainer .description p {
-    padding-right: 0;
-  }
-}
-section.recent .workcontainer .description .labels {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.recent .workcontainer .description .labels .avatar_brand {
-  border-radius: 50%;
-  display: inline-flex;
-  height: 28px;
-  margin: 0;
-}
-
-/* # Brands I have Worked With 
-================================================== */
-section.worked-with::before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  height: 32px;
-  width: 100%;
-  background: url(../img/vector_worked.svg);
-}
-
-section.worked-with {
-  position: relative;
-  background: #E3FDED;
-}
-section.worked-with h1 {
-  color: #479E59;
-}
-section.worked-with .brand-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 64px;
-}
-section.worked-with .brand-list .brand {
-  flex-grow: 1;
-  flex: 0 0 auto;
-  padding: 16px;
-}
-section.worked-with .brand-list .brand img {
-  width: 96px;
-}
-
-/* # Testimonials 
-================================================== */
-section.recommendations::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_testmonials.svg);
-}
-
-section.recommendations {
-  position: relative;
-  background: #FFFDF4;
-  position: relative;
-}
-section.recommendations .testimonials {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.recommendations .testimonials blockquote.testimonial {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin: 0 0 32px 0;
-}
-section.recommendations .testimonials blockquote.testimonial .avatar_lockup {
-  display: flex;
-}
-@media screen and (min-width: 768px) {
-  section.recommendations .testimonials blockquote.testimonial {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.recommendations .testimonials blockquote.testimonial a:hover {
-  text-decoration: none;
-  border-bottom: 0;
-}
-section.recommendations .testimonials blockquote.testimonial a .avatar {
-  position: relative;
-  display: inline-block;
-  width: 64px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-color: #dddddd;
-  border: 4px solid #434A54;
-  transition: border-color 0.2s ease-in-out;
-}
-
-.name {
-  font-style: normal;
-  margin-left: 16px;
-}
-.name .avatar {
-  position: relative;
-  display: inline-block;
-  width: 160px;
-  margin-bottom: 12px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-.name .author {
-  display: block;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 8px 0 0 0;
-}
-.name .position {
-  color: #8895A7;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-/* # My Value 
-================================================== */
-section.my-value::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_value.svg);
-}
-
-section.my-value {
-  position: relative;
-  background-color: #F9FBFD;
-}
-section.my-value .values_row {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.my-value .values_row .value-container {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  section.my-value .values_row .value-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.my-value .values_row .value-container .image_value {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  box-sizing: border-box;
-}
-
-/* # Contact CTA Styles
-================================================== */
-section.contact::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_contact.svg);
-}
-
-section.contact {
-  position: relative;
-  background: #FBE8E8;
-}
-section.contact .container {
-  display: flex;
-  background: white;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
-  padding: 32px;
-  border-radius: 32px;
-  margin: 24px 32px 64px;
-  max-width: 800px;
-}
-section.contact .container .image {
-  margin: 24px;
-}
-@media screen and (max-width: 600px) {
-  section.contact .container {
-    flex-wrap: wrap;
-  }
-  section.contact .container .content, section.contact .container .image {
-    width: 150%;
-  }
-  section.contact .container .image {
-    order: -1;
-    text-align: center;
-    margin-top: 0;
-  }
-}
-
-#contact input[type=text], #contact input[type=email], #contact input[type=url], #contact textarea, #contact button[type=submit] {
-  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
-  border-radius: 8px;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 16px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-#contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea {
-  border: 4px solid transparent;
-  background: #F8F9FA;
-  margin: 0 0 5px;
-  padding: 16px;
-  font-size: 16px;
-  color: #212A34;
-  font-weight: 600;
-  width: -webkit-calc(100% - 32px);
-  width: -moz-calc(100% - 32px);
-  width: calc(100% - 32px);
-}
-
-#contact input[type=text]:hover, #contact input[type=email]:hover, #contact input[type=tel]:hover, #contact input[type=url]:hover, #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 4px solid #ABD4F5;
-}
-
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-
-#contact button[type=submit] {
-  margin: 16px 0 0 0;
-  padding: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  transition: all 150ms ease-out;
-}
-
-#contact button[type=submit]:hover {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#contact input:focus, #contact textarea:focus {
-  outline: 0;
-  border: 4px solid #ABD4F5;
-}
-
-::-webkit-input-placeholder {
-  color: #B8C4CF;
-}
-
-:-moz-placeholder {
-  color: #B8C4CF;
-}
-
-::-moz-placeholder {
-  color: #B8C4CF;
-}
-
-:-ms-input-placeholder {
-  color: #B8C4CF;
-}
-
-.contact section.contact {
-  position: relative;
-  background: #FBE8E8;
-  padding-top: 80px;
-}
-.contact section.contact .container {
-  display: flex;
-  background: white;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
-  padding: 32px;
-  border-radius: 32px;
-  margin: 24px 32px 64px;
-  max-width: 800px;
-}
-.contact section.contact .container .image {
-  margin: 24px;
-}
-@media screen and (max-width: 600px) {
-  .contact section.contact .container {
-    flex-wrap: wrap;
-  }
-  .contact section.contact .container .content, .contact section.contact .container .image {
-    width: 150%;
-  }
-  .contact section.contact .container .image {
-    order: -1;
-    text-align: center;
-    margin-top: 0;
-  }
-}
-.contact #contact input[type=text], .contact #contact input[type=email], .contact #contact input[type=url], .contact #contact textarea, .contact #contact button[type=submit] {
-  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
-  border-radius: 8px;
-}
-.contact fieldset {
-  border: medium none !important;
-  margin: 0 0 16px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-.contact #contact input[type=text], .contact #contact input[type=email], .contact #contact input[type=tel], .contact #contact input[type=url], .contact #contact textarea {
-  border: 4px solid transparent;
-  background: #F8F9FA;
-  margin: 0 0 5px;
-  padding: 16px;
-  font-size: 16px;
-  color: #212A34;
-  font-weight: 600;
-  width: -webkit-calc(100% - 32px);
-  width: -moz-calc(100% - 32px);
-  width: calc(100% - 32px);
-}
-.contact #contact input[type=text]:hover, .contact #contact input[type=email]:hover, .contact #contact input[type=tel]:hover, .contact #contact input[type=url]:hover, .contact #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 4px solid #ABD4F5;
-}
-.contact #contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
-}
-.contact #contact button[type=submit] {
-  margin: 16px 0 0 0;
-  padding: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  transition: all 150ms ease-out;
-}
-.contact #contact button[type=submit]:hover {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.contact #contact input:focus, .contact #contact textarea:focus {
-  outline: 0;
-  border: 4px solid #ABD4F5;
-}
-.contact ::-webkit-input-placeholder {
-  color: #B8C4CF;
-}
-.contact :-moz-placeholder {
-  color: #B8C4CF;
-}
-.contact ::-moz-placeholder {
-  color: #B8C4CF;
-}
-.contact :-ms-input-placeholder {
-  color: #B8C4CF;
-}
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -889,7 +197,7 @@ fieldset {
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  padding: 15px 15px;
+  padding: 8px 8px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -912,7 +220,7 @@ fieldset {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
+  background-color: white;
 }
 
 .hamburger-box {
@@ -930,7 +238,7 @@ fieldset {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -1729,6 +1037,132 @@ fieldset {
   transform: rotate(-90deg);
 }
 
+/* # Header Styles
+================================================== */
+header {
+  width: 100%;
+  position: fixed;
+  background: #203D55;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+  z-index: 9;
+}
+header .header-container {
+  display: flex;
+  align-content: center;
+  padding: 16px 0;
+  max-width: 1024px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  header .header-container {
+    padding: 16px 32px;
+  }
+}
+header .header-container .header-left, header .header-container .header-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+header .header-container .header-left a {
+  transition: opacity 300ms ease-out;
+}
+header .header-container .header-left a:hover {
+  opacity: 0.7;
+  border: 0;
+}
+header .header-container .header-left .avatar {
+  border-radius: 50%;
+  height: 24px;
+  margin-right: 8px;
+}
+header .header-container .header-left .logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+}
+@media screen and (max-width: 400px) {
+  header .header-container .mobile_hide {
+    display: none;
+  }
+}
+header .header-container .header-right {
+  justify-content: flex-end;
+}
+header .header-container .header-right a {
+  display: flex;
+}
+header .header-container .header-right a:hover {
+  opacity: 1;
+  border: 0;
+}
+header .header-container .header-right .icon {
+  width: 23px;
+  margin-left: 24px;
+}
+
+/* # Footer Styles
+================================================== */
+section.footer::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_footer.svg);
+}
+
+section.footer {
+  position: relative;
+  background: #203D55;
+  color: white;
+  height: 100%;
+}
+section.footer .container {
+  text-align: center;
+  padding: 24px 0;
+  margin-bottom: 0;
+}
+section.footer .container p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+section.footer .container a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+section.footer .container a:hover {
+  border-bottom: 3px solid white;
+}
+section.footer .container .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+section.footer .container .links .footerlink {
+  margin: 16px 16px 0 16px;
+}
+section.thanks {
+  position: relative;
+  height: 100vh;
+  height: -webkit-calc(100vh - 132px);
+  height: -moz-calc(100vh - 132px);
+  height: calc(100vh - 132px);
+  text-align: center;
+}
+section.thanks h1 {
+  color: #3183C8;
+}
+
 /* # Intro Hero Styles
 ================================================== */
 section.intro {
@@ -2078,6 +1512,217 @@ section.my-value .values_row .value-container .image_value {
   display: inline-block;
   width: 120px;
   box-sizing: border-box;
+}
+
+/* # Contact CTA Styles
+================================================== */
+section.contact::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_contact.svg);
+}
+
+section.contact {
+  position: relative;
+  background: #FBE8E8;
+}
+section.contact .container {
+  display: flex;
+  background: white;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+  padding: 32px;
+  border-radius: 32px;
+  margin: 24px 32px 64px;
+  max-width: 800px;
+}
+section.contact .container .image {
+  margin: 24px;
+}
+@media screen and (max-width: 600px) {
+  section.contact .container {
+    flex-wrap: wrap;
+  }
+  section.contact .container .content, section.contact .container .image {
+    width: 150%;
+  }
+  section.contact .container .image {
+    order: -1;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=url], #contact textarea, #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 16px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea {
+  border: 4px solid transparent;
+  background: #F8F9FA;
+  margin: 0 0 5px;
+  padding: 16px;
+  font-size: 16px;
+  color: #212A34;
+  font-weight: 600;
+  width: -webkit-calc(100% - 32px);
+  width: -moz-calc(100% - 32px);
+  width: calc(100% - 32px);
+}
+
+#contact input[type=text]:hover, #contact input[type=email]:hover, #contact input[type=tel]:hover, #contact input[type=url]:hover, #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 4px solid #ABD4F5;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type=submit] {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 150ms ease-out;
+}
+
+#contact button[type=submit]:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: 0;
+  border: 4px solid #ABD4F5;
+}
+
+::-webkit-input-placeholder {
+  color: #B8C4CF;
+}
+
+:-moz-placeholder {
+  color: #B8C4CF;
+}
+
+::-moz-placeholder {
+  color: #B8C4CF;
+}
+
+:-ms-input-placeholder {
+  color: #B8C4CF;
+}
+
+.contact section.contact {
+  position: relative;
+  background: #FBE8E8;
+  padding-top: 80px;
+}
+.contact section.contact .container {
+  display: flex;
+  background: white;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+  padding: 32px;
+  border-radius: 32px;
+  margin: 24px 32px 64px;
+  max-width: 800px;
+}
+.contact section.contact .container .image {
+  margin: 24px;
+}
+@media screen and (max-width: 600px) {
+  .contact section.contact .container {
+    flex-wrap: wrap;
+  }
+  .contact section.contact .container .content, .contact section.contact .container .image {
+    width: 150%;
+  }
+  .contact section.contact .container .image {
+    order: -1;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+.contact #contact input[type=text], .contact #contact input[type=email], .contact #contact input[type=url], .contact #contact textarea, .contact #contact button[type=submit] {
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+}
+.contact fieldset {
+  border: medium none !important;
+  margin: 0 0 16px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.contact #contact input[type=text], .contact #contact input[type=email], .contact #contact input[type=tel], .contact #contact input[type=url], .contact #contact textarea {
+  border: 4px solid transparent;
+  background: #F8F9FA;
+  margin: 0 0 5px;
+  padding: 16px;
+  font-size: 16px;
+  color: #212A34;
+  font-weight: 600;
+  width: -webkit-calc(100% - 32px);
+  width: -moz-calc(100% - 32px);
+  width: calc(100% - 32px);
+}
+.contact #contact input[type=text]:hover, .contact #contact input[type=email]:hover, .contact #contact input[type=tel]:hover, .contact #contact input[type=url]:hover, .contact #contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 4px solid #ABD4F5;
+}
+.contact #contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+.contact #contact button[type=submit] {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 150ms ease-out;
+}
+.contact #contact button[type=submit]:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact #contact input:focus, .contact #contact textarea:focus {
+  outline: 0;
+  border: 4px solid #ABD4F5;
+}
+.contact ::-webkit-input-placeholder {
+  color: #B8C4CF;
+}
+.contact :-moz-placeholder {
+  color: #B8C4CF;
+}
+.contact ::-moz-placeholder {
+  color: #B8C4CF;
+}
+.contact :-ms-input-placeholder {
+  color: #B8C4CF;
 }
 
 @keyframes bouncey {
