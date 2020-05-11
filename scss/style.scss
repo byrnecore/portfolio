@@ -2,7 +2,10 @@
 /* # Imports
 ================================================== */
 
+// Libraries
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
+
+// Global Variable and compnents
 @import 'variables';
 @import 'global';
 @import 'header';
@@ -11,8 +14,11 @@
 // Home
 @import 'home';
 
-// Contact
-@import 'contact';
+// Work
+@import 'work';
+
+// About Me
+@import 'about';
 
 
 
