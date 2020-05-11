@@ -21,7 +21,6 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  background: url(../img/bg_hero.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
 }
@@ -1202,7 +1201,12 @@ section.thanks h1 {
 ================================================== */
 section.intro {
   background: #4BAEA3;
-  background: rgba(75, 174, 163, 0.9);
+  background: #4baea3;
+  background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding: 48px 0 0 0;
   color: white;
 }

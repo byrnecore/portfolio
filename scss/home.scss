@@ -3,11 +3,14 @@
 
 section.intro {
   background: #4BAEA3;
-  background: rgba(75, 174, 163, 0.9);
+  background: rgba(75, 174, 163, 1);
+  background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding: 48px 0 0 0;
   color: white;
-
-   
 
   .container {
     margin-top: 32px;
@@ -20,7 +23,6 @@ section.intro {
     @media screen and (max-width: $tablet-width) {
       margin-top: 0;
       margin-bottom: 80px;
-      // min-height: 50vh;
       }
     
     h1 {
