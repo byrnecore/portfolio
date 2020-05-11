@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K49NTNG');</script>
+    <!-- End Google Tag Manager -->
     <title>Shaun Byrne: Product Designer & Leader</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
@@ -13,93 +19,78 @@
     <meta name="twitter:description" content="Shaun Byrne is an end to end product designer that thrives on solving real user problems, working at scale and shaping healthy teams.">
     <meta name="twitter:image" content="https://byrnecore.github.io/img/bg_hero.jpg">
     <meta name="twitter:site" content="@byrnecore">
-    <!-- Google Tag Manager -->
-    <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-K49NTNG');
-    </script>
-    <!-- End Google Tag Manager -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script async src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body class="contact">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K49NTNG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-      <header>
-      <div class="header-container">
-        <div class="header-left">
-          <img class="avatar mobile_hide" src="img/avatar-shaun.jpg"/>
-          <a href="/">
-            <span class="logo">S<span class="mobile_hide">haun</span> Byrne
-        </a>
-        </div>
-        <div class="header-right">
-          <a class="icon" target="_blank" href="https://www.linkedin.com/in/byrneshaun/">
-            <img src="img/icon_linkedin.svg">
-          </a>
-          <a class="icon" target="_blank" href="https://twitter.com/byrnecore">
-            <img src="img/icon_twitter.svg">
-          </a>
-          <a class="icon" target="_blank" href="#contact">
-            <img src="img/icon_email.svg">
-          </a>
+  <header id="mainNav">
+    <div class="header-container">
+      <div class="header-left">
+        <img class="avatar mobile_hide" src="img/avatar-shaun.jpg"/>
+        <a href="index.html">
+          <span class="logo">S<span class="mobile_hide">haun</span> Byrne
+      </a>
+      </div>
+      <div class="header-right">
+        <button id="burger_btn" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="popover">
+          <li><a href="index.html" class="item active" title="Home">Home</a></li>
+          <li><a href="work.html" class="item" title="My work">My work</a></li>
+          <li><a href="philosophy.html" class="item" title="Philosophy">Philosophy</a></li>
+          <li><a href="contact.html" class="item" title="About me">About me</a></li>
         </div>
       </div>
-    </header>
-      <section class="contact" id="contact">
-        <div class="container reveal">
-           <script type="text/javascript">var submitted=false;</script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-            onload="if(submitted) {window.location='thanks.html';}"></iframe>
-            <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCKGNXQN0ufR8UCelitQp_FxjYVexDFb4MXYSpFNFVn9FX6A/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-              <h1>Let's Get Acquainted! (It's free)</h1>
-              <p>To learn more about me, my work, or you want to discuss the cool stuff we could build together, please get in contact. I love meeting new people and learning about new products and user problems.</p>
-              <fieldset>
-                <input placeholder="Name" type="text" tabindex="1" name="entry.2005620554" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Email address" type="email" tabindex="2" name="entry.1045781291" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Website (optional)" type="text" tabindex="4" name="entry.813148544">
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="How can I help?" tabindex="5" name="entry.839337160" required></textarea>
-              </fieldset>
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Get in touch</button>
-              </fieldset>
-            </form>
-      </section>
     </div>
-    <section class="footer">
-       <div class="container">
-        <div class="links">
-          <a target="_blank" href="mailto:byrnecore+portfolio@gmail.com?subject=Hi, I found your portfolio" class="footerlink">
-            <img src="img/icon_email.svg"></a>
-          <a target="_blank" href="https://www.linkedin.com/in/byrneshaun/" class="footerlink"><img src="img/icon_linkedin.svg"></a>
-          <a target="_blank" href="#" class="footerlink"><img src="img/icon_twitter.svg"></a>
-          <a target="_blank" href="https://www.dropbox.com/s/ykj9nxgvgtifbxb/Resume%20-%20Shaun%20Byrne.pdf?dl=0" class="footerlink">My CV</a>
-        </div>
-        <div>
-          <p>Designed & built in Melbourne , 🇦🇺.  Shaun Byrne © 2020</p>
-        </div>
+  </header>
+  <section class="contact" id="contact">
+    <div class="container reveal">
+       <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+        onload="if(submitted) {window.location='thanks.html';}"></iframe>
+        <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCKGNXQN0ufR8UCelitQp_FxjYVexDFb4MXYSpFNFVn9FX6A/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+          <h1>Let's Chat! (It's free)</h1>
+          <p>To learn more about me, my work, or you want to discuss the cool stuff we could build together, please get in contact. I love meeting new people and learning about new products and user problems.</p>
+          <fieldset>
+            <input placeholder="Name" type="text" tabindex="1" name="entry.2005620554" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email address" type="email" tabindex="2" name="entry.1045781291" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Website (optional)" type="text" tabindex="4" name="entry.813148544">
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="How can I help?" tabindex="5" name="entry.839337160" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Get in touch</button>
+          </fieldset>
+        </form>
+  </section>
+  <section class="footer">
+     <div class="container">
+      <div class="links">
+        <a target="_blank" href="mailto:byrnecore+portfolio@gmail.com?subject=Hi, I found your portfolio" class="footerlink">
+          <img src="img/icon_email.svg"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/byrneshaun/" class="footerlink"><img src="img/icon_linkedin.svg"></a>
+        <a target="_blank" href="#" class="footerlink"><img src="img/icon_twitter.svg"></a>
+        <a target="_blank" href="https://www.dropbox.com/s/ykj9nxgvgtifbxb/Resume%20-%20Shaun%20Byrne.pdf?dl=0" class="footerlink">My CV</a>
       </div>
-    </section>
+      <div>
+        <p>Designed & built in Melbourne , 🇦🇺.  Shaun Byrne © 2020</p>
+      </div>
+    </div>
+  </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>

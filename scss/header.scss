@@ -6,10 +6,11 @@ $hamburger-layer-height        : 3px !default;
 $hamburger-layer-spacing       : 5px !default;
 $hamburger-layer-color         : #fff !default;
 $hamburger-layer-border-radius : 4px !default;
-$hamburger-hover-opacity       : 0.7 !default;
+$hamburger-hover-opacity       : 1 !default;
 // $hamburger-active-layer-color  : black;
 
-@import 'hamburgers/hamburgers';
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
 
  /* # Header Styles
 ================================================== */
@@ -39,7 +40,7 @@ header.menuOpen .popover {
     float: left;
     width: auto;
     font-size: 32px;
-    font-weight: $semibold;
+    font-weight: 700;
     margin: 0;
     color: #2f353e;
     transition: color 0.3s, background 0.3s;

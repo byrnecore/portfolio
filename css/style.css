@@ -1,7 +1,6 @@
 /* # Imports
 ================================================== */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css");
 /* # Global Variables
 ================================================== */
 /* # Font settings
@@ -212,10 +211,10 @@ a.current-role:hover {
   overflow: visible;
 }
 .hamburger:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .hamburger.is-active:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
@@ -1064,7 +1063,7 @@ header.menuOpen .popover li a {
   float: left;
   width: auto;
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
   color: #2f353e;
   transition: color 0.3s, background 0.3s;
