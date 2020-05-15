@@ -1,3 +1,5 @@
+
+
 /* # Intro Hero Styles
 ================================================== */
 
@@ -77,11 +79,10 @@ section.intro {
 }
 
 
-
-/* # Recent Work Styles
+/* # Work Styles
 ================================================== */
 
-section.recent::before {
+section.work::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -91,141 +92,70 @@ section.recent::before {
   // outline: 1px solid red;
 }
 
-section.recent {
+section.work {
   position: relative;
   background-color: #F9FBFD;
 
-  .work-list {
+  .container {
     display: flex;
-    flex-wrap: wrap;
-  }
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 120px;
 
-  .workcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    max-width: 100%;
+    h1 {
+        text-align: left;
+      }
 
-    @media screen and (min-width: $tablet-width) {
-      max-width: 50%;
-    }
+      @media screen and (max-width: $mobile-tablet) {
+        width: 100%;
+        flex-wrap: wrap;
 
-    .workcolumns {
-      flex: 0 0 100%;
-      max-width: 100%;
+        h1 {
+          text-align: center;
+        } 
+      }
+      
+
+    .item {
+      width: 100%;
       box-sizing: border-box;
-      
-      &:first-child {
-        margin-bottom: 32px;
-      }
+      margin: 0 16px;
 
-      &:second-child {
-        margin-bottom: 32px;
-      }
-      
       @media screen and (min-width: $mobile-tablet) {
-        max-width: 100%;
-        padding: 0 16px;
+        width: 50%;
       }
 
-      &.image {
-        order: -1;
-        margin-bottom: 16px;
-
-        @media screen and (min-width: $mobile-tablet) {
-          order: -1;
-        }
-
-        img, .video {
-          display: flex;
-          border-radius: 16px;
-          max-width: 100%;
-          box-shadow: $shadow;
-        }
-        .video {
-          display: flex;
-          background: #F6D5E0;
-          padding: 32px;
-          align-items:center;
-          video {
-            max-height: 416px;
-            width: 100%;
-            margin: auto;
-
-          }
-        }
-        .secondary_images {
-          display: flex;
-          flex-wrap: no-wrap;
-          .image {
-            flex-shrink:1;
-            max-width: 50%;
-            margin-top: $unit*4;  
-            &:nth-child(odd) {
-              margin-right: $unit*4;
-            }     
-          }
-        }
-      }
-    }
-    h4 {
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-size: $unit*6.5;
-      line-height: $unit*8;
-      padding-right: $unit*8;
-      margin-top: $unit*2;
-    }
-    .cta-link {
-      a {
-        color: #3973FF;
-        font-weight: $normal;
-        transition: all .1s ease-out;
-
-        &:hover {
-          border-bottom: none;
-        }
-      }
-      &:hover {
-        a {
-
-        }
-        span {
-        margin-left: $unit*3;
-        }
+      .more {
+        justify-content: left;
       }
 
-      span {
-        margin-left: $unit*2;
-        color: #e03f7f;
-        width: 22px;
-        height: 16px;
-        transition: all .1s ease-out;
-      }
-    }
-    .link-subtitle {
-        color: $neutral-50;
-        font-size: $unit*3;
-      }
-    .description {
-      p {
-        padding-right: $unit*8;
-        @media screen and (max-width: 600px) {
-          padding-right: 0;
-        }
-      }
-      .labels {
+      &.thumbnails {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 12px;
+        box-sizing: border-box;
 
-        .avatar_brand {
-          border-radius: 50%;
-          display: inline-flex;
-          height: 28px;
-          margin: 0;
+        @media screen and (min-width: $mobile-tablet) {
+          order: +1;
+        }
+
+
+        .row {
+          display: flex;
+          flex-wrap: no-wrap;
+          justify-content: center;
+          width: 100%;
+
+          div {
+            margin: 8px;
+            max-width: 33%;
+
+          img {
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 16px;
+            box-shadow: $shadow;
+          }
+         }
         }
       }
     }
@@ -262,6 +192,7 @@ section.worked-with {
       flex-grow: 1;
       flex: 0 0 auto;
       padding: $unit*4;
+
       img {
         width: 96px;
       }
@@ -310,13 +241,6 @@ section.recommendations {
         max-width: 50%;
         padding: 0 16px;
       }
-      
-      @media screen and (min-width: 900px) {
-        // min-width: 40%;
-        &:nth-child(even) {
-            // margin-right: 0;
-          } 
-      }
       a {
 
         &:hover {
@@ -364,7 +288,7 @@ section.recommendations {
   }
 }
 
-.content_cta {
+.more {
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,11 +1,17 @@
-/* # Global Variables
-================================================== */
-/* # Font settings
-================================================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
-/* # Color Variables
-================================================== */
+/* Error: Undefined variable.
+ *    ,
+ * 29 |     @media screen and (min-width: $tablet-width) {
+ *    |                                   ^^^^^^^^^^^^^
+ *    '
+ *   scss/work.scss 29:35  root stylesheet */
 
-/*# sourceMappingURL=work.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 29 \2502      @media screen and (min-width: $tablet-width) {\a    \2502                                    ^^^^^^^^^^^^^\a    \2575 \a   scss/work.scss 29:35  root stylesheet";
+}

@@ -15,9 +15,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
 ::selection {
   background: #FDF4D7;
 }
@@ -45,7 +42,7 @@ body h1 {
 }
 body h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 800;
 }
 @media screen and (max-width: 500px) {
@@ -94,12 +91,6 @@ body a:hover {
   border-radius: 16px;
   margin: 0 0 0 8px;
 }
-.label.openpay {
-  background: #3C465A;
-}
-.label.redbubble {
-  background: #E41421;
-}
 .label .label_name {
   text-transform: uppercase;
   color: white;
@@ -125,7 +116,6 @@ a .recent_cta span {
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: url("../img/bg_hero_about.jpg");
   min-height: 50vh;
   width: 100%;
@@ -182,11 +172,18 @@ section h1 {
   line-height: 32px;
 }
 
+.leadout {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.leadout h2 {
+  text-align: center;
+}
+
 a.button, button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
-  margin: 16px 0 0 0;
   padding: 16px;
   text-align: center;
   text-decoration: none;
@@ -1321,6 +1318,236 @@ section.intro .container .button.tertiary {
   padding: 16px 0;
 }
 
+/* # Work Styles
+================================================== */
+section.work::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_recent.svg);
+}
+
+section.work {
+  position: relative;
+  background-color: #F9FBFD;
+}
+section.work .container {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 120px;
+}
+section.work .container h1 {
+  text-align: left;
+}
+@media screen and (max-width: 575px) {
+  section.work .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  section.work .container h1 {
+    text-align: center;
+  }
+}
+section.work .container .item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 16px;
+}
+@media screen and (min-width: 575px) {
+  section.work .container .item {
+    width: 50%;
+  }
+}
+section.work .container .item .more {
+  justify-content: left;
+}
+section.work .container .item.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 575px) {
+  section.work .container .item.thumbnails {
+    order: 1;
+  }
+}
+section.work .container .item.thumbnails .row {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  width: 100%;
+}
+section.work .container .item.thumbnails .row div {
+  margin: 8px;
+  max-width: 33%;
+}
+section.work .container .item.thumbnails .row div img {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+}
+
+/* # Brands I have Worked With 
+================================================== */
+section.worked-with::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  height: 32px;
+  width: 100%;
+  background: url(../img/vector_worked.svg);
+}
+
+section.worked-with {
+  position: relative;
+  background: #E3FDED;
+}
+section.worked-with h1 {
+  color: #479E59;
+}
+section.worked-with .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 64px;
+}
+section.worked-with .brand-list .brand {
+  flex-grow: 1;
+  flex: 0 0 auto;
+  padding: 16px;
+}
+section.worked-with .brand-list .brand img {
+  width: 96px;
+}
+
+/* # Testimonials 
+================================================== */
+section.recommendations::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_testmonials.svg);
+}
+
+section.recommendations {
+  position: relative;
+  background: #FFFDF4;
+  position: relative;
+}
+section.recommendations .testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.recommendations .testimonials blockquote.testimonial {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: 0 0 32px 0;
+}
+section.recommendations .testimonials blockquote.testimonial .avatar_lockup {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  section.recommendations .testimonials blockquote.testimonial {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 16px;
+  }
+}
+section.recommendations .testimonials blockquote.testimonial a:hover {
+  text-decoration: none;
+  border-bottom: 0;
+}
+section.recommendations .testimonials blockquote.testimonial a .avatar {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #dddddd;
+  border: 4px solid #434A54;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.name {
+  font-style: normal;
+  margin-left: 16px;
+}
+.name .avatar {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.name .author {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 0 0 0;
+}
+.name .position {
+  color: #8895A7;
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+/* # My Value 
+================================================== */
+section.my-value::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_value.svg);
+}
+
+section.my-value {
+  position: relative;
+  background-color: #F9FBFD;
+}
+section.my-value .values_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.my-value .values_row .value-container {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  section.my-value .values_row .value-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 16px;
+  }
+}
+section.my-value .values_row .value-container .image_value {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  box-sizing: border-box;
+}
+
 /* # Recent Work Styles
 ================================================== */
 section.recent::before {
@@ -1458,169 +1685,6 @@ section.recent .workcontainer .description .labels .avatar_brand {
   margin: 0;
 }
 
-/* # Brands I have Worked With 
-================================================== */
-section.worked-with::before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  height: 32px;
-  width: 100%;
-  background: url(../img/vector_worked.svg);
-}
-
-section.worked-with {
-  position: relative;
-  background: #E3FDED;
-}
-section.worked-with h1 {
-  color: #479E59;
-}
-section.worked-with .brand-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 64px;
-}
-section.worked-with .brand-list .brand {
-  flex-grow: 1;
-  flex: 0 0 auto;
-  padding: 16px;
-}
-section.worked-with .brand-list .brand img {
-  width: 96px;
-}
-
-/* # Testimonials 
-================================================== */
-section.recommendations::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_testmonials.svg);
-}
-
-section.recommendations {
-  position: relative;
-  background: #FFFDF4;
-  position: relative;
-}
-section.recommendations .testimonials {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.recommendations .testimonials blockquote.testimonial {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin: 0 0 32px 0;
-}
-section.recommendations .testimonials blockquote.testimonial .avatar_lockup {
-  display: flex;
-}
-@media screen and (min-width: 768px) {
-  section.recommendations .testimonials blockquote.testimonial {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.recommendations .testimonials blockquote.testimonial a:hover {
-  text-decoration: none;
-  border-bottom: 0;
-}
-section.recommendations .testimonials blockquote.testimonial a .avatar {
-  position: relative;
-  display: inline-block;
-  width: 64px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-color: #dddddd;
-  border: 4px solid #434A54;
-  transition: border-color 0.2s ease-in-out;
-}
-
-.name {
-  font-style: normal;
-  margin-left: 16px;
-}
-.name .avatar {
-  position: relative;
-  display: inline-block;
-  width: 160px;
-  margin-bottom: 12px;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-.name .author {
-  display: block;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 8px 0 0 0;
-}
-.name .position {
-  color: #8895A7;
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-.content_cta {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 32px 0;
-}
-/* # My Value 
-================================================== */
-section.my-value::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_value.svg);
-}
-
-section.my-value {
-  position: relative;
-  background-color: #F9FBFD;
-}
-section.my-value .values_row {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.my-value .values_row .value-container {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  section.my-value .values_row .value-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.my-value .values_row .value-container .image_value {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  box-sizing: border-box;
-}
-
-/* # Global Variables
-================================================== */
-/* # Font settings
-================================================== */
-/* # Color Variables
-================================================== */
 /* # Global Variables
 ================================================== */
 /* # Font settings
