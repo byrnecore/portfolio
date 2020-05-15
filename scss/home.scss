@@ -95,18 +95,20 @@ section.recent {
   position: relative;
   background-color: #F9FBFD;
 
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .workcontainer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-/*
-    &:nth-child(odd) {
-      margin-top: 32px;
-    }
+    max-width: 100%;
 
-    &:nth-child(even) {
-      margin-top: 80px;
-    }*/
+    @media screen and (min-width: $tablet-width) {
+      max-width: 50%;
+    }
 
     .workcolumns {
       flex: 0 0 100%;
@@ -122,8 +124,7 @@ section.recent {
       }
       
       @media screen and (min-width: $mobile-tablet) {
-        flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 100%;
         padding: 0 16px;
       }
 
@@ -132,7 +133,7 @@ section.recent {
         margin-bottom: 16px;
 
         @media screen and (min-width: $mobile-tablet) {
-          order: 0;
+          order: -1;
         }
 
         img, .video {
@@ -147,7 +148,7 @@ section.recent {
           padding: 32px;
           align-items:center;
           video {
-            max-height: 450px;
+            max-height: 416px;
             width: 100%;
             margin: auto;
 
@@ -360,6 +361,16 @@ section.recommendations {
     font-size: $unit*4;
     line-height: 1.5;
     font-weight: $light;
+  }
+}
+
+.content_cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+
+  .button {
   }
 }
 
