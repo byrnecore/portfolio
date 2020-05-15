@@ -1203,18 +1203,33 @@ section.footer .container a {
   text-decoration: none;
 }
 section.footer .container a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: none;
 }
-section.footer .container .links {
+section.footer .container .site_links, section.footer .container .social_links {
+  margin-bottom: 24px;
+}
+section.footer .container .site_links {
+  margin-top: 16px;
+}
+section.footer .container .site_links a {
+  margin: 0 8px;
+}
+@media screen and (max-width: 480px) {
+  section.footer .container .site_links a {
+    display: block;
+    margin: 16px 0;
+  }
+}
+section.footer .container .social_links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
 }
-section.footer .container .links .footerlink {
+section.footer .container .social_links .footerlink {
   margin: 16px 16px 0 16px;
 }
+
 section.thanks {
   position: relative;
   height: 100vh;

@@ -31,19 +31,31 @@ section.footer {
       font-weight: $semibold;
       text-decoration: none;
       &:hover {
-        border-bottom: 3px solid white;
+        border-bottom: none;
       }
     }
-    .links {
+    .site_links, .social_links {
+      margin-bottom: $unit*6;
+    }
+    .site_links {
+      margin-top: 16px;
+      a {
+      margin: 0 8px;
+
+        @media screen and (max-width: 480px) {
+          display: block;
+          margin: 16px 0;
+        }
+      }
+    }
+    .social_links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-bottom: $unit*8;
       .footerlink {
         margin: $unit*4 $unit*4 0 $unit*4;
-        @media screen and (max-width: 600px) {
-        }
+        
       }
     }
     
