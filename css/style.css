@@ -1245,12 +1245,17 @@ section.intro {
   background: #4BAEA3;
   background: #4baea3;
   background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
-  background-position: center;
+  background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 48px 0 0 0;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  section.intro {
+    background-position: center;
+  }
 }
 section.intro .container {
   margin-top: 32px;
@@ -1354,7 +1359,6 @@ section.work .container h1 {
 section.work .container .item {
   width: 100%;
   box-sizing: border-box;
-  margin: 0 16px;
 }
 @media screen and (min-width: 575px) {
   section.work .container .item {
@@ -1362,7 +1366,12 @@ section.work .container .item {
   }
 }
 section.work .container .item .more {
-  justify-content: left;
+  justify-content: center;
+}
+@media screen and (min-width: 575px) {
+  section.work .container .item .more {
+    justify-content: left;
+  }
 }
 section.work .container .item.thumbnails {
   display: flex;

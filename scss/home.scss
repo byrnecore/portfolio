@@ -7,12 +7,16 @@ section.intro {
   background: #4BAEA3;
   background: rgba(75, 174, 163, 1);
   background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
-  background-position: center;
+  background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 48px 0 0 0;
   color: white;
+
+  @media screen and (min-width: $max-width) {
+  background-position: center;
+    }
 
   .container {
     margin-top: 32px;
@@ -119,14 +123,17 @@ section.work {
     .item {
       width: 100%;
       box-sizing: border-box;
-      margin: 0 16px;
 
       @media screen and (min-width: $mobile-tablet) {
         width: 50%;
       }
 
       .more {
-        justify-content: left;
+      justify-content: center;
+
+        @media screen and (min-width: $mobile-tablet) {
+          justify-content: left;
+        }
       }
 
       &.thumbnails {
