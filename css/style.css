@@ -1712,10 +1712,7 @@ section.recent .workcontainer .description .labels .avatar_brand {
 @media screen and (min-width: 768px) {
   .therealme_list .item {
     max-width: 33.3%;
-    padding-right: 32px;
-  }
-  .therealme_list .item:last-child {
-    padding-right: 0;
+    padding: 0 16px;
   }
 }
 .therealme_list .item .item_img img {

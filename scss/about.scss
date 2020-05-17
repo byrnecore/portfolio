@@ -15,10 +15,7 @@
 
     @media screen and (min-width: $tablet-width) {
         max-width: 33.3%;
-        padding-right: 32px; 
-        &:last-child {
-          padding-right: 0; 
-        }
+        padding: 0 16px; 
       }
 
     .item_img {
