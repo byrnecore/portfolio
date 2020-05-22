@@ -2,28 +2,67 @@
 
 @import 'variables';
 
-.therealme_list {
-  display: flex;
-  flex-wrap: wrap;
+section.history {
 
-  .item {
-    max-width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 32px;
-        
-    
+  .List_customList {
+    margin-top: 32px;
+  }
 
-    @media screen and (min-width: $tablet-width) {
+  .List_customList li {
+    list-style: none;
+    padding: .5em 0;
+    margin: 0;
+    line-height: 1.5em;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .List_bullet {
+    display: block;
+    position: absolute;
+    width: 20px;
+    top: 10px;
+    left: -40px;
+    color: #4BAEA3;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  a {
+    font-weight: 600;
+    margin-left: 4px;
+
+  }
+
+}
+
+
+section.therealme {
+
+  .therealme_list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      max-width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 32px;
+
+      @media screen and (min-width: $tablet-width) {
         max-width: 33.3%;
-        padding: 0 16px; 
+        padding: 0 16px;
       }
 
-    .item_img {
+      .item_img {
 
-      img {
-        width: 100%;
-        border-radius: 16px;
-        box-shadow: $shadow;
+        img {
+          width: 100%;
+          border-radius: 16px;
+          box-shadow: $shadow;
+        }
       }
     }
   }

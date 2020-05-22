@@ -52,6 +52,13 @@ body {
     line-height: $unit*7;
     font-weight: $light;
     color: #506690;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+  }
+
+  p.emphasise {
+    font-size: 22px;
+    line-height: 32px;
   }
   
   strong {
@@ -157,11 +164,6 @@ section {
 .leadin {
   max-width: 800px;
   margin: 0 auto 40px;
-  
-  p {
-    font-size: 22px;
-    line-height: 32px;
-  }
 }
 
 .leadout {

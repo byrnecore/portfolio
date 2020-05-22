@@ -69,6 +69,12 @@ body p {
   line-height: 28px;
   font-weight: 600;
   color: #506690;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+}
+body p.emphasise {
+  font-size: 22px;
+  line-height: 32px;
 }
 body strong {
   font-weight: 800;
@@ -166,10 +172,6 @@ section h1 {
 .leadin {
   max-width: 800px;
   margin: 0 auto 40px;
-}
-.leadin p {
-  font-size: 22px;
-  line-height: 32px;
 }
 
 .leadout {
@@ -1359,6 +1361,7 @@ section.work .container h1 {
 section.work .container .item {
   width: 100%;
   box-sizing: border-box;
+  margin: 0 16px;
 }
 @media screen and (min-width: 575px) {
   section.work .container .item {
@@ -1700,22 +1703,50 @@ section.recent .workcontainer .description .labels .avatar_brand {
 ================================================== */
 /* # Color Variables
 ================================================== */
-.therealme_list {
+section.history .List_customList {
+  margin-top: 32px;
+}
+section.history .List_customList li {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+  line-height: 1.5em;
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+}
+section.history .List_bullet {
+  display: block;
+  position: absolute;
+  width: 20px;
+  top: 10px;
+  left: -40px;
+  color: #4BAEA3;
+}
+section.history .List_bullet svg {
+  width: 100%;
+}
+section.history a {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+section.therealme .therealme_list {
   display: flex;
   flex-wrap: wrap;
 }
-.therealme_list .item {
+section.therealme .therealme_list .item {
   max-width: 100%;
   box-sizing: border-box;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
-  .therealme_list .item {
+  section.therealme .therealme_list .item {
     max-width: 33.3%;
     padding: 0 16px;
   }
 }
-.therealme_list .item .item_img img {
+section.therealme .therealme_list .item .item_img img {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
