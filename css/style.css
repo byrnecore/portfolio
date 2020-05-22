@@ -169,17 +169,9 @@ section h1 {
   }
 }
 
-.leadin {
+.onecolpara {
   max-width: 800px;
   margin: 0 auto 40px;
-}
-
-.leadout {
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-.leadout h2 {
-  text-align: center;
 }
 
 a.button, button {
