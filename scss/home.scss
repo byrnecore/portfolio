@@ -6,7 +6,8 @@
 section.intro {
   background: #4BAEA3;
   background: rgba(75, 174, 163, 1);
-  background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
+  // background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
+  background-image: linear-gradient(rgba(57, 115, 255,0.9), rgba(57, 115, 255,0.9)), url("../img/bg_hero.jpg");
   background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,15 +22,6 @@ section.intro {
   .container {
     margin-top: 32px;
     margin-bottom: 120px;
-
-    @media screen and (min-width: $max-width) {
-      min-height: 50vh;
-    }
-
-    @media screen and (max-width: $tablet-width) {
-      margin-top: 0;
-      margin-bottom: 80px;
-      }
     
     h1 {
       max-width: $max-width;
@@ -211,7 +203,7 @@ section.worked-with {
 /* # Testimonials 
 ================================================== */
 
-section.recommendations::before {
+section.testimonials::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -222,7 +214,7 @@ section.recommendations::before {
   // outline: 1px solid red;
 }
 
-section.recommendations {
+section.testimonials {
   h1 {
     // color: #F4CA64;
   }

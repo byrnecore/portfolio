@@ -26,37 +26,39 @@ body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
-  background-size: cover;
-  height: 100%;
 }
-body h1 {
+
+h1 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
 @media screen and (max-width: 500px) {
-  body h1 {
+  h1 {
     font-size: 32px;
   }
 }
-body h2 {
+
+h2 {
   margin: 0;
   font-size: 32px;
   font-weight: 800;
 }
 @media screen and (max-width: 500px) {
-  body h2 {
+  h2 {
     font-size: 16px;
   }
 }
-body h3 {
+
+h3 {
   display: block;
   font-size: 20px;
   font-weight: 800;
   padding: 8px 0 0 0;
 }
-body h4 {
+
+h4 {
   color: #8895A7;
   display: block;
   font-size: 16px;
@@ -64,28 +66,58 @@ body h4 {
   font-weight: 700;
   margin: 0;
 }
-body p {
+
+p,
+li {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
-  color: #506690;
   margin-block-start: 2em;
   margin-block-end: 2em;
+  color: #506690;
 }
-body p.emphasise {
-  font-size: 22px;
-  line-height: 32px;
-}
-body strong {
+p strong,
+li strong {
   font-weight: 800;
 }
-body a {
+p a,
+li a {
   color: #203D55;
-  font-weight: 800;
+  border-bottom: 1px solid #203D55;
 }
-body a:hover {
+p a:hover,
+li a:hover {
   cursor: pointer;
-  border-bottom: 3px solid #203D55;
+  color: #3973FF;
+}
+
+p.emphasise {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+li {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+  line-height: 1.5em;
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  color: #203D55;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+a .recent_cta span {
+  display: inline-flex;
+  align-items: center;
+  width: 24px;
+  height: 16px;
+  margin-left: 8px;
+  color: #e03f7f;
 }
 
 .label {
@@ -105,25 +137,10 @@ body a:hover {
   font-weight: 700;
 }
 
-a {
-  color: #3183C8;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-}
-a .recent_cta span {
-  display: inline-flex;
-  align-items: center;
-  width: 24px;
-  height: 16px;
-  margin-left: 8px;
-  color: #e03f7f;
-}
-
 /* The hero image */
 .hero-image {
   background-image: url("../img/bg_hero_about.jpg");
-  min-height: 50vh;
+  min-height: 40vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,7 +191,8 @@ section h1 {
   margin: 0 auto 40px;
 }
 
-a.button, button {
+a.button,
+button {
   display: inline-block;
   border-radius: 6px;
   border: 3px solid;
@@ -188,11 +206,13 @@ a.button, button {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-a.button.dark, button.dark {
+a.button.dark,
+button.dark {
   border-color: #203D55;
   color: #203D55;
 }
-a.button.light, button.light {
+a.button.light,
+button.light {
   background: white;
   border-color: white;
   color: #203D55;
@@ -1087,6 +1107,7 @@ header.menuOpen .popover li a {
   margin: 0;
   color: #2f353e;
   transition: color 0.3s, background 0.3s;
+  border-bottom: none;
 }
 header.menuOpen .popover li a:hover {
   border-bottom: none;
@@ -1106,7 +1127,7 @@ header {
   width: 100%;
   position: fixed;
   background: #203D55;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+  box-shadow: 0 1rem 2rem rgba(22, 28, 45, 0.2);
   z-index: 9;
 }
 header .header-container {
@@ -1121,7 +1142,8 @@ header .header-container {
     padding: 16px 32px;
   }
 }
-header .header-container .header-left, header .header-container .header-right {
+header .header-container .header-left,
+header .header-container .header-right {
   position: relative;
   display: flex;
   align-items: center;
@@ -1238,7 +1260,7 @@ section.thanks h1 {
 section.intro {
   background: #4BAEA3;
   background: #4baea3;
-  background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
+  background-image: linear-gradient(rgba(57, 115, 255, 0.9), rgba(57, 115, 255, 0.9)), url("../img/bg_hero.jpg");
   background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1254,17 +1276,6 @@ section.intro {
 section.intro .container {
   margin-top: 32px;
   margin-bottom: 120px;
-}
-@media screen and (min-width: 1024px) {
-  section.intro .container {
-    min-height: 50vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  section.intro .container {
-    margin-top: 0;
-    margin-bottom: 80px;
-  }
 }
 section.intro .container h1 {
   max-width: 1024px;
@@ -1431,7 +1442,7 @@ section.worked-with .brand-list .brand img {
 
 /* # Testimonials 
 ================================================== */
-section.recommendations::before {
+section.testimonials::before {
   content: "";
   position: absolute;
   top: -60px;
@@ -1441,36 +1452,36 @@ section.recommendations::before {
   background: url(../img/vector_testmonials.svg);
 }
 
-section.recommendations {
+section.testimonials {
   position: relative;
   background: #FFFDF4;
   position: relative;
 }
-section.recommendations .testimonials {
+section.testimonials .testimonials {
   display: flex;
   flex-wrap: wrap;
 }
-section.recommendations .testimonials blockquote.testimonial {
+section.testimonials .testimonials blockquote.testimonial {
   box-sizing: border-box;
   flex: 0 0 100%;
   max-width: 100%;
   margin: 0 0 32px 0;
 }
-section.recommendations .testimonials blockquote.testimonial .avatar_lockup {
+section.testimonials .testimonials blockquote.testimonial .avatar_lockup {
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  section.recommendations .testimonials blockquote.testimonial {
+  section.testimonials .testimonials blockquote.testimonial {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0 16px;
   }
 }
-section.recommendations .testimonials blockquote.testimonial a:hover {
+section.testimonials .testimonials blockquote.testimonial a:hover {
   text-decoration: none;
   border-bottom: 0;
 }
-section.recommendations .testimonials blockquote.testimonial a .avatar {
+section.testimonials .testimonials blockquote.testimonial a .avatar {
   position: relative;
   display: inline-block;
   width: 64px;
@@ -1698,29 +1709,15 @@ section.recent .workcontainer .description .labels .avatar_brand {
 section.history .List_customList {
   margin-top: 32px;
 }
-section.history .List_customList li {
-  list-style: none;
-  padding: 0.5em 0;
-  margin: 0;
-  line-height: 1.5em;
-  position: relative;
-  font-weight: 600;
-  font-size: 18px;
-}
 section.history .List_bullet {
   display: block;
   position: absolute;
   width: 20px;
   top: 10px;
   left: -40px;
-  color: #4BAEA3;
 }
 section.history .List_bullet svg {
   width: 100%;
-}
-section.history a {
-  font-weight: 600;
-  margin-left: 4px;
 }
 
 section.therealme .therealme_list {

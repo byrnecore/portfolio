@@ -10,29 +10,15 @@
 section.history .List_customList {
   margin-top: 32px;
 }
-section.history .List_customList li {
-  list-style: none;
-  padding: 0.5em 0;
-  margin: 0;
-  line-height: 1.5em;
-  position: relative;
-  font-weight: 600;
-  font-size: 18px;
-}
 section.history .List_bullet {
   display: block;
   position: absolute;
   width: 20px;
   top: 10px;
   left: -40px;
-  color: #4BAEA3;
 }
 section.history .List_bullet svg {
   width: 100%;
-}
-section.history a {
-  font-weight: 600;
-  margin-left: 4px;
 }
 
 section.therealme .therealme_list {
