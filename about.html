@@ -55,15 +55,21 @@
     </div>
   </header>
   <section>
-    <div class="container onecolpara about">
+    <div class="container about">
+      <div class="onecolpara">
         <h1>About Me</h1>
         <div class="img_container reveal">
-          <img src="img/aboutme_image.png">
+          <picture>
+            <source media="(min-width:650px)" srcset="img/aboutme_image_desktop.png">
+            <source media="(min-width:465px)" srcset="img/aboutme_image_mobile.png">
+            <img src="img/aboutme_image_mobile.png" alt="Flowers">
+          </picture>
         </div>
         <p class="emphasise reveal">I'm an end-to-end product designer that enjoys the relationship between qualitative and quantitative information. I take business aspirations, combine them with human insights to design beautiful, scalable solutions. I get excited when truly understanding the user and seeing how my work impacts lives globally. </p>
         <p class="reveal">I think the secret sauce to building great products is highly aligned, motivated and resilient crossfunctinal teams. Throughout my career, I have found that I’m most satisfied when helping teams and individuals achieve their goals and creating healthy cultures for thriving.</p>
         <p class="reveal">When considering people to work with, I look for value driven and product/user led companies who want to make the world a better place. I thrive when collaborating with engineers, product people and SMEs.</p>
-        <p class="reveal">I'm interested in design roles to help companies mature design practices and empower growth, remove roadblocks, and create environments that set teams up for success.</p>
+        <p class="reveal">I'm interested in design roles that help to mature design practices, empower growth, remove roadblocks and create environments that set teams up for success.</p>
+      </div>
     </div>
     
     </div>
@@ -123,7 +129,7 @@
         <div class="item reveal">
           <div class="item_img"><img src="img/img_aboutme_sport.jpg"></div>
           <h3>Sport's My Jam</h3>
-          <p>I've been playing sports since I can remember - especially team sport. I love the competition, teamwork and comradery to achieve success. ⚾️🧗🏻‍♂️🚴🏼‍♂️ </p>
+          <p>I've been playing sports since I can remember - especially team sport. I love the competition, teamwork and camaraderie to achieve success. ⚾️🧗🏻‍♂️🚴🏼‍♂️ </p>
         </div>
         <div class="item reveal">
           <div class="item_img"><img src="img/img_aboutme_byrnecore.jpg"></div>
@@ -139,7 +145,7 @@
         <p>Got a cool product idea or looking for someone to speak about design or design leadership?</p>
       </div>
       <div class="content_cta more">
-        <a class="button reveal dark" target="_blank" href="contact.html" >Get in touch</a>
+        <a class="button reveal dark" href="contact.html" >Get in touch</a>
       </div>
     </div>
   </section>

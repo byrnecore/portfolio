@@ -191,6 +191,7 @@ section h1 {
 
 .onecolpara {
   max-width: 800px;
+  margin: 0 auto 40px;
 }
 
 a.button,
@@ -1121,7 +1122,7 @@ header.menuOpen .popover {
   width: 100%;
   height: 100%;
   opacity: 1;
-  background: #4BAEA3;
+  background: linear-gradient(#3973ff, #f473ff);
   z-index: 10;
   flex-direction: column;
 }
@@ -1156,7 +1157,7 @@ header.menuOpen .popover li a.item.active {
 header {
   width: 100%;
   position: fixed;
-  background: #203D55;
+  background: #3B73FF;
   box-shadow: 0 1rem 2rem rgba(22, 28, 45, 0.2);
   z-index: 9;
   top: 0;
@@ -1291,7 +1292,7 @@ section.thanks h1 {
 section.intro {
   background: #4BAEA3;
   background: #4baea3;
-  background-image: linear-gradient(rgba(57, 115, 255, 0.9), rgba(57, 115, 255, 0.9)), url("../img/bg_hero.jpg");
+  background-image: linear-gradient(rgba(57, 115, 255, 0.9), rgba(244, 115, 255, 0.9)), url("../img/bg_hero.jpg");
   background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
