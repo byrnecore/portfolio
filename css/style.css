@@ -121,17 +121,17 @@ a .recent_cta span {
 }
 
 .label {
-  background: #3973FF;
-  padding: 0 16px;
+  background: #DEF1FE;
+  padding: 0 12px;
   height: 28px;
   display: inline-flex;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 4px;
   margin: 0 0 0 8px;
 }
 .label .label_name {
   text-transform: uppercase;
-  color: white;
+  color: #3973FF;
   letter-spacing: 0.01em;
   font-size: 12px;
   font-weight: 700;
