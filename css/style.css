@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 48px;
   font-weight: 800;
   letter-spacing: -0.5px;
@@ -50,7 +50,7 @@ h2 {
 }
 @media screen and (max-width: 500px) {
   h2 {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -211,8 +211,8 @@ button {
 }
 a.button.dark,
 button.dark {
-  border-color: #203D55;
-  color: #203D55;
+  border-color: #3B73FF;
+  color: #3B73FF;
 }
 a.button.light,
 button.light {
@@ -1136,7 +1136,7 @@ header.menuOpen .popover li a {
   font-size: 32px;
   font-weight: 700;
   margin: 0;
-  color: #2f353e;
+  color: white;
   transition: color 0.3s, background 0.3s;
   border-bottom: none;
 }
@@ -1312,17 +1312,8 @@ section.intro .container {
 section.intro .container h1 {
   max-width: 1024px;
   text-align: left;
-}
-@media screen and (max-width: 768px) {
-  section.intro .container h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section.intro .container h1 {
-    line-height: 52px;
-  }
+  font-size: 28px;
+  line-height: 36px;
 }
 section.intro .container h1 .strong {
   font-weight: 800;
@@ -1334,8 +1325,8 @@ section.intro .container h2 {
 }
 section.intro .container p {
   color: white;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 32px;
   margin: 0;
   opacity: 0.9;
 }
@@ -1345,19 +1336,21 @@ section.intro .container p {
     line-height: 32px;
   }
 }
-section.intro .container .button {
+section.intro .container a, section.intro .container button {
   display: inline-block;
   vertical-align: middle;
   color: white;
-  border: 3px solid white;
+  background-color: #3B73FF;
+  border: 3px solid #3B73FF;
   padding: 16px 24px;
   border-radius: 4px;
   font-size: 16px;
   margin: 32px 16px 0 0;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
-section.intro .container .button.tertiary {
-  border: 0;
-  padding: 16px 0;
+section.intro .container a.tertiary, section.intro .container button.tertiary {
+  background: none;
+  border: 3px solid white;
 }
 
 /* # Work Styles

@@ -26,15 +26,9 @@ section.intro {
     h1 {
       max-width: $max-width;
       text-align: left;
+      font-size: $unit*7;
+      line-height: $unit*9;
 
-      @media screen and (max-width: $tablet-width) {
-        font-size: $unit*6;
-        line-height: $unit*9;
-      }
-
-      @media screen and (min-width: $max-width) {
-        line-height: $unit*13;
-      }
       .strong {
         font-weight: $semibold;
       }
@@ -47,8 +41,8 @@ section.intro {
     }
     p {
       color: white;
-      font-size: $unit*6;
-      line-height: $unit*9;
+      font-size: $unit*5;
+      line-height: $unit*8;
       margin:0;
       opacity: 0.9;
       
@@ -57,20 +51,23 @@ section.intro {
         line-height: $unit*8;
       }
     }
-    .button {
+    a, button {
       display: inline-block;
       vertical-align: middle;
       color: white;
-      border: 3px solid white;
+      background-color: #3B73FF;
+      border: 3px solid #3B73FF;
       padding: $unit*4 $unit*6;
       border-radius: $unit;
       font-size: $unit*4;
       margin: $unit*8 $unit*4 0 0;
+      box-shadow: $shadow;
+
       &.tertiary {
-        border: 0;
-        padding: 16px 0;
+        background: none;
+        border: 3px solid white;
       }
-    }
+    } 
   }
 }
 

@@ -15,7 +15,7 @@
  }
 
  h1 {
-   font-size: $unit*10;
+   font-size: $unit*9;
    line-height: $unit*12;
    font-weight: $semibold;
    letter-spacing: -0.5px;
@@ -31,7 +31,7 @@
    font-weight: $semibold;
 
    @media screen and (max-width: 500px) {
-     font-size: $unit*4;
+     font-size: $unit*6;
    }
  }
 
@@ -207,8 +207,8 @@
    cursor: pointer;
 
    &.dark {
-     border-color: $primary-70;
-     color: $primary-70;
+     border-color: #3B73FF;
+     color: #3B73FF;
    }
 
    &.light {
