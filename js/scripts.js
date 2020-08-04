@@ -1,14 +1,3 @@
-// Swiper
-
-var swiper = new Swiper('.swiper-container', {
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next, .swipe',
-    prevEl: '.swiper-button-prev',
-  },
-});
 
 // Smooth Scroll to anchors
 
@@ -17,14 +6,19 @@ var scroll = new SmoothScroll('a[href*="#"]');
 
 // ScrollReveal
 
-window.sr = ScrollReveal();
-// sr.reveal(document.querySelectorAll('.reveal', 0));
-sr.reveal('.reveal', { duration: 1000 });
+ScrollReveal().reveal('.reveal', { duration: 2000 }, { delay: 1500 });
+ScrollReveal().reveal('.heroreveal', { duration: 3000 });
 
-// GA tagging and tracing
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-117998943-1');	
+// Burger Toggle
+
+var $hamburger = $(".hamburger");
+	$hamburger.on("click", function(e) {
+	$hamburger.toggleClass("is-active");
+	// Do something else, like open/close menu
+});
+
+$('#burger_btn').click(function(e){
+	e.preventDefault();
+	$('#mainNav').toggleClass('menuOpen');
+});
