@@ -1141,8 +1141,8 @@ header.menuOpen .popover li a {
   border-bottom: none;
 }
 header.menuOpen .popover li a:hover {
-  border-bottom: none;
   color: white;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 header.menuOpen .popover li a.item {
   margin: 0;
@@ -1152,6 +1152,7 @@ header.menuOpen .popover li a.item {
 }
 header.menuOpen .popover li a.item.active {
   color: white;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 header {
@@ -1312,8 +1313,9 @@ section.intro .container {
 section.intro .container h1 {
   max-width: 1024px;
   text-align: left;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 36px;
+  margin-top: 0;
 }
 section.intro .container h1 .strong {
   font-weight: 800;

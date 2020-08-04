@@ -26,8 +26,9 @@ section.intro {
     h1 {
       max-width: $max-width;
       text-align: left;
-      font-size: $unit*7;
+      font-size: $unit*6;
       line-height: $unit*9;
+      margin-top: 0;
 
       .strong {
         font-weight: $semibold;
