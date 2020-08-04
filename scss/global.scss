@@ -226,3 +226,36 @@
      text-decoration: underline;
    }
  }
+
+
+ section.contact_cta {
+  position: relative;
+  background: #FBE8E8;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    height: 60px;
+    width: 100%;
+    background: url(../img/vector_contact.svg);
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+
+    p {
+      font-size: 24px;
+      text-align: center;
+      margin: 24px 0;
+      line-height: 40px;
+    }
+
+    .more {
+      margin: 0;
+    }
+
+  }
+}

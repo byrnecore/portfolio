@@ -2,51 +2,34 @@
 
 @import 'variables';
 
-section.history {
 
-  .List_customList {
-    margin-top: 32px;
-  }
 
-  .List_bullet {
-    display: block;
+
+
+
+section.get_contact {
+  position:relative;
+  background: #FBE8E8;
+  margin-top: 32px;
+  &::before {
+    content: "";
     position: absolute;
-    width: 20px;
-    top: 10px;
-    left: -40px;
-
-    svg {
-      width: 100%;
-    }
+    top: -60px;
+    height: 60px;
+    width: 100%;
+    background: url(../img/vector_contact.svg);
+    // outline: 1px solid red;
   }
-}
 
-
-section.therealme {
-
-  .therealme_list {
+  .container {
     display: flex;
-    flex-wrap: wrap;
+    background: white;
+    box-shadow: $shadow; 
+    padding: $unit*8;
+    border-radius: $unit*8;
+    margin: $unit*6 $unit*8 $unit*16;
+    max-width: 800px;
 
-    .item {
-      max-width: 100%;
-      box-sizing: border-box;
-      margin-bottom: 32px;
-
-      @media screen and (min-width: $tablet-width) {
-        max-width: 33.3%;
-        padding: 0 16px;
-      }
-
-      .item_img {
-
-        img {
-          width: 100%;
-          border-radius: 16px;
-          box-shadow: $shadow;
-        }
-      }
-    }
   }
 }
 
