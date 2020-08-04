@@ -183,7 +183,7 @@
 
  .onecolpara {
    max-width: 800px;
-   margin: 0 auto 40px;
+   // margin: 0 auto 40px;
  }
 
  // Button styles
@@ -251,6 +251,7 @@
       text-align: center;
       margin: 24px 0;
       line-height: 40px;
+      color: $primary-70;
     }
 
     .more {

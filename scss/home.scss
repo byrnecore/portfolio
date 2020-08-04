@@ -152,7 +152,7 @@ section.work {
           img {
             width: 100%;
             box-sizing: border-box;
-            border-radius: 16px;
+            border-radius: $unit*4;
             box-shadow: $shadow;
           }
          }

@@ -191,7 +191,6 @@ section h1 {
 
 .onecolpara {
   max-width: 800px;
-  margin: 0 auto 40px;
 }
 
 a.button,
@@ -253,6 +252,7 @@ section.contact_cta .container p {
   text-align: center;
   margin: 24px 0;
   line-height: 40px;
+  color: #203D55;
 }
 section.contact_cta .container .more {
   margin: 0;
@@ -1737,6 +1737,15 @@ section.recent .workcontainer .description .labels .avatar_brand {
 ================================================== */
 /* # Color Variables
 ================================================== */
+.img_container img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.container.about h1 {
+  margin-top: 120px;
+}
+
 section.history .List_customList {
   margin-top: 32px;
 }
