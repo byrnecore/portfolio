@@ -9,7 +9,7 @@
 
 section.get_contact {
   position:relative;
-  background: #FBE8E8;
+  background: $neutral-10;
   margin-top: 32px;
   &::before {
     content: "";
@@ -23,11 +23,6 @@ section.get_contact {
 
   .container {
     display: flex;
-    background: white;
-    box-shadow: $shadow; 
-    padding: $unit*8;
-    border-radius: $unit*8;
-    margin: $unit*6 $unit*8 $unit*16;
     max-width: 800px;
 
   }
@@ -48,7 +43,7 @@ fieldset {
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	border:4px solid transparent;
-	background: $neutral-10;
+	background: $neutral-20;
 	margin:0 0 5px;
 	padding:16px;
 	font-size: 16px;
@@ -94,7 +89,7 @@ fieldset {
 	border:4px solid #ABD4F5;
 }
 ::-webkit-input-placeholder {
- color:$neutral-40;
+ color:$neutral-50;
 }
 :-moz-placeholder {
  color:$neutral-40;
