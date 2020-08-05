@@ -1756,11 +1756,13 @@ section.recent .workcontainer .description .labels .avatar_brand {
   margin: 16px 0;
   background: #DEF1FE;
   border-radius: 16px;
-  box-sizing: border-box;
 }
 @media screen and (min-width: 768px) {
   .process-phases .phase:nth-child(even) {
-    margin-left: 32px;
+    margin-left: 16px;
+  }
+  .process-phases .phase:nth-child(odd) {
+    margin-right: 16px;
   }
 }
 .process-phases .phase p {
@@ -1768,7 +1770,7 @@ section.recent .workcontainer .description .labels .avatar_brand {
   margin-block-end: 1em;
 }
 .process-phases .phase li:before {
-  content: "✅";
+  content: "➡️";
   display: inline-block;
   width: 37px;
   height: 12px;
