@@ -51,8 +51,7 @@
    margin: 0;
  }
 
- p,
- li {
+ p {
    font-size: $unit*4.5;
    line-height: $unit*7;
    margin-block-start: 2em;
@@ -77,18 +76,17 @@
  p.emphasise {
    font-size: 22px;
    line-height: 36px;
-   // margin: auto;
  }
 
  li {
     list-style: none;
     padding: .5em 0;
     margin: 0;
-    line-height: 1.5em;
+    // line-height: 1.5em;
     position: relative;
     font-weight: 600;
     font-size: 18px;
-    color: $primary-70;
+    color: #506690;
   }
 
    a {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* # Imports
 ================================================== */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
@@ -12,6 +13,9 @@
 ================================================== */
 /* # Global Styles
 ================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
@@ -70,25 +74,21 @@ h4 {
   margin: 0;
 }
 
-p,
-li {
+p {
   font-size: 18px;
   line-height: 28px;
   margin-block-start: 2em;
   margin-block-end: 2em;
   color: #506690;
 }
-p strong,
-li strong {
+p strong {
   font-weight: 800;
 }
-p a,
-li a {
+p a {
   color: #203D55;
   border-bottom: 1px solid #203D55;
 }
-p a:hover,
-li a:hover {
+p a:hover {
   cursor: pointer;
   color: #3973FF;
 }
@@ -102,11 +102,10 @@ li {
   list-style: none;
   padding: 0.5em 0;
   margin: 0;
-  line-height: 1.5em;
   position: relative;
   font-weight: 600;
   font-size: 18px;
-  color: #203D55;
+  color: #506690;
 }
 
 a {
@@ -1348,7 +1347,7 @@ section.intro .container a, section.intro .container button {
   border-radius: 4px;
   font-size: 16px;
   margin: 32px 16px 0 0;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+  box-shadow: 0 0.5rem 0.5rem rgba(10, 28, 36, 0.1);
 }
 section.intro .container a.tertiary, section.intro .container button.tertiary {
   background: none;
@@ -1736,6 +1735,58 @@ section.recent .workcontainer .description .labels .avatar_brand {
 .img_container img {
   width: 100%;
   border-radius: 16px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+}
+
+.container.about h1 {
+  margin-top: 120px;
+}
+
+.process-phases {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 768px) {
+  .process-phases {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.process-phases .phase {
+  padding: 32px;
+  margin: 16px 0;
+  background: #DEF1FE;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .process-phases .phase:nth-child(even) {
+    margin-left: 32px;
+  }
+}
+.process-phases .phase p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.process-phases .phase li:before {
+  content: "✅";
+  display: inline-block;
+  width: 37px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -38px;
+}
+
+/* # Global Variables
+================================================== */
+/* # Font settings
+================================================== */
+/* # Color Variables
+================================================== */
+.img_container img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
 
 .container.about h1 {

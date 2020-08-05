@@ -6,7 +6,6 @@
 section.intro {
   background: #4BAEA3;
   background: rgba(75, 174, 163, 1);
-  // background-image: linear-gradient(rgba(75, 174, 163, 0.9), rgba(75, 174, 163, 0.9)), url("../img/bg_hero.jpg");
   background-image: linear-gradient(rgba(57, 115, 255,0.9), rgba(244, 115, 255,0.9)), url("../img/bg_hero.jpg");
   background-position: 60% 50%;
   background-repeat: no-repeat;
@@ -62,7 +61,7 @@ section.intro {
       border-radius: $unit;
       font-size: $unit*4;
       margin: $unit*8 $unit*4 0 0;
-      box-shadow: $shadow;
+      box-shadow: 0 0.5rem 0.5rem rgba(10, 28, 36, 0.10);
 
       &.tertiary {
         background: none;
