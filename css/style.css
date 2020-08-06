@@ -1355,82 +1355,43 @@ section.intro .container a.tertiary, section.intro .container button.tertiary {
   border: 3px solid white;
 }
 
-/* # Work Styles
+/* # How I can help you
 ================================================== */
-section.work::before {
+section.my-value::before {
   content: "";
   position: absolute;
   top: -60px;
   height: 60px;
   width: 100%;
-  background: url(../img/vector_recent.svg);
+  background: url(../img/vector_value.svg);
 }
 
-section.work {
+section.my-value {
   position: relative;
   background-color: #F9FBFD;
 }
-section.work .container {
-  display: flex;
-  align-items: center;
-  margin-top: 64px;
-  margin-bottom: 120px;
-}
-section.work .container h1 {
-  text-align: left;
-}
-@media screen and (max-width: 575px) {
-  section.work .container {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  section.work .container h1 {
-    text-align: center;
-  }
-}
-section.work .container .item {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 16px;
-}
-@media screen and (min-width: 575px) {
-  section.work .container .item {
-    width: 50%;
-  }
-}
-section.work .container .item .more {
-  justify-content: center;
-}
-@media screen and (min-width: 575px) {
-  section.work .container .item .more {
-    justify-content: left;
-  }
-}
-section.work .container .item.thumbnails {
+section.my-value .values_row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
 }
-@media screen and (min-width: 575px) {
-  section.work .container .item.thumbnails {
-    order: 1;
+section.my-value .values_row .value-container {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  section.my-value .values_row .value-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 16px;
   }
 }
-section.work .container .item.thumbnails .row {
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  width: 100%;
-}
-section.work .container .item.thumbnails .row div {
-  margin: 8px;
-  max-width: 33%;
-}
-section.work .container .item.thumbnails .row div img {
-  width: 100%;
+section.my-value .values_row .value-container .image_value {
+  position: relative;
+  display: inline-block;
+  width: 120px;
   box-sizing: border-box;
-  border-radius: 16px;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
 
 /* # Brands I have Worked With 
@@ -1446,7 +1407,7 @@ section.worked-with::before {
 
 section.worked-with {
   position: relative;
-  background: #E3FDED;
+  background: #e3fded;
 }
 section.worked-with h1 {
   color: #479E59;
@@ -1467,21 +1428,137 @@ section.worked-with .brand-list .brand img {
   width: 96px;
 }
 
-/* # Testimonials 
+/* # Recent Work Styles
 ================================================== */
-section.testimonials::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  height: 60px;
+section.recent {
+  position: relative;
+  background-color: #F9FBFD;
+}
+section.recent .work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.recent .workcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  section.recent .workcontainer {
+    max-width: 50%;
+  }
+}
+section.recent .workcontainer .workcolumns {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+section.recent .workcontainer .workcolumns:first-child {
+  margin-bottom: 32px;
+}
+section.recent .workcontainer .workcolumns:second-child {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 575px) {
+  section.recent .workcontainer .workcolumns {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+section.recent .workcontainer .workcolumns.image {
+  order: -1;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 575px) {
+  section.recent .workcontainer .workcolumns.image {
+    order: -1;
+  }
+}
+section.recent .workcontainer .workcolumns.image img, section.recent .workcontainer .workcolumns.image .video {
+  display: flex;
+  border-radius: 16px;
+  max-width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+}
+section.recent .workcontainer .workcolumns.image .video {
+  display: flex;
+  background: #F6D5E0;
+  padding: 32px;
+  align-items: center;
+}
+section.recent .workcontainer .workcolumns.image .video video {
+  max-height: 416px;
   width: 100%;
-  background: url(../img/vector_testmonials.svg);
+  margin: auto;
+}
+section.recent .workcontainer .workcolumns.image .secondary_images {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+section.recent .workcontainer .workcolumns.image .secondary_images .image {
+  flex-shrink: 1;
+  max-width: 50%;
+  margin-top: 16px;
+}
+section.recent .workcontainer .workcolumns.image .secondary_images .image:nth-child(odd) {
+  margin-right: 16px;
+}
+section.recent .workcontainer h4 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+section.recent .workcontainer h2 {
+  padding-right: 32px;
+  margin-top: 8px;
+}
+section.recent .workcontainer .cta-link a {
+  color: #3973FF;
+  font-weight: 700;
+  transition: all 0.1s ease-out;
+}
+section.recent .workcontainer .cta-link a:hover {
+  border-bottom: none;
+}
+section.recent .workcontainer .cta-link:hover span {
+  margin-left: 12px;
+}
+section.recent .workcontainer .cta-link span {
+  margin-left: 8px;
+  color: #e03f7f;
+  width: 22px;
+  height: 16px;
+  transition: all 0.1s ease-out;
+}
+section.recent .workcontainer .link-subtitle {
+  color: #8895A7;
+  font-size: 12px;
+}
+section.recent .workcontainer .description p {
+  padding-right: 32px;
+}
+@media screen and (max-width: 600px) {
+  section.recent .workcontainer .description p {
+    padding-right: 0;
+  }
+}
+section.recent .workcontainer .description .labels {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+section.recent .workcontainer .description .labels .avatar_brand {
+  border-radius: 50%;
+  display: inline-flex;
+  height: 28px;
+  margin: 0;
 }
 
+/* # Testimonials 
+================================================== */
 section.testimonials {
   position: relative;
-  background: #FFFDF4;
+  background: #F9FBFD;
   position: relative;
 }
 section.testimonials .testimonials {
@@ -1553,45 +1630,6 @@ section.testimonials .testimonials blockquote.testimonial a .avatar {
   justify-content: center;
   margin: 32px 0;
 }
-/* # My Value 
-================================================== */
-section.my-value::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_value.svg);
-}
-
-section.my-value {
-  position: relative;
-  background-color: #F9FBFD;
-}
-section.my-value .values_row {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.my-value .values_row .value-container {
-  box-sizing: border-box;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 768px) {
-  section.my-value .values_row .value-container {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 16px;
-  }
-}
-section.my-value .values_row .value-container .image_value {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-  box-sizing: border-box;
-}
-
 /* # Recent Work Styles
 ================================================== */
 section.recent::before {
