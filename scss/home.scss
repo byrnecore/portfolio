@@ -28,45 +28,30 @@ section.intro {
       font-size: $unit*6;
       line-height: $unit*9;
       margin-top: 0;
+      margin: 0 auto 12px;
 
       .strong {
         font-weight: $semibold;
       }
     }
-
-    h2 {
-      margin: 0 0 24px 0;
-      color: white;
-      opacity: 0.6;
-    }
     p {
       color: white;
       font-size: $unit*5;
       line-height: $unit*8;
-      margin:0;
+      margin: 0;
       opacity: 0.9;
-      
-      @media screen and (max-width: $tablet-width) {
-        font-size: $unit*5;
-        line-height: $unit*8;
-      }
     }
 
     .buttons {
       padding-top: $unit*4;
 
       a.button {
-        text-align: center;
-        text-decoration: none;
         background: white;
         color: #3B73FF;
-        font-family: $family;
-        font-size: $unit*4;
-        font-weight: $semibold;
-        transition: all 150ms ease-out;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
-        margin: 0 $unit*2 $unit*2 0;
+
+          path {
+            fill: #F473FF;
+          }
 
         &.tertiary {
          background: $primary-70;
@@ -88,7 +73,6 @@ section.my-value::before {
   height: 60px;
   width: 100%;
   background: url(../img/vector_value.svg);
-  // outline: 1px solid red;
 }
 
 section.my-value {
@@ -113,8 +97,9 @@ section.my-value {
       .image_value {
         position:relative;
         display: inline-block;
-        width: 120px;
+        width: 96px;
         box-sizing: border-box;
+        margin-bottom: $unit*2;
       }
     }
   }
@@ -133,7 +118,6 @@ section.worked-with::before {
   height: 32px;
   width: 100%;
   background: url(../img/vector_worked.svg);
-  // outline: 1px solid red;
 }
 
 section.worked-with {
@@ -164,15 +148,14 @@ section.worked-with {
 /* # Recent Work Styles
 ================================================== */
 
-// section.recent::before {
-//   content: "";
-//   position: absolute;
-//   top: -60px;
-//   height: 60px;
-//   width: 100%;
-//   background: url(../img/vector_recent.svg);
-//   // outline: 1px solid red;
-// }
+section.recent::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_recent.svg);
+}
 
 section.recent {
   position: relative;

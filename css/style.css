@@ -202,6 +202,17 @@ a.button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
   margin: 0 8px 8px 0;
 }
+a.button .button-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: margin 0.3s ease;
+}
+a.button .button-arrow button-arrow-svg.svg {
+  max-width: 100%;
+}
+a.button .button-arrow button-arrow-svg.svg path {
+  fill: white;
+}
 a.button.tertiary {
   background: #203D55;
   color: white;
@@ -1308,14 +1319,10 @@ section.intro .container h1 {
   font-size: 24px;
   line-height: 36px;
   margin-top: 0;
+  margin: 0 auto 12px;
 }
 section.intro .container h1 .strong {
   font-weight: 800;
-}
-section.intro .container h2 {
-  margin: 0 0 24px 0;
-  color: white;
-  opacity: 0.6;
 }
 section.intro .container p {
   color: white;
@@ -1324,27 +1331,15 @@ section.intro .container p {
   margin: 0;
   opacity: 0.9;
 }
-@media screen and (max-width: 768px) {
-  section.intro .container p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
 section.intro .container .buttons {
   padding-top: 16px;
 }
 section.intro .container .buttons a.button {
-  text-align: center;
-  text-decoration: none;
   background: white;
   color: #3B73FF;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  transition: all 150ms ease-out;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
-  margin: 0 8px 8px 0;
+}
+section.intro .container .buttons a.button path {
+  fill: #F473FF;
 }
 section.intro .container .buttons a.button.tertiary {
   background: #203D55;
@@ -1386,8 +1381,9 @@ section.my-value .values_row .value-container {
 section.my-value .values_row .value-container .image_value {
   position: relative;
   display: inline-block;
-  width: 120px;
+  width: 96px;
   box-sizing: border-box;
+  margin-bottom: 8px;
 }
 
 /* # Brands I have Worked With 
@@ -1426,6 +1422,15 @@ section.worked-with .brand-list .brand img {
 
 /* # Recent Work Styles
 ================================================== */
+section.recent::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  height: 60px;
+  width: 100%;
+  background: url(../img/vector_recent.svg);
+}
+
 section.recent {
   position: relative;
   background-color: #F9FBFD;

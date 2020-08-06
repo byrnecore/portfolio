@@ -206,9 +206,23 @@
    box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
    margin: 0 $unit*2 $unit*2 0;
 
+   .button-arrow {
+          display: inline-block;
+          margin-left: 8px;
+          transition: margin .3s ease;
+
+          button-arrow-svg.svg {
+            max-width: 100%;
+            path {
+              fill: white;
+            }
+          }
+        }
+
    &.tertiary {
      background: $primary-70;
      color: white;
+              
    }
 
    @media screen and (min-width: $desktop-width) {
