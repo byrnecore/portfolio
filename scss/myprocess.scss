@@ -31,6 +31,7 @@
     margin: $unit*4 0;
     background: #DEF1FE;
     border-radius: 16px;
+    box-shadow: $shadow;
 
     @media screen and (min-width: $tablet-width) {
       &:nth-child(even) {
