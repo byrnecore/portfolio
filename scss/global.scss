@@ -194,28 +194,23 @@
  button {
    display: inline-block;
    border-radius: 6px;
-   border: 3px solid;
    padding: $unit*4;
    text-align: center;
    text-decoration: none;
-   background: transparent;
+   background: #3B73FF;
+   color: white;
    font-family: $family;
    font-size: $unit*4;
    font-weight: $semibold;
    transition: all 150ms ease-out;
    cursor: pointer;
+   box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
+   margin: 0 $unit*2 $unit*2 0;
 
-   &.dark {
-     border-color: #3B73FF;
-     color: #3B73FF;
+   &.tertiary {
+     background: $primary-70;
+     color: white;
    }
-
-   &.light {
-     background: white;
-     border-color: white;
-     color: $primary-70;
-   }
-
  }
 
  a.current-role {

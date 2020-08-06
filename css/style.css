@@ -198,27 +198,23 @@ a.button,
 button {
   display: inline-block;
   border-radius: 6px;
-  border: 3px solid;
   padding: 16px;
   text-align: center;
   text-decoration: none;
-  background: transparent;
+  background: #3B73FF;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 800;
   transition: all 150ms ease-out;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 8px 8px 0;
 }
-a.button.dark,
-button.dark {
-  border-color: #3B73FF;
-  color: #3B73FF;
-}
-a.button.light,
-button.light {
-  background: white;
-  border-color: white;
-  color: #203D55;
+a.button.tertiary,
+button.tertiary {
+  background: #203D55;
+  color: white;
 }
 
 a.current-role {
@@ -1338,21 +1334,8 @@ section.intro .container p {
     line-height: 32px;
   }
 }
-section.intro .container a, section.intro .container button {
-  display: inline-block;
-  vertical-align: middle;
-  color: white;
-  background-color: #3B73FF;
-  border: 3px solid #3B73FF;
-  padding: 16px 24px;
-  border-radius: 4px;
-  font-size: 16px;
-  margin: 32px 16px 0 0;
-  box-shadow: 0 0.5rem 0.5rem rgba(10, 28, 36, 0.1);
-}
-section.intro .container a.tertiary, section.intro .container button.tertiary {
-  background: none;
-  border: 3px solid white;
+section.intro .container .buttons {
+  padding-top: 16px;
 }
 
 /* # How I can help you
@@ -1630,167 +1613,29 @@ section.testimonials .testimonials blockquote.testimonial a .avatar {
   justify-content: center;
   margin: 32px 0;
 }
-/* # Recent Work Styles
-================================================== */
-section.recent::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_recent.svg);
-}
-
-section.recent {
-  position: relative;
-  background-color: #F9FBFD;
-}
-section.recent .work-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-section.recent .workcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  section.recent .workcontainer {
-    max-width: 50%;
-  }
-}
-section.recent .workcontainer .workcolumns {
-  flex: 0 0 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-section.recent .workcontainer .workcolumns:first-child {
-  margin-bottom: 32px;
-}
-section.recent .workcontainer .workcolumns:second-child {
-  margin-bottom: 32px;
-}
-@media screen and (min-width: 575px) {
-  section.recent .workcontainer .workcolumns {
-    max-width: 100%;
-    padding: 0 16px;
-  }
-}
-section.recent .workcontainer .workcolumns.image {
-  order: -1;
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 575px) {
-  section.recent .workcontainer .workcolumns.image {
-    order: -1;
-  }
-}
-section.recent .workcontainer .workcolumns.image img, section.recent .workcontainer .workcolumns.image .video {
-  display: flex;
-  border-radius: 16px;
-  max-width: 100%;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
-}
-section.recent .workcontainer .workcolumns.image .video {
-  display: flex;
-  background: #F6D5E0;
-  padding: 32px;
-  align-items: center;
-}
-section.recent .workcontainer .workcolumns.image .video video {
-  max-height: 416px;
-  width: 100%;
-  margin: auto;
-}
-section.recent .workcontainer .workcolumns.image .secondary_images {
-  display: flex;
-  flex-wrap: no-wrap;
-}
-section.recent .workcontainer .workcolumns.image .secondary_images .image {
-  flex-shrink: 1;
-  max-width: 50%;
-  margin-top: 16px;
-}
-section.recent .workcontainer .workcolumns.image .secondary_images .image:nth-child(odd) {
-  margin-right: 16px;
-}
-section.recent .workcontainer h4 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-section.recent .workcontainer h2 {
-  padding-right: 32px;
-  margin-top: 8px;
-}
-section.recent .workcontainer .cta-link a {
-  color: #3973FF;
-  font-weight: 700;
-  transition: all 0.1s ease-out;
-}
-section.recent .workcontainer .cta-link a:hover {
-  border-bottom: none;
-}
-section.recent .workcontainer .cta-link:hover span {
-  margin-left: 12px;
-}
-section.recent .workcontainer .cta-link span {
-  margin-left: 8px;
-  color: #e03f7f;
-  width: 22px;
-  height: 16px;
-  transition: all 0.1s ease-out;
-}
-section.recent .workcontainer .link-subtitle {
-  color: #8895A7;
-  font-size: 12px;
-}
-section.recent .workcontainer .description p {
-  padding-right: 32px;
-}
-@media screen and (max-width: 600px) {
-  section.recent .workcontainer .description p {
-    padding-right: 0;
-  }
-}
-section.recent .workcontainer .description .labels {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-section.recent .workcontainer .description .labels .avatar_brand {
-  border-radius: 50%;
-  display: inline-flex;
-  height: 28px;
-  margin: 0;
-}
-
 /* # Global Variables
 ================================================== */
 /* # Font settings
 ================================================== */
 /* # Color Variables
 ================================================== */
-.img_container img {
+section.myprocess .img_container img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
-
-.container.about h1 {
+section.myprocess .container h1 {
   margin-top: 120px;
 }
-
-.process-phases {
+section.myprocess .process-phases {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 @media screen and (min-width: 768px) {
-  .process-phases {
+  section.myprocess .process-phases {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.process-phases .phase {
+section.myprocess .process-phases .phase {
   padding: 32px;
   margin: 16px 0;
   background: #DEF1FE;
@@ -1798,18 +1643,18 @@ section.recent .workcontainer .description .labels .avatar_brand {
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
 @media screen and (min-width: 768px) {
-  .process-phases .phase:nth-child(even) {
+  section.myprocess .process-phases .phase:nth-child(even) {
     margin-left: 16px;
   }
-  .process-phases .phase:nth-child(odd) {
+  section.myprocess .process-phases .phase:nth-child(odd) {
     margin-right: 16px;
   }
 }
-.process-phases .phase p {
+section.myprocess .process-phases .phase p {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
-.process-phases .phase li:before {
+section.myprocess .process-phases .phase li:before {
   content: "➡️";
   display: inline-block;
   width: 37px;
@@ -1825,27 +1670,25 @@ section.recent .workcontainer .description .labels .avatar_brand {
 ================================================== */
 /* # Color Variables
 ================================================== */
-.img_container img {
+section.aboutme .img_container img {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 }
-
-.container.about h1 {
+section.aboutme .container.about h1 {
   margin-top: 120px;
 }
-
-section.history .List_customList {
+section.aboutme section.history .List_customList {
   margin-top: 32px;
 }
-section.history .List_bullet {
+section.aboutme section.history .List_bullet {
   display: block;
   position: absolute;
   width: 20px;
   top: 10px;
   left: -40px;
 }
-section.history .List_bullet svg {
+section.aboutme section.history .List_bullet svg {
   width: 100%;
 }
 

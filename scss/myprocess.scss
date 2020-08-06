@@ -2,65 +2,67 @@
 
 @import 'variables';
 
+section.myprocess {
 
-.img_container {
+  .img_container {
 
-  img {
-    width: 100%;
-    border-radius: $unit*4;
-    box-shadow: $shadow;
-  }
-}
-
-.container.about {
-  h1 {
-    margin-top: 120px; 
-  }
-}
-
-.process-phases {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-
-    @media screen and (min-width: $tablet-width) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-  .phase {
-    padding: $unit*8;
-    margin: $unit*4 0;
-    background: #DEF1FE;
-    border-radius: 16px;
-    box-shadow: $shadow;
-
-    @media screen and (min-width: $tablet-width) {
-      &:nth-child(even) {
-        margin-left: $unit*4;
-      }
-      &:nth-child(odd) {
-        margin-right: $unit*4;
-      }
-    }
-
-
-
-    p {
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-    }
-
-    li {
-
-      &:before { 
-        content:'➡️'; 
-        display:inline-block; 
-        width: 37px;
-        height: 12px;
-        background-size:contain; 
-        background-repeat:no-repeat; 
-        margin-left: -38px;
-      }
+    img {
+      width: 100%;
+      border-radius: $unit*4;
     }
   }
+
+  .container {
+    h1 {
+      margin-top: 120px; 
+    }
+  }
+
+  .process-phases {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+      @media screen and (min-width: $tablet-width) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .phase {
+      padding: $unit*8;
+      margin: $unit*4 0;
+      background: #DEF1FE;
+      border-radius: 16px;
+      box-shadow: $shadow;
+
+      @media screen and (min-width: $tablet-width) {
+        &:nth-child(even) {
+          margin-left: $unit*4;
+        }
+        &:nth-child(odd) {
+          margin-right: $unit*4;
+        }
+      }
+
+
+
+      p {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+      }
+
+      li {
+
+        &:before { 
+          content:'➡️'; 
+          display:inline-block; 
+          width: 37px;
+          height: 12px;
+          background-size:contain; 
+          background-repeat:no-repeat; 
+          margin-left: -38px;
+        }
+      }
+    }
+  }
+
 }
 

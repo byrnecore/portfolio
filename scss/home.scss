@@ -51,23 +51,11 @@ section.intro {
         line-height: $unit*8;
       }
     }
-    a, button {
-      display: inline-block;
-      vertical-align: middle;
-      color: white;
-      background-color: #3B73FF;
-      border: 3px solid #3B73FF;
-      padding: $unit*4 $unit*6;
-      border-radius: $unit;
-      font-size: $unit*4;
-      margin: $unit*8 $unit*4 0 0;
-      box-shadow: 0 0.5rem 0.5rem rgba(10, 28, 36, 0.10);
 
-      &.tertiary {
-        background: none;
-        border: 3px solid white;
-      }
-    } 
+    .buttons {
+      padding-top: $unit*4;
+    }
+    
   }
 }
 
