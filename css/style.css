@@ -6,29 +6,21 @@
 ================================================== */
 /* # Font settings
 ================================================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap");
 /* # Color Variables
 ================================================== */
 /* # Global Styles
 ================================================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1,&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,600;1,700;1,800;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap");
 ::selection {
   background: #FDF4D7;
 }
 
 body {
   color: #203D55;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -194,8 +186,7 @@ section h1 {
   margin: 0 auto 40px;
 }
 
-a.button,
-button {
+a.button {
   display: inline-block;
   border-radius: 6px;
   padding: 16px;
@@ -203,7 +194,7 @@ button {
   text-decoration: none;
   background: #3B73FF;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 800;
   transition: all 150ms ease-out;
@@ -211,10 +202,15 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
   margin: 0 8px 8px 0;
 }
-a.button.tertiary,
-button.tertiary {
+a.button.tertiary {
   background: #203D55;
   color: white;
+}
+@media screen and (min-width: 1280px) {
+  a.button:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+  }
 }
 
 a.current-role {
@@ -1192,7 +1188,7 @@ header .header-container .header-left .avatar {
   margin-right: 8px;
 }
 header .header-container .header-left .logo {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
@@ -1424,6 +1420,7 @@ section.recent .work-list {
 section.recent .workcontainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 80px;
   max-width: 100%;
 }
