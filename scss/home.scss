@@ -231,6 +231,8 @@ section.testimonials {
 
       .avatar_lockup {
         display: flex;
+        top: -16px;
+        position: relative;
       }
 
       @media screen and (min-width: $tablet-width) {
@@ -251,8 +253,9 @@ section.testimonials {
           border-radius: 50%;
           box-sizing: border-box;
           background-color: #dddddd;
-          border: 4px solid $Dark-Gray;
+          // border: 4px solid #3B73FF;
           transition:border-color 0.2s ease-in-out;
+          box-shadow: $shadow;
         }
       }
     }
