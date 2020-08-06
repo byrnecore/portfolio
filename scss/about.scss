@@ -18,26 +18,25 @@ section.aboutme {
       margin-top: 120px; 
     }
   }
+}
 
-  section.history {
+section.history {
 
-    .List_customList {
-      margin-top: 32px;
-    }
+  .List_customList {
+    margin-top: 32px;
+  }
 
-    .List_bullet {
-      display: block;
-      position: absolute;
-      width: 20px;
-      top: 10px;
-      left: -40px;
+  .List_bullet {
+    display: block;
+    position: absolute;
+    width: 20px;
+    top: 10px;
+    left: -40px;
 
       svg {
         width: 100%;
       }
-    }
   }
-
 }
 
 
