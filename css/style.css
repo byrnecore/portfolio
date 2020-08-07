@@ -20,7 +20,7 @@
 
 body {
   color: #203D55;
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -166,7 +166,7 @@ section h1 {
 }
 
 a.button, button.button {
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   font-size: 16px;
   font-weight: 800;
   display: inline-block;
@@ -176,7 +176,7 @@ a.button, button.button {
   text-decoration: none;
   background: #3B73FF;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   font-size: 16px;
   font-weight: 800;
   transition: all 150ms ease-out;
@@ -1182,7 +1182,7 @@ header .header-container .header-left .avatar {
   margin-right: 8px;
 }
 header .header-container .header-left .logo {
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
