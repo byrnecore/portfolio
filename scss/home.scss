@@ -54,7 +54,8 @@ section.intro {
           }
 
         &.tertiary {
-         background: $primary-70;
+         background: transparent;
+         border: 2px solid white;
          color: white;
         }
       }
@@ -184,6 +185,7 @@ section.recent {
       
       &:first-child {
         margin-bottom: 32px;
+        height: 100%;
       }
 
       &:second-child {
