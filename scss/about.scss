@@ -2,18 +2,21 @@
 
 @import 'variables';
 
+section.aboutme {
 
-.img_container {
+  .img_container {
 
-  img {
-    width: 100%;
-    border-radius: $unit*4;
+    img {
+      width: 100%;
+      border-radius: $unit*4;
+      box-shadow: $shadow;
+    }
   }
-}
 
-.container.about {
-  h1 {
-    margin-top: 120px; 
+  .container.about {
+    h1 {
+      margin-top: 120px; 
+    }
   }
 }
 
@@ -30,9 +33,9 @@ section.history {
     top: 10px;
     left: -40px;
 
-    svg {
-      width: 100%;
-    }
+      svg {
+        width: 100%;
+      }
   }
 }
 
