@@ -6,7 +6,7 @@ $tablet-width: 768px;
 $mobile-tablet: 575px;
 $mobile-width: 480px;
 $desktop-width: 1280px;
-$shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
+$shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
 
 /* # Font settings
 ================================================== */
@@ -17,9 +17,9 @@ $shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.1);
 $family: -apple-system, BlinkMacSystemFont,'Inter', sans-serif;
 // $family: 'Open Sans', sans-serif;
 
-$light: 600;
-$normal: 700;
-$semibold: 800;
+$light: 500;
+$normal: 600;
+$semibold: 700;
 
 /* # Color Variables
 ================================================== */

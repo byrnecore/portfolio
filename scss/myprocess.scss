@@ -6,6 +6,8 @@ section.myprocess {
 
   .img_container {
 
+    margin: $unit*20 0;
+
     img {
       width: 100%;
       border-radius: $unit*4;
@@ -13,6 +15,7 @@ section.myprocess {
   }
 
   .container {
+    
     h1 {
       margin-top: 120px; 
     }
@@ -32,6 +35,14 @@ section.myprocess {
       background: #C3D5FF;
       border-radius: 16px;
       box-shadow: $shadow;
+
+      &.diamond-one {
+        background: #C7F2FB;
+      }
+
+      &.diamond-two {
+        background: #D6D3FF;
+      }
 
       @media screen and (min-width: $tablet-width) {
         &:nth-child(even) {

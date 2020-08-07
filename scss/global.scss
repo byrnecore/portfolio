@@ -12,6 +12,7 @@
    -webkit-font-smoothing: antialiased;
    /* Fix for webkit rendering */
    -webkit-text-size-adjust: 100%;
+   background: #f6f9fc;
  }
 
  h1 {
@@ -26,10 +27,10 @@
  }
 
  h2 {
-  margin: 0;
-  font-size: $unit*6.5;
-  font-weight: $semibold;
-  line-height: $unit*8;
+   margin: 0;
+   font-size: $unit*6.5;
+   font-weight: $semibold;
+   line-height: $unit*8;
 
    @media screen and (max-width: 500px) {
      font-size: $unit*6;
@@ -80,17 +81,21 @@
  }
 
  li {
-    list-style: none;
-    padding: .5em 0;
-    margin: 0;
-    // line-height: 1.5em;
-    position: relative;
-    font-weight: 600;
-    font-size: 18px;
-    color: #506690;
-  }
+   list-style: none;
+   padding: .5em 0;
+   margin: 0;
+   position: relative;
+   font-weight: 600;
+   font-size: 18px;
+   color: #506690;
 
    a {
+    color: #506690;
+    border-bottom: 1px solid #506690; 
+   }
+ }
+
+ a {
    font-size: 18px;
    font-weight: 700;
    text-decoration: none;
@@ -126,10 +131,10 @@
    }
  }
 
-// .leadin {
-//     max-width: 800px;
-//     margin: 0 auto 40px;
-// }
+ // .leadin {
+ //     max-width: 800px;
+ //     margin: 0 auto 40px;
+ // }
 
 
 
@@ -170,47 +175,53 @@
 
  // Button styles
 
-  a.button, button.button {
+ a.button,
+ button.button {
 
-    font-family: $family;
-    font-size: $unit*4;
-    font-weight: $semibold;
-    display: inline-block;
-    border-radius: 32px;
-    padding: $unit*3 $unit*8;
-    text-align: center;
-    text-decoration: none;
-    background: #3B73FF;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.2);
-    margin: 0 $unit*2 $unit*2 0;
-    border: transparent;
-    transition: all 150ms ease-out;
+   font-family: $family;
+   font-size: $unit*4;
+   font-weight: $semibold;
+   display: inline-block;
+   border-radius: 32px;
+   padding: $unit*3 $unit*8;
+   text-align: center;
+   text-decoration: none;
+   background: #3B73FF;
+   color: white;
+   cursor: pointer;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .2);
+   margin: 0 $unit*2 $unit*2 0;
+   border: transparent;
+   transition: all 150ms ease-out;
 
    .button-arrow {
-          display: inline-block;
-          margin-left: 8px;
-          transition: margin .3s ease;
+     display: inline-block;
+     margin-left: 8px;
+     transition: margin .3s ease;
 
-          button-arrow-svg.svg {
-            max-width: 100%;
-            path {
-              fill: white;
-            }
-          }
-        }
+     button-arrow-svg.svg {
+       max-width: 100%;
+
+       path {
+         fill: white;
+       }
+     }
+   }
 
    &.tertiary {
      background: $primary-70;
      color: white;
-              
+
+     path {
+       fill: white;
+     }
+
    }
 
    @media screen and (min-width: $desktop-width) {
      &:hover {
-      box-shadow: 0 10px 25px rgba(0,0,0,.15), 0 8px 10px -6px rgba(0,0,0,.3);
-      transform: translateY(-1px);
+       box-shadow: 0 10px 25px rgba(0, 0, 0, .15), 0 8px 10px -6px rgba(0, 0, 0, .3);
+       transform: translateY(-1px);
      }
    }
  }
@@ -228,34 +239,34 @@
 
 
  section.contact_cta {
-  position: relative;
-  background: #FBE8E8;
+   position: relative;
+   background: #FBE8E8;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -60px;
-    height: 60px;
-    width: 100%;
-    background: url(../img/vector_contact.svg);
-  }
+   &::before {
+     content: "";
+     position: absolute;
+     top: -60px;
+     height: 60px;
+     width: 100%;
+     background: url(../img/vector_contact.svg);
+   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
+   .container {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 800px;
 
-    p {
-      font-size: 24px;
-      text-align: center;
-      margin: 24px 0;
-      line-height: 40px;
-      color: $primary-70;
-    }
+     p {
+       font-size: 24px;
+       text-align: center;
+       margin: 24px 0;
+       line-height: 40px;
+       color: $primary-70;
+     }
 
-    .more {
-      margin: 0;
-    }
+     .more {
+       margin: 0;
+     }
 
-  }
-}
+   }
+ }
