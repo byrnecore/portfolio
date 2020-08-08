@@ -1847,10 +1847,13 @@ section.get_contact {
 }
 section.get_contact .container {
   display: flex;
-  max-width: 800px;
 }
 section.get_contact .container h1 {
   margin-top: 120px;
+}
+
+form#contact {
+  max-width: 768px;
 }
 
 fieldset {
