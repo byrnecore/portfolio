@@ -2,24 +2,24 @@
 ================================================== */
 $unit: 4px;
 $max-width: 1024px;
+$desktop-width: 1280px;
 $tablet-width: 768px;
 $mobile-tablet: 575px;
 $mobile-width: 480px;
-$desktop-width: 1280px;
 $shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
 
 /* # Font settings
 ================================================== */
 
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');
 
 $family: -apple-system, BlinkMacSystemFont,'Inter', sans-serif;
-// $family: 'Open Sans', sans-serif;
 
 $light: 500;
 $normal: 600;
 $semibold: 700;
+
+
 
 /* # Color Variables
 ================================================== */
@@ -64,3 +64,10 @@ $spotify:     #1ed760;
 $twitter:     #1da1f2;
 $pinterest:   #bd081c;
 $current-role:   #E41421;
+
+
+// Hamburger
+
+
+$hamburger-layer-color         : $primary-70;
+

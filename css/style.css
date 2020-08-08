@@ -70,7 +70,7 @@ h4 {
 
 p {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 32px;
   margin-block-start: 1em;
   margin-block-end: 2em;
   color: #506690;
@@ -166,7 +166,7 @@ section h1 {
 }
 
 .onecolpara {
-  max-width: 800px;
+  max-width: 768px;
   margin: 0 auto 40px;
 }
 
@@ -247,7 +247,7 @@ section.contact_cta .container {
   max-width: 800px;
 }
 section.contact_cta .container p {
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   margin: 24px 0;
   line-height: 40px;
@@ -288,7 +288,7 @@ section.contact_cta .container .more {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #fff;
+  background-color: #203D55;
 }
 
 .hamburger-box {
@@ -306,7 +306,7 @@ section.contact_cta .container .more {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 28px;
   height: 3px;
-  background-color: #fff;
+  background-color: #203D55;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -1153,24 +1153,33 @@ header.menuOpen .popover li a.item.active {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+#mainNav.home .hamburger-inner,
+#mainNav.home .hamburger-inner::before,
+#mainNav.home .hamburger-inner::after, #mainNav.menuOpen .hamburger-inner,
+#mainNav.menuOpen .hamburger-inner::before,
+#mainNav.menuOpen .hamburger-inner::after {
+  background-color: white;
+}
+#mainNav.home .logo, #mainNav.menuOpen .logo {
+  color: white;
+}
+
 header {
   width: 100%;
-  position: fixed;
-  background: #3B73FF;
-  box-shadow: 0 1rem 2rem rgba(22, 28, 45, 0.2);
+  position: absolute;
   z-index: 9;
   top: 0;
 }
 header .header-container {
   display: flex;
   align-content: center;
-  padding: 16px 0;
+  padding: 32px 0;
   max-width: 1024px;
   margin: auto;
 }
 @media screen and (max-width: 1024px) {
   header .header-container {
-    padding: 16px 32px;
+    padding: 32px 32px;
   }
 }
 header .header-container .header-left,
@@ -1180,6 +1189,9 @@ header .header-container .header-right {
   align-items: center;
   flex-wrap: nowrap;
   flex-grow: 1;
+}
+header .header-container .header-left {
+  z-index: 100;
 }
 header .header-container .header-left a {
   transition: opacity 300ms ease-out;
@@ -1198,7 +1210,7 @@ header .header-container .header-left .logo {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: white;
+  color: #212A34;
   letter-spacing: 0.01em;
   margin-top: 8px;
 }
@@ -1209,6 +1221,13 @@ header .header-container .header-left .logo {
 }
 header .header-container .header-right {
   justify-content: flex-end;
+}
+header .header-container .header-right button#burger_btn {
+  transition: opacity 300ms ease-out;
+}
+header .header-container .header-right button#burger_btn:hover {
+  opacity: 0.7;
+  border: 0;
 }
 header .header-container .header-right .hamburger {
   z-index: 100;
@@ -1290,7 +1309,7 @@ section.thanks h1 {
 ================================================== */
 section.intro {
   background: #4BAEA3;
-  background: #4baea3;
+  background: #f473ff;
   background-image: linear-gradient(rgba(57, 115, 255, 0.9), rgba(244, 115, 255, 0.9)), url("../img/bg_hero.jpg");
   background-position: 60% 50%;
   background-repeat: no-repeat;
@@ -1307,23 +1326,24 @@ section.intro {
 section.intro .container {
   margin-top: 32px;
   margin-bottom: 120px;
+  max-width: 680px;
 }
 section.intro .container h1 {
   max-width: 1024px;
   text-align: left;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 40px;
   margin-top: 0;
-  margin: 0 auto 12px;
+  margin: 0 auto 32px;
 }
 section.intro .container h1 .strong {
   font-weight: 700;
 }
 section.intro .container p {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 32px;
-  margin: 0;
+  margin: 0 0 32px 0;
   opacity: 0.9;
 }
 section.intro .container .buttons {
@@ -1824,14 +1844,6 @@ section.get_contact {
   position: relative;
   background: #F8F9FA;
   margin-top: 32px;
-}
-section.get_contact::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  width: 100%;
-  background: url(../img/vector_contact.svg);
 }
 section.get_contact .container {
   display: flex;

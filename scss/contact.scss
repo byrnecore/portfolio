@@ -10,16 +10,6 @@ section.get_contact {
   background: $neutral-10;
   margin-top: 32px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -60px;
-    height: 60px;
-    width: 100%;
-    background: url(../img/vector_contact.svg);
-    // outline: 1px solid red;
-  }
-
   .container {
     display: flex;
     max-width: 800px;

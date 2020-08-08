@@ -55,7 +55,7 @@
 
  p {
    font-size: $unit*4.5;
-   line-height: $unit*7;
+   line-height: $unit*8;
    margin-block-start: 1em;
    margin-block-end: 2em;
    color: #506690;
@@ -169,7 +169,7 @@
  }
 
  .onecolpara {
-   max-width: 800px;
+   max-width: $tablet-width;
    margin: 0 auto 40px;
  }
 
@@ -257,7 +257,7 @@
      max-width: 800px;
 
      p {
-       font-size: 24px;
+       font-size: 22px;
        text-align: center;
        margin: 24px 0;
        line-height: 40px;
