@@ -21,15 +21,15 @@ section.intro {
   .container {
     margin-top: 32px;
     margin-bottom: 120px;
-    max-width: 680px;
+    // max-width: 680px;
     
     h1 {
       max-width: $max-width;
       text-align: left;
       font-size: $unit*9;
       line-height: $unit*10;
-      margin-top: 0;
-      margin: 0 auto 32px;
+      margin: 0 0 32px;
+      max-width: 680px;
 
       .strong {
         font-weight: $semibold;
@@ -41,6 +41,7 @@ section.intro {
       line-height: $unit*8;
       margin: 0 0 32px 0;
       opacity: 0.9;
+      max-width: 680px;
     }
 
     .buttons {
