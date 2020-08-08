@@ -29,7 +29,6 @@ form#contact {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  // font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
   // border-radius: 8px;
 }
 
@@ -76,12 +75,9 @@ fieldset {
 }
 
 #contact button[type="submit"] {
-  // margin: 16px 0 0 0;
-  //    padding: 16px;
-  //    font-family: "Open Sans", sans-serif;
-  //    font-size: 16px;
-  //    font-weight: 800;
-  //    transition: all 150ms ease-out;
+  border-radius: 32px;
+  margin: 0 $unit*4 $unit*4 0;
+  padding: $unit*3 $unit*8;
 }
 
 #contact button[type="submit"]:hover {

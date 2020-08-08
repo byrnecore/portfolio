@@ -1898,6 +1898,12 @@ fieldset {
   resize: none;
 }
 
+#contact button[type=submit] {
+  border-radius: 32px;
+  margin: 0 16px 16px 0;
+  padding: 12px 32px;
+}
+
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
