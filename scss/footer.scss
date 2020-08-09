@@ -40,6 +40,7 @@ section.footer {
     }
     .site_links {
       margin-top: 16px;
+
       a {
       margin: 0 8px;
 
@@ -54,8 +55,13 @@ section.footer {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+
       .footerlink {
         margin: $unit*4 $unit*4 0 $unit*4;
+
+        @media screen and (max-width: 480px) {
+          margin: $unit*4 $unit*3 0 $unit*3;
+        }
         
       }
     }

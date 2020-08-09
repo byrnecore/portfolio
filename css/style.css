@@ -1310,6 +1310,11 @@ section.footer .container .social_links {
 section.footer .container .social_links .footerlink {
   margin: 16px 16px 0 16px;
 }
+@media screen and (max-width: 480px) {
+  section.footer .container .social_links .footerlink {
+    margin: 16px 12px 0 12px;
+  }
+}
 
 /* # Intro Hero Styles
 ================================================== */
