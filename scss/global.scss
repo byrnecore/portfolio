@@ -90,8 +90,8 @@
    color: #506690;
 
    a {
-    color: #506690;
-    border-bottom: 1px solid #506690; 
+     color: #506690;
+     border-bottom: 1px solid #506690;
    }
  }
 
@@ -167,10 +167,10 @@
  }
 
  .onecolpara {
-   // max-width: $tablet-width;
    margin: 0 auto 40px;
+
    p {
-    max-width: 768px;
+     max-width: $tablet-width;
    }
  }
 
@@ -205,8 +205,8 @@
      }
 
      path {
-         fill: #F473FF;
-       }
+       fill: #F473FF;
+     }
    }
 
    &.tertiary {
@@ -284,9 +284,13 @@
    }
  }
 
-.more {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 32px 0;
-}
+ .more {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: 32px 0;
+
+   p {
+     max-width: $tablet-width;;
+   }
+ }
