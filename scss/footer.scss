@@ -62,17 +62,3 @@ section.footer {
     
   }
 }
-
-section.thanks {
-  position: relative;
-  height: 100vh;
-  height: -webkit-calc(100vh - 132px);
-  height:    -moz-calc(100vh - 132px);
-  height:         calc(100vh - 132px);
-  text-align: center;
-
-  h1 {
-    color: #3183C8;
-  }
-
-}

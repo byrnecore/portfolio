@@ -211,6 +211,16 @@ a.button.tertiary .button-arrow path,
 button.button.tertiary .button-arrow path {
   fill: white;
 }
+a.button.secondary,
+button.button.secondary {
+  background: transparent;
+  color: #203D55;
+  border: 2px solid #203D55;
+}
+a.button.secondary .button-arrow path,
+button.button.secondary .button-arrow path {
+  fill: #203D55;
+}
 @media screen and (min-width: 1280px) {
   a.button:hover,
 button.button:hover {
@@ -1301,18 +1311,6 @@ section.footer .container .social_links .footerlink {
   margin: 16px 16px 0 16px;
 }
 
-section.thanks {
-  position: relative;
-  height: 100vh;
-  height: -webkit-calc(100vh - 132px);
-  height: -moz-calc(100vh - 132px);
-  height: calc(100vh - 132px);
-  text-align: center;
-}
-section.thanks h1 {
-  color: #3183C8;
-}
-
 /* # Intro Hero Styles
 ================================================== */
 section.intro {
@@ -1865,6 +1863,9 @@ fieldset {
   padding: 0;
   width: 100%;
 }
+fieldset.contact_submit {
+  text-align: right;
+}
 
 #contact input[type=text],
 #contact input[type=email],
@@ -1926,6 +1927,14 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #B8C4CF;
+}
+
+section.thanks {
+  position: relative;
+  height: 100vh;
+  height: -webkit-calc(100vh - 132px);
+  height: -moz-calc(100vh - 132px);
+  height: calc(100vh - 132px);
 }
 
 @keyframes bouncey {
