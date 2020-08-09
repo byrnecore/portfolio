@@ -255,6 +255,14 @@ section.contact_cta .container p {
 }
 section.contact_cta .container .more {
   margin: 0;
+  justify-content: center;
+}
+
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 32px 0;
 }
 
 /*!
@@ -1643,12 +1651,6 @@ section.testimonials .testimonials blockquote.testimonial a .avatar {
   font-weight: 500;
 }
 
-.more {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 32px 0;
-}
 /* # Global Variables
 ================================================== */
 /* # Font settings

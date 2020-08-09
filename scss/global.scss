@@ -267,7 +267,15 @@
 
      .more {
        margin: 0;
+       justify-content: center;
      }
 
    }
  }
+
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 32px 0;
+}
