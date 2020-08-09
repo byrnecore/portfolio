@@ -1430,7 +1430,6 @@ section.worked-with .brand-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
   margin-bottom: 64px;
 }
 section.worked-with .brand-list .brand {

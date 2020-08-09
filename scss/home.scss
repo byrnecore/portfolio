@@ -21,7 +21,6 @@ section.intro {
   .container {
     margin-top: 32px;
     margin-bottom: 120px;
-    // max-width: 680px;
     
     h1 {
       max-width: $max-width;
@@ -133,7 +132,6 @@ section.worked-with {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
     margin-bottom: 64px;
 
     .brand {
