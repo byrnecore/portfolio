@@ -332,6 +332,14 @@ section.testimonials {
       max-width: 100%;
       margin: 0 0 32px 0;
 
+      .quote {
+        p {
+          border-radius: 1rem 1rem 1rem 0;
+          padding: 1rem 1.4rem;
+          background: #DEF1FE;
+        }
+      }
+
       .avatar_lockup {
         display: flex;
         top: -16px;

@@ -1603,6 +1603,11 @@ section.testimonials .testimonials blockquote.testimonial {
   max-width: 100%;
   margin: 0 0 32px 0;
 }
+section.testimonials .testimonials blockquote.testimonial .quote p {
+  border-radius: 1rem 1rem 1rem 0;
+  padding: 1rem 1.4rem;
+  background: #DEF1FE;
+}
 section.testimonials .testimonials blockquote.testimonial .avatar_lockup {
   display: flex;
   top: -16px;
