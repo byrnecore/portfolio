@@ -1349,6 +1349,12 @@ section.intro .container h1 {
   margin: 0 0 32px;
   max-width: 680px;
 }
+@media screen and (min-width: 480px) {
+  section.intro .container h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
 section.intro .container h1 .strong {
   font-weight: 700;
 }
