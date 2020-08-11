@@ -1429,10 +1429,10 @@ section.worked-with::before {
 
 section.worked-with {
   position: relative;
-  background: #e3fded;
+  background: #F9D9FB;
 }
 section.worked-with h1 {
-  color: #479E59;
+  color: #F473FF;
 }
 section.worked-with .brand-list {
   display: flex;
